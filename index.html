@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../Portfolio/css/style.css">
     <title>Alexandr Morra</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../Portfolio/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
@@ -15,24 +15,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    
     <div class="wrapper">
         <header class="header">
-            <div class="header__content">
-                <div class="header__body">
-                    <a href="#"class="header__logo ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 0 700 612"><path d="M18.43 255.8L192 224L100.8 292.6C90.67 302.8 97.8 320 112 320h222.7c-9.499-26.5-14.75-54.5-14.75-83.38V194.2L200.3 106.8C176.5 90.88 145 92.75 123.3 111.2l-117.5 116.4C-6.562 238 2.436 258 18.43 255.8zM575.2 289.9l-100.7-50.25c-16.25-8.125-26.5-24.75-26.5-43V160h63.99l28.12 22.62C546.1 188.6 554.2 192 562.7 192h30.1c11.1 0 23.12-6.875 28.5-17.75l14.37-28.62c5.374-10.87 4.25-23.75-2.999-33.5l-74.49-99.37C552.1 4.75 543.5 0 533.5 0H296C288.9 0 285.4 8.625 290.4 13.62L351.1 64L292.4 88.75c-5.874 3-5.874 11.37 0 14.37L351.1 128l-.0011 108.6c0 72 35.99 139.4 95.99 179.4c-195.6 6.75-344.4 41-434.1 60.88c-8.124 1.75-13.87 9-13.87 17.38C.0463 504 8.045 512 17.79 512h499.1c63.24 0 119.6-47.5 122.1-110.8C642.3 354 617.1 310.9 575.2 289.9zM489.1 66.25l45.74 11.38c-2.75 11-12.5 18.88-24.12 18.25C497.7 95.25 484.8 83.38 489.1 66.25z"/></svg>
-                    </a>
-                    <div class="header__burger">
-                        <span></span>
-                    </div>
-                    <nav class="header__menu">
-                        <ul class="header__list">
-                            <li class="menu__item"><a href="" class="menu__link-1">HO<span>ME</span></a></li>
-                            <li class="menu__item"><a href="" class="menu__link-2">Skills</a></li>
-                            <li class="menu__item"><a href="" class="menu__link-3">Projects</a></li>
-                        </ul>
-                    </nav>
+            <div class="max-width">
+                <div class="logo"><a href="#">Mo<span>r</span>ra</a></div>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#"><span>Pro</span>jects</a></li>
+                    <li><a href="#">About Me</a></li>
+                </ul>
+                <div class="menu__btn">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>  
         </header>
@@ -64,71 +59,203 @@
             </div>
         </section>
 
+         <!-----Fullscrin---->
         <section class="fullscrin">
-            <div data-aos="fade-up" class="fullscrin__body">
-                <div class="fullscrin__container _container">
-                    <div data-aos="zoom-in" class="gradient-1"></div>
-                    <div data-aos="zoom-in"class="gradient-2"></div>
+            <div data-aos="fade-up" class="max-width">
+                <div class="container"> 
                     <div class="title">
+                        <div class="text-1">Hello, my name is</div>
                         <h1 data-content="Alexandr" class="glow">Alexandr</h1>
                         <h2 data-content-2="Morra" class="glow">Morra</h2>
                     </div>
-                    <div class="static__card">
-                        <div class="static-txt">I'm a</div>
-                        <ul class="dynamic-txts">
-                            <li><span>Front-End Developer</span></li>
-                            <li><span>Writer</span></li>
-                            <li><span>Freelancer</span></li>
-                            <li><span>Designer</span></li>
-                        </ul>
+                    <div class="photo__container">
+                        <div class="photo">
+                            <div class="cont">
+                                <div class="img-box"> <img src="./img/photo.jfif"></div>
+                                <div class="content-box">
+                                    <h4>My Contact<br><span>Hover me</span></h4>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1"> 
+                                    <a href="#" class="box__facebook fa-brands fa-facebook"></a>
+                                </li>
+                                <li style="--i:2"> 
+                                    <a href="#" class="box__insta fa-brands fa-instagram "></a>
+                                </li>
+                                <li style="--i:3"> 
+                                    <a href="#" class="box__telegram fa-brands fa-telegram"></a>
+                                </li>
+                            </ul>
+                        </div>        
                     </div>
-                    <h3>html css java script jquery </h3>
+                    <div class="static__card">
+                        <div class="static-txt">I'm a<span class="typing"></span></div>
+                        <h3>HTML CSS Java Script JQUERY <br><br> Figma BootStrap Photoshop</h3>
+                    </div> 
                     <a href="#" class="neon">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
-                        Neon Button
+                        Contact me
                     </a>
-                    <a href="#" class="neon-2">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Neon Button
-                    </a>
-                </div>
-                <div class="photo__container">
-                    <div class="photo">
-                        <div class="cont">
-                            <div class="img-box"> <img src="./img/photo.jfif"></div>
-                            <div class="content-box">
-                                <h4>Semeone alse<br><span>Front-End</span></h4>
-                            </div>
-                        </div>
-                        <ul class="sci">
-                            <li style="--i:1"> 
-                                <a href="#" class="box__facebook fa-brands fa-facebook"></a>
-                            </li>
-                            <li style="--i:2"> 
-                                <a href="#" class="box__insta fa-brands fa-instagram "></a>
-                            </li>
-                            <li style="--i:3"> 
-                                <a href="#" class="box__telegram fa-brands fa-telegram"></a>
-                            </li>
-                        </ul>
-                    </div>        
-                </div>        
+                    <div data-aos="zoom-in" class="gradient-1"></div>
+                    <div data-aos="zoom-in"class="gradient-2"></div>
+                </div>            
             </div>
         </section>
-
+         
+        <!-----Content---->
         <section class="content">
-            <div  class="container__skills">
+             <!-----Progress skill---->
+            <div  class="container__skills" id="container__skills">
                 <div data-aos="slide-up"  class="skills__block">
+                    <div data-aos="fade-up" class="skill_bar">
+                        <div data-aos="zoom-in" class="skill_html">HTML</div>
+                        <div data-aos="zoom-in" class="outer_circle">
+                            <div data-aos="zoom-in" class="inner_circle">
+                                <div data-aos="fade-up" id="value">80%</div>
+                            </div>
+                        </div>
+                        <svg width="120px" height="120px">
+                            <defs>
+                                <linearGradient id="linear" >
+                                    <stop offset="0%"   stop-color="rgb(255, 27, 141)"/>
+                                    <stop offset="100%" stop-color="rgb(255, 27, 85)"/>
+                                </linearGradient>
+                            </defs>
+                            <circle data-aos="zoom-in" cx="60" cy="60" r="50"  stroke-linecap="round"/>
+                        </svg>
+                    </div>
+
+                    <div data-aos="fade-up" class="skill_bar-2">
+                        <div data-aos="zoom-in" class="skill_CSS">CSS</div>
+                        <div data-aos="zoom-in" class="outer_circle">
+                            <div data-aos="zoom-in" class="inner_circle">
+                                <div data-aos="fade-up" id="value_2">60%</div>
+                            </div>
+                        </div>
+                        <svg width="120px" height="120px">
+                            <defs>
+                                <linearGradient id="linear" >
+                                    <stop offset="0%"   stop-color="rgb(255, 27, 141)"/>
+                                    <stop offset="100%" stop-color="rgb(255, 27, 85)"/>
+                                </linearGradient>
+                            </defs>
+                            <circle data-aos="zoom-in" cx="60" cy="60" r="50"  stroke-linecap="round"/>
+                        </svg>
+                    </div>
+
+                    <div data-aos="fade-up" class="skill_bar-3">
+                        <div data-aos="zoom-in" class="skill_JS">Java Script</div>
+                        <div data-aos="zoom-in" class="outer_circle">
+                            <div data-aos="zoom-in" class="inner_circle">
+                                <div data-aos="fade-up" id="value_3">45%</div>
+                            </div>
+                        </div>
+                        <svg width="120px" height="120px">
+                            <defs>
+                                <linearGradient id="linear" >
+                                    <stop offset="0%"   stop-color="rgb(255, 27, 141)"/>
+                                    <stop offset="100%" stop-color="rgb(255, 27, 85)"/>
+                                </linearGradient>
+                            </defs>
+                            <circle data-aos="zoom-in" cx="60" cy="60" r="50"  stroke-linecap="round"/>
+                        </svg>
+                    </div>
+
+                    <div data-aos="fade-up" class="skill_bar-4">
+                        <div data-aos="zoom-in" class="skill_figma">Figma</div>
+                        <div data-aos="zoom-in" class="outer_circle">
+                            <div data-aos="zoom-in" class="inner_circle">
+                                <div data-aos="fade-up" id="value_4">65%</div>
+                            </div>
+                        </div>
+                        <svg width="120px" height="120px">
+                            <defs>
+                                <linearGradient id="linear" >
+                                    <stop offset="0%"   stop-color="rgb(255, 27, 141)"/>
+                                    <stop offset="100%" stop-color="rgb(255, 27, 85)"/>
+                                </linearGradient>
+                            </defs>
+                            <circle data-aos="zoom-in" cx="60" cy="60" r="50"  stroke-linecap="round"/>
+                        </svg>
+                    </div>
+
+                    <div data-aos="fade-up" class="skill_bar-5">
+                        <div data-aos="zoom-in" class="skill_JQUERY">JQUERY</div>
+                        <div data-aos="zoom-in" class="outer_circle">
+                            <div data-aos="zoom-in" class="inner_circle">
+                                <div data-aos="fade-up" id="value_5">55%</div>
+                            </div>
+                        </div>
+                        <svg width="120px" height="120px">
+                            <defs>
+                                <linearGradient id="linear" >
+                                    <stop offset="0%"   stop-color="rgb(255, 27, 141)"/>
+                                    <stop offset="100%" stop-color="rgb(255, 27, 85)"/>
+                                </linearGradient>
+                            </defs>
+                            <circle data-aos="zoom-in" cx="60" cy="60" r="50"  stroke-linecap="round"/>
+                        </svg>
+                    </div>
+
+                    <div data-aos="fade-up" class="skill_bar-6">
+                        <div data-aos="zoom-in" class="skill_BootStrap">BootStrap</div>
+                        <div data-aos="zoom-in" class="outer_circle">
+                            <div data-aos="zoom-in" class="inner_circle">
+                                <div data-aos="fade-up" id="value_6">70%</div>
+                            </div>
+                        </div>
+                        <svg width="120px" height="120px">
+                            <defs>
+                                <linearGradient id="linear" >
+                                    <stop offset="0%"   stop-color="rgb(255, 27, 141)"/>
+                                    <stop offset="100%" stop-color="rgb(255, 27, 85)"/>
+                                </linearGradient>
+                            </defs>
+                            <circle data-aos="zoom-in" cx="60" cy="60" r="50"  stroke-linecap="round"/>
+                        </svg>
+                    </div>
+
+                    <div data-aos="fade-up" class="skill_bar-7">
+                        <div data-aos="zoom-in" class="skill_Photoshop">Photoshop</div>
+                        <div data-aos="zoom-in" class="outer_circle">
+                            <div data-aos="zoom-in" class="inner_circle">
+                                <div data-aos="fade-up" id="value_7">65%</div>
+                            </div>
+                        </div>
+                        <svg width="120px" height="120px">
+                            <defs>
+                                <linearGradient id="linear" >
+                                    <stop offset="0%"   stop-color="rgb(255, 27, 141)"/>
+                                    <stop offset="100%" stop-color="rgb(255, 27, 85)"/>
+                                </linearGradient>
+                            </defs>
+                            <circle data-aos="zoom-in" cx="60" cy="60" r="50"  stroke-linecap="round"/>
+                        </svg>
+                    </div>
+
+                    <div data-aos="fade-up" class="skill_bar-8">
+                        <div data-aos="zoom-in" class="skill_writing">Writing</div>
+                        <div data-aos="zoom-in" class="outer_circle">
+                            <div data-aos="zoom-in" class="inner_circle">
+                                <div data-aos="fade-up" id="value_8">90%</div>
+                            </div>
+                        </div>
+                        <svg width="120px" height="120px">
+                            <defs>
+                                <linearGradient id="linear" >
+                                    <stop offset="0%"   stop-color="rgb(255, 27, 141)"/>
+                                    <stop offset="100%" stop-color="rgb(255, 27, 85)"/>
+                                </linearGradient>
+                            </defs>
+                            <circle data-aos="zoom-in" cx="60" cy="60" r="50"  stroke-linecap="round"/>
+                        </svg>
+                    </div>
 
                 </div>
-                <div data-aos="zoom-in" class="gradient-1"></div>
-                <div data-aos="zoom-in" class="gradient-2"></div>
                 <div  data-aos="fade-up" class="skills__title">
                     Skills
                     <div data-aos="fade-up" class="grav__icons fa-brands fa-grav"></div>
@@ -138,12 +265,11 @@
                      laudantium! Aut pe place
                 </div>
             </div>
+            
 
-            <div class="container__projects">
-                <div data-aos="slide-up"  class="projects__block">
-                </div>
-                <div data-aos="zoom-in" class="gradient-1"></div>
-                <div data-aos="zoom-in" class="gradient-2"></div>
+            <!-----Container projects---->
+            <div data-aos="slide-up" class="container__projects" id="container__projects">
+    
                 <div  data-aos="fade-up" class="projects__title">
                     <div data-aos="fade-up" class="pizza__icons fa-solid fa-pizza-slice"></div>
                     Projects
@@ -151,8 +277,111 @@
                 <div  data-aos="fade-up" class="projects__text">
                     Lorem ipsum saepe rerum
                 </div>   
+                <div  class="projects__list">
+                    <div  class="tab-projects">
+                        <p  class="tab-laps active-lin" onclick="opentabs('Twenty One Fans')">Twenty One Fans</p>
+                        <p  class="tab-laps" onclick="opentabs('Magazine')">Magazine</p>
+                        <p  class="tab-laps" onclick="opentabs('Clock')">Clock</p>
+                    </div>
+                    <div class="projects active-tabs" id="Twenty One Fans">
+                        <img data-aos="zoom-in" src="/img/photo.jfif" alt="">
+                        <div class="layer">
+                            <div class="projects__txt">Social Media App</div>
+                             <p>The app connects you yo the talented people around the world. Download it form play store</p>
+                           <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects" id="Magazine" >
+                        <img src="/img/photo.jfif" alt="">
+                        <div class="layer">
+                            <div class="projects__txt">Social </div>
+                             <p>The app connects you yit form play store</p>
+                           <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects" id="Clock" >
+                        <img src="/img/photo.jfif" alt="">
+                        <div class="layer">
+                            <div class="projects__txt">Social Media App</div>
+                             <p>The app connects you yo the talented people around the world. Download it form play store</p>
+                           <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="zoom-in" class="gradient-5"></div>
+            <div data-aos="zoom-in" class="gradient-6"></div>
+
+
+            <!---------About---------->
+            <div data-aos="slide-up" class="container__about" id="container__about">  
+                <div data-aos="slide-up" class="about__block">
+                    <div class="container__row">
+                        <div class="about__block-1">
+                            <img data-aos="zoom-in" src="/img/photo.jfif" alt="">
+                        </div>
+                        <div class="about__block-2">
+                            <div data-aos="fade-up" class="container__txt">
+                                <div data-aos="zoom-in" class="pen__icons fa-solid fa-pen"> </div>
+                                <p>About Me</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quisquam laborum sed, accusamus totam officiis, necessitatibus voluptas aspernatur hic similique ducimus tenetur, quis rem aliquid praesentium veritatis magnam saepe debitis!</p>
+                            <div data-aos="fade-up" class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('Education')">Education</p>
+                            </div>
+                            <div data-aos="fade-up" class="tab-contents active-tab" id="Experience">
+                                <ul>
+                                    <li><span>2021 - Current</span><br>Designt trening</li>
+                                    <li><span>2019 - Current</span><br>Designt prow trening</li>
+                                    <li><span>2020 - Current</span><br>Designt marino trening</li>
+                                </ul>
+                            </div>
+                            <div  class="tab-contents" id="Education">
+                                <ul>
+                                    <li><span>201 - Current</span><br>Designt trening</li>
+                                    <li><span>2009 - Current</span><br>Designt prow trening</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <div data-aos="zoom-in" class="gradients-1"></div>
+            <div data-aos="zoom-in" class="gradients-2"></div>
+            <div data-aos="zoom-in" class="gradients-3"></div>
+
+            <!-----Container about---->  
+            <div class="container__contact" id="container__contact">
+                <div class="contact__block">
+                    <div class="contact__row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p> <i class="fa-solid fa-paper-plane"></i>morramay94@gmail.com</p>
+                            <p> <i class="fa-solid fa-phone"></i> +380999099211</p>
+                            <div class="social-icons">
+                                <a href="#" class="box__facebook fa-brands fa-facebook"></a>
+                                <a href="#" class="box__insta fa-brands fa-instagram "></a>
+                                <a href="#" class="box__telegram fa-brands fa-telegram"></a>
+                            </div>
+                            <a href="img/my-cv.pdf" download class="btn" >Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form>
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Text Message"></textarea>
+                                <button type="submit" class="btn btn2" >Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="copyright">
+                <p>Copyright © Alexandr Morra <i class="fa-solid fa-dragon"></i></p>
+            </div>   
+            <!-----Container cards
             <div data-aos="fade-up" class="container__cards">
                 <div class="cards">
                     <div class="imgBx">
@@ -182,15 +411,14 @@
                     </div>
                 </div>
             </div>
-            <div class="container__send">
-
-            </div>   
+             -->   
         </section>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>	
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>	
     <script src="https://kit.fontawesome.com/6d7cb93199.js" crossorigin="anonymous"></script>
-    <script src="../Portfolio/js/jquery-3.6.0.min.js"></script>
-    <script src="../Portfolio/js/script.js"></script>
-    <script src="../Portfolio/js/slick.min.js"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/slick.min.js"></script>
 </body>
 </html>
