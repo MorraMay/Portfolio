@@ -22,9 +22,6 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
-html {
-	scroll-behavior: smooth;
-}
 
 body{
 	color: #fff;
@@ -215,11 +212,13 @@ body{
 	}
 	.header .menu li{
 		display: block;
+		position: relative;
+		top: 100px;
 	}
 	.header .menu li a{
 		display: inline-block;
-		margin: 20px 0;
-		font-size: 25px;
+		margin: 30px 0;
+		font-size: 30px;
 	}
 
 	/*............fullscrin.................*/
@@ -1450,12 +1449,12 @@ h3{
 	color: #03e9f4;
 	font-size: 22px;
 	text-decoration: none;
-	transition: 0.4s;
 	overflow: hidden;
 	z-index: 2;
 	letter-spacing: 2px;
 	-webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 	animation:  neon-2 1.9s infinite alternate-reverse ;
+	transition: all 0.4s ease;
 }
 .neon:hover{
 	background: #03e9f4;
@@ -1464,7 +1463,7 @@ h3{
 	0 0 10px #03e9f4,
 	0 0 25px #03e9f4,
 	0 0 100px #03e9f4;
-	transition: 0.4s;
+	transition: all 0.4s ease;
 }
 .neon span{
 	position: absolute;
@@ -2499,12 +2498,13 @@ circle{
 	margin-right: 15px;
 	color: #5a5a5a;
 	display: inline-block;
-	transition: 0.5s;
-}
+	transition: all 0.5s ease;
+	}
+
 .social-icons a:hover{
 	color: #ffd829;
 	transform: translateY(-5px);
-	transition: 0.5s;
+	transition: all 0.5s ease;
 }
 .btn {
 	display: inline-block;
