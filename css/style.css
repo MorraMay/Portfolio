@@ -199,7 +199,7 @@ body{
 	}
 	.header .menu{
 		position: fixed;
-		height: 100vh;
+		min-height: 100vh;
 		width: 100%;
 		left: -100%;
 		top: 0;
@@ -490,10 +490,10 @@ body{
 
 	/*............fullscrin.................*/
 	.fullscrin .max-width .title{
-		top: 20px;
+		top: 30px;
 		right: 0px;
 		margin: auto 15px;
-		margin-top: 0px;
+		margin-top: 10px;
 	}
 	.max-width .text-1{
 		left: 100px;
@@ -690,9 +690,22 @@ body{
 			max-width: 75%;
 			left: 4%;
 		}
+
+		/*............Footer.................*/
+		.copyright{
+			width: 100%;
+			text-align: center;
+			padding: 25px 0px;
+			font-weight: 300px ;
+			position: relative;
+			top: 250px;
+			left: 50px;
+			z-index: 100;
+		
+		}
 	}
 
-/*...........Adaptive 761px.................*/
+/*...........Adaptive 610px.................*/
 @media (max-width: 610px) {
 		/*............Projects.................*/
 		.content{
@@ -837,6 +850,97 @@ body{
 			font-family: 'Josefin Sans', sans-serif;
 			
 		}	
+
+		.content .contact__block{
+			margin: 150px auto;
+			position: relative;
+			max-width: 550px;
+			color: #5a5a5a;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+		.content .contact__row{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			position: relative;
+			margin: 0px 30px;
+		}
+		.content .contact-left{
+			position: relative;
+			bottom: 12px;	
+			flex-basis: 100%;
+		}
+		.content .contact-left h1{
+			font-size: 50px;
+			position: relative;
+			left: 120px;
+			bottom: 20px;	
+		}
+		.contact-right{	
+			flex-basis: 60%;
+		}
+		.content .contact-left p{
+			margin-top: 20px;
+		}
+		.content .contact-left p i {
+			margin-right: 15px;
+			color: #03e9f4;
+			text-shadow: 0 1px 2px #000000;
+			font-size: 22px;
+		}
+		
+		.social-icons a{
+			text-decoration: none;
+			font-size: 30px;
+			margin-right: 15px;
+			color: #5a5a5a;
+			display: inline-block;
+			transition: 0.5s;
+		}
+		.social-icons a:hover{
+			color: #ffd829;
+			transform: translateY(-5px);
+		}
+		.content .btn {
+			display: inline-block;
+			margin: 30px auto;
+			width: fit-content;
+			padding: 12px 40px;
+			border-radius: 6px;
+			color: #5a5a5a;
+			text-decoration: none;
+			background:#ffd829;
+			transition: 0.5s;
+			
+		}
+		.btn:hover{
+			background:#ffd82960;
+			backdrop-filter: blur(40px);
+		}
+		.content .contact-right form{
+			width: 140%;
+		}
+		
+		.content form .btn2{
+			padding: 12px 40px;
+			font-size: 18px;
+			margin-top: 20px;
+			cursor: pointer;
+		}
+		
+		
+		/*............Footer.................*/
+		 .copyright{
+			width: 100%;
+			text-align: center;
+			padding: 25px 0px;
+			font-weight: 300px ;
+			position: relative;
+			top: 250px;
+			left: 50px;
+			z-index: 100;
+		
+		}
 }
 
 /*...........Adaptive 520px.................*/	
@@ -924,6 +1028,7 @@ body{
 			
 		}  
 }
+
 
 /*............FullScrin.................*/
 .fullscrin .max-width {
