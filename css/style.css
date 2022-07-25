@@ -751,11 +751,11 @@ body{
 		.content .tab-laps::after{
 			content: '';
 			width: 0;
-			height: 15px;
+			height: 5px;
 			background-color: #cc1872e1;
 			position: absolute;
 			left: 0;
-			bottom: -0px;
+			bottom: 0px;
 		
 			
 			
