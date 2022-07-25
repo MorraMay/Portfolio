@@ -454,7 +454,7 @@ body{
 		/*............contact block.................*/
 		.content .contact__block{
 			bottom: 90px;
-			margin: 0 0px;
+			margin-top: 150px;
 			left: 0px;
 			justify-content: center;
 		}
@@ -490,10 +490,10 @@ body{
 
 	/*............fullscrin.................*/
 	.fullscrin .max-width .title{
-		top: 40px;
+		top: 20px;
 		right: 0px;
 		margin: auto 15px;
-		margin-top: 50px;
+		margin-top: 20px;
 	}
 	.max-width .text-1{
 		left: 100px;
@@ -751,11 +751,11 @@ body{
 		.content .tab-laps::after{
 			content: '';
 			width: 0;
-			height: 20px;
+			height: 15px;
 			background-color: #cc1872e1;
 			position: absolute;
 			left: 0;
-			bottom: -5px;
+			bottom: -0px;
 		
 			
 			
