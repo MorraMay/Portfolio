@@ -523,7 +523,8 @@ body{
 @media (max-width: 767px){
 	.fullscrin .max-width {
 		padding: 0 0px;
-		max-width: 100%;
+	
+	
 	}
 	.header .logo a{
 		
@@ -540,12 +541,8 @@ body{
 		top: 40px;
 		right: 0px;
 		margin: auto 15px;
-		
+		margin-top: 100px;
 	}
-
-	
-
-
 	.max-width .text-1{
 		left: 100px;
 		min-width: 200px;
@@ -569,7 +566,6 @@ body{
 	.max-width h2:before{
 		line-height: 58px;
 	} 
-
 	.container .photo__container {
 		position: relative;
 		z-index: 1;
@@ -579,8 +575,6 @@ body{
 		align-items: center;
 		max-width: 450px;
 		max-height: 400px;
-	
-		
 	}
 	.container .photo__container  .photo {
 		position: relative;
@@ -597,15 +591,10 @@ body{
 		backdrop-filter: blur(10px);
 	
 	}
-	
-	
 	.container .photo__container  .photo .cont .img-box {
-	
 		width: 200px;
 		height: 200px;
-		
 	}
-	
 	.container .photo__container  .photo .cont .content-box h4 {
 		color: #fff;
 		text-transform: uppercase;
@@ -627,22 +616,14 @@ body{
 		bottom: 50px;
 		display: flex;
 	}
-	
-	
 	.container .photo__container .photo .sci li a{
 		color: #fff;
 		font-size: 25px;
 		transition: 0.3s;
 	}
-	
-	
-
-
-
 	.container .static__card{	
 		max-width: 370px;
 		height: 200px;
-		
 		bottom:0px;
 		right: 0px;
 		position: relative;
@@ -673,31 +654,91 @@ body{
 			bottom: 60px;
 			left: 70px;
 	}
-
 	@media (max-width: 520px){
+		
+		.max-width .text-1{
+			left: 100px;
+			min-width: 200px;
+			font-size: 18px;
+			top: 0px;
+		}
+		.max-width h1 {
+			font-size: 36px;
+			font-weight: 400;
+			position: relative;
+			right:30px;
+		}
+		.max-width h2 {
+			font-size: 36px;
+			font-weight: 400;
+			position: relative;
+			right:30px;
+		}
+		.max-width h1:before{
+			
+			line-height: 48px;
+			
+		} 
+		.max-width h2:before{
+			line-height: 48px;
+		} 
+		
+		.container .photo__container {
+			position: relative;
+			z-index: 1;
+			display: flex;
+			left: 235px;
+			top: 215px;
+			align-items: center;
+			max-width: 450px;
+			max-height: 400px;
+		}
+		.container .photo__container  .photo .cont .img-box {
+			width: 190px;
+			height: 190px;
+		}
 		.container .neon{
-			bottom: 0px;
-			top:135px;
-			right: 0px;
-			left: 180px;
+			
+			top: 290px;
+			right: 135px;
+		
+			padding: 12px 17px;
+			margin: 10px 10px;
+		
+			font-size: 18px;
+			
+			
 		}
 		.container .gradient-1{
-			top: -150px;
-			left: 70px;
+			top: -10px;
+			left: 85px;
+			height: 6rem;
+			width: 6rem;
 		}
 		.container .static__card{	
-			max-width: 365px;
-			height: 200px;
-			
+			max-width: 300px;
+			height: 165px;
 			bottom:0px;
 			right: 0px;
 			position: relative;
-			left: 115px;
+			left: 105px;
 			top: 120px;
 			
 		}
+		.container .static__card .static-txt{
+			font-size: 26px;
+			font-weight: 300;
+		}
+		.container .static__card .static-txt span{
+			font-size: 23px;
+		}
+		.container h3{
+			position: relative;
+			top: 60px;
+			font-size: 13px;
+			
+		}  
 	}
-
 	.content{
 		top: 250px;	
 		padding: 0 60px;
@@ -874,7 +915,7 @@ body{
 				font-weight: 100;
 				font-size: 60px;
 				right: 70px;
-				top: -45px;
+				top: -55px;
 			}
 			.content .pizza__icons{
 				left: 295px;
@@ -883,12 +924,12 @@ body{
 			}
 			.content .projects__text{
 				font-size: 22px;
-				top: -45px;
+				top: -55px;
 				max-width: 280px;
 				text-align: left;
 			}
 			.content .projects{
-			bottom: 90px;
+			bottom: 30px;
 			max-width: 90%;
 			left: 0%;
 			position: relative;
@@ -903,20 +944,23 @@ body{
 			display: block;
 		}
 		.content .tab-laps{
+			background-color: #ffd82985;
 			font-size: 26px;
 			font-weight: 300;
 			right: 0px;
 			position: relative;
-			top: -30px;
-	
+			top: -50px;
+			max-width: 350px;
+			margin-top: 10px;
 			height: 60px;
 		}
+		
 		
 		.content .tab-laps::after{
 			content: '';
 			width: 0;
 			height: 20px;
-		
+			background-color: #cc1872e1;
 			position: absolute;
 			left: 0;
 			bottom: -5px;
