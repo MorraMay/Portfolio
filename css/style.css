@@ -690,18 +690,6 @@ body{
 			left: 4%;
 		}
 
-		/*............Footer.................*/
-		.copyright{
-			width: 100%;
-			text-align: center;
-			padding: 25px 0px;
-			font-weight: 300px ;
-			position: relative;
-			top: 250px;
-			left: 50px;
-			z-index: 100;
-		
-		}
 	}
 
 /*...........Adaptive 610px.................*/
@@ -796,7 +784,7 @@ body{
 			max-width: 120%;
 			border-radius: 15px;
 			position: relative;
-			bottom: 150px;
+			bottom: 135px;
 			left: 10px;
 		}
 		.content .about__block-2{
@@ -815,7 +803,7 @@ body{
 			0 0 10px #03e9f4,
 			0 0 15px #03e9f4;
 			font-weight: 100;
-			bottom: 150px;
+			bottom: 140px;
 			left: 10px;
 			animation:  neon2 1.9s infinite reverse;
 			font-size: 50px;
@@ -831,7 +819,7 @@ body{
 			position: relative;
 			left: 260px;
 			font-size:35px;
-			top: 60px;
+			top: 45px;
 			animation: swing 1.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 		} 
 		.content .tab-titles{
@@ -849,7 +837,6 @@ body{
 			font-family: 'Josefin Sans', sans-serif;
 			
 		}	
-
 		.content .contact__block{
 			margin: 150px auto;
 			position: relative;
@@ -886,20 +873,7 @@ body{
 			color: #03e9f4;
 			text-shadow: 0 1px 2px #000000;
 			font-size: 22px;
-		}
-		
-		.social-icons a{
-			text-decoration: none;
-			font-size: 30px;
-			margin-right: 15px;
-			color: #5a5a5a;
-			display: inline-block;
-			transition: 0.5s;
-		}
-		.social-icons a:hover{
-			color: #ffd829;
-			transform: translateY(-5px);
-		}
+		}	
 		.content .btn {
 			display: inline-block;
 			margin: 30px auto;
@@ -912,14 +886,9 @@ body{
 			transition: 0.5s;
 			
 		}
-		.btn:hover{
-			background:#ffd82960;
-			backdrop-filter: blur(40px);
-		}
 		.content .contact-right form{
 			width: 140%;
 		}
-		
 		.content form .btn2{
 			padding: 12px 40px;
 			font-size: 18px;
@@ -927,19 +896,7 @@ body{
 			cursor: pointer;
 		}
 		
-		
-		/*............Footer.................*/
-		 .copyright{
-			width: 100%;
-			text-align: center;
-			padding: 25px 0px;
-			font-weight: 300px ;
-			position: relative;
-			top: 250px;
-			left: 50px;
-			z-index: 100;
-		
-		}
+	
 }
 
 /*...........Adaptive 520px.................*/	
@@ -949,7 +906,7 @@ body{
 			left: 100px;
 			min-width: 200px;
 			font-size: 18px;
-			top: 0px;
+			top: 10px;
 		}
 		.max-width h1 {
 			font-size: 40px;
