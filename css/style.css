@@ -908,7 +908,7 @@ body{
 @media (max-width: 520px){
 		
 		.max-width .text-1{
-			left: 100px;
+			left: 85px;
 			min-width: 200px;
 			font-size: 18px;
 			top: 10px;
@@ -939,7 +939,7 @@ body{
 			position: relative;
 			z-index: 1;
 			display: flex;
-			left: 235px;
+			left: 245px;
 			top: 215px;
 			align-items: center;
 			max-width: 450px;
@@ -951,8 +951,8 @@ body{
 		}
 		.container .neon{
 			
-			top: 290px;
-			right: 135px;
+			top: 280px;
+			right: 122px;
 		
 			padding: 12px 17px;
 			margin: 10px 10px;
@@ -973,8 +973,8 @@ body{
 			bottom:0px;
 			right: 0px;
 			position: relative;
-			left: 105px;
-			top: 120px;
+			left: 115px;
+			top: 110px;
 			
 		}
 		.container .static__card .static-txt{
