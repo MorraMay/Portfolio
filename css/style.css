@@ -361,20 +361,20 @@ body{
 		}
 		.content .projects__title{
 			right: 0px;
-			top: -80px;
+			top: -85px;
 		}
 		.content .projects__text{
 			right: 0px;
-			top: -85px;
+			top: -90px;
 			max-width: 350px;
 		}
 		.content .tab-projects{
 			position: relative;
-			bottom: 75px;
+			bottom: 80px;
 			left: 185px;
 		}
 		.content .projects{
-			bottom: 12%;
+			bottom: 9%;
 		}
 
 		/*............About.................*/
@@ -522,9 +522,19 @@ body{
 /*...........Adaptive 767px.................*/
 @media (max-width: 767px){
 	.fullscrin .max-width {
-		padding: 0 40px;
+		padding: 0 0px;
+		max-width: 100%;
 	}
-
+	.header .logo a{
+		
+		font-size: 25px;
+		
+	}
+	.header .logo a span{
+		font-size: 39px;
+	
+		
+	}
 	/*............fullscrin.................*/
 	.fullscrin .max-width .title{
 		top: 40px;
@@ -532,38 +542,167 @@ body{
 		margin: auto 15px;
 		
 	}
+
+	
+
+
 	.max-width .text-1{
-		
-		left: 70px;
+		left: 100px;
 		min-width: 200px;
 		font-size: 20px;
-		top: 15px;
+		top: 10px;
 	}
 	.max-width h1 {
 		font-size: 45px;
 		font-weight: 400;
-	
+		right:0px;
 	}
 	.max-width h2 {
 		font-size: 45px;
 		font-weight: 400;
 	}
-	.container .static__card{
-	top: 140px;
+	.max-width h1:before{
+		
+		line-height: 58px;
+		
+	} 
+	.max-width h2:before{
+		line-height: 58px;
+	} 
+
+	.container .photo__container {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		left: 275px;
+		top: 215px;
+		align-items: center;
+		max-width: 450px;
+		max-height: 400px;
+	
+		
 	}
+	.container .photo__container  .photo {
+		position: relative;
+		width: 0px;
+		height: 200px;
+		bottom: 120px;
+		background: rgba(255, 255, 255, 0.05);
+		margin: auto 20px;
+		box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+		border-radius: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		backdrop-filter: blur(10px);
+	
+	}
+	
+	
+	.container .photo__container  .photo .cont .img-box {
+	
+		width: 200px;
+		height: 200px;
+		
+	}
+	
+	.container .photo__container  .photo .cont .content-box h4 {
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-family: 'Carter One';
+		font-weight: 500;
+		font-size: 0px;
+		text-align: center;
+		margin: 0px 0 0px;
+		line-height: 0em;
+	}
+	.container .photo__container  .photo .cont .content-box h4 span{
+		font-size: 0px;
+		font-weight: 300px;
+		text-transform: initial;
+	}
+	.container .photo__container .photo .sci {
+		position: absolute;
+		bottom: 50px;
+		display: flex;
+	}
+	
+	
+	.container .photo__container .photo .sci li a{
+		color: #fff;
+		font-size: 25px;
+		transition: 0.3s;
+	}
+	
+	
+
+
+
+	.container .static__card{	
+		max-width: 370px;
+		height: 200px;
+		
+		bottom:0px;
+		right: 0px;
+		position: relative;
+		left: 115px;
+		top: 100px;
+		
+	}
+	.container .static__card .static-txt{
+		font-size: 30px;
+		font-weight: 300;
+	}
+	.container .static__card .static-txt span{
+		font-size: 28px;
+	}
+	.container h3{
+		position: relative;
+		top: 60px;
+		
+		font-size: 15px;
+		
+	}  
 	.container .neon{
-			top: 40px;
-			right: 0px;
+			top: 330px;
+			right: 185px;
 			
 	}
 	.container .gradient-1{
-			bottom: 70px;
-	}
-	.content{
-		top: 250px;	
-		padding: 0 80px;
+			bottom: 60px;
+			left: 70px;
 	}
 
+	@media (max-width: 520px){
+		.container .neon{
+			bottom: 0px;
+			top:135px;
+			right: 0px;
+			left: 180px;
+		}
+		.container .gradient-1{
+			top: -150px;
+			left: 70px;
+		}
+		.container .static__card{	
+			max-width: 365px;
+			height: 200px;
+			
+			bottom:0px;
+			right: 0px;
+			position: relative;
+			left: 115px;
+			top: 120px;
+			
+		}
+	}
+
+	.content{
+		top: 250px;	
+		padding: 0 60px;
+		max-width: 100%;
+	}
 
 		/*............Skills.................*/
 		.content .container__skills {
@@ -571,8 +710,6 @@ body{
 			margin: 100px auto;
 			top: 0px;
 		}
-		
-		
 		.content .skills__text {
 			
 			font-size: 22px;
@@ -583,7 +720,6 @@ body{
 			
 		
 		}
-		
 		.content .skill_bar{
 			display: none;
 		}
@@ -614,17 +750,18 @@ body{
 			left: 0px;
 			margin: 100px auto;
 			padding: 50px 0px;
-			bottom: -10px;
+			bottom: 0px;
+		
 		}
 		.content .projects__title{
 			font-weight: 100;
-			font-size: 70px;
-			right: 80px;
+			font-size: 60px;
+			right: 70px;
 			top: -105px;
 		}
 		.content .pizza__icons{
-			left: 335px;
-			font-size: 65px;
+			left: 295px;
+			font-size: 55px;
 			
 		}
 		.content .projects__text{
@@ -637,16 +774,12 @@ body{
 			font-size: 26px;
 			top: 70px;
 			margin: 0 auto;
-			right: 95px;
-		}
+			right: 5px;
+		}	
 		.content .projects{
-			
-			bottom: 12%;
-			width: 93%;
+			bottom: 5%;
+			max-width: 75%;
 			left: 4%;
-			
-			transition: transform 0.5s;
-			z-index: 2;
 		}
 		
 
@@ -654,14 +787,14 @@ body{
 		.content .container__about{
 			right: 0px;
 			margin: 150px auto;
-			padding: 265px 0;
+			padding: 305px 0;
 			max-width: 600px;
 			top: -30px;
 			
 		
 		}
 		.content .container__row{
-			bottom: 285px;
+			bottom: 145px;
 			
 		}
 		.content .about__block-1{
@@ -669,31 +802,34 @@ body{
 			
 		}
 		.content .about__block-1 img{
-			width: 135%;
-			top: 70px;
+			max-width: 135%;
+			top: -100px;
 		}
 		.content .container__txt p{
 			font-weight: 100;
-			bottom: 400px;
-			left: -45px;
+			bottom: 520px;
+			left: -30px;
 			line-height: 50px;
 			text-align: center;
-			max-width: 270px;
+			max-width: 300px;
 			margin: 0 auto;
-			font-size: 57px;
-
+			font-size: 55px;
+		}
+		.content .about__block-2{
+			top: -180px;
 			
 		}
 		.content .pen__icons{
-		
-			left: 310px;
-			font-size: 55px;
-			bottom: 365px;
+			left: 390px;
+			font-size: 45px;
+			bottom: 495px;
 	
 		} 
 		.content .tab-titles{
 			display: flex;
 			margin: 20px 0 30px;
+			position: relative;
+			bottom: 0px;
 		}
 		.content .tab-links{
 			margin-right: 40px;
@@ -703,15 +839,16 @@ body{
 			cursor: pointer;
 			position: relative;
 			left: 0px;
+	
 		}		
 		.content .tab-contents ul li{
 			text-align: left;
-			position: relative;
+			
 			right: 0px;
 			margin: 25px 0;
 			font-size: 17px;
 			font-family: 'Josefin Sans', sans-serif;
-			
+			bottom: 0px;
 		}
 		.content .tab-contents ul li span{
 			color: #367181;
@@ -720,12 +857,165 @@ body{
 			font-weight: 900;
 			font-family: 'Josefin Sans', sans-serif;
 		}
+		
+		@media (max-width: 610px) {
+			/*............Projects.................*/
+			.content{
+				max-width: 600px;
+			} 
+			.content .container__projects{
+			left: 0px;
+			margin: 100px auto;
+			padding: 0px 0px;
+			bottom: 0px;
+
+			}
+			.content .projects__title{
+				font-weight: 100;
+				font-size: 60px;
+				right: 70px;
+				top: -45px;
+			}
+			.content .pizza__icons{
+				left: 295px;
+				font-size: 55px;
+				
+			}
+			.content .projects__text{
+				font-size: 22px;
+				top: -45px;
+				max-width: 280px;
+				text-align: left;
+			}
+			.content .projects{
+			bottom: 90px;
+			max-width: 90%;
+			left: 0%;
+			position: relative;
+			margin: 0 auto;
+		}
+		.content .tab-projects{
+			position: relative;
+			bottom: 0px;
+			left: 0px;
+		}
+		.content .projects.active-tabs{
+			display: block;
+		}
+		.content .tab-laps{
+			font-size: 26px;
+			font-weight: 300;
+			right: 0px;
+			position: relative;
+			top: -30px;
+	
+			height: 60px;
+		}
+		
+		.content .tab-laps::after{
+			content: '';
+			width: 0;
+			height: 20px;
+		
+			position: absolute;
+			left: 0;
+			bottom: -5px;
+		
+			
+			
+		}
+		.content .tab-laps.active-lin::after{
+			max-width: 100%;
+			left: 0px;
+			
+		}
+		
+		
+
+			.content .container__about{
+				right: 0px;
+				margin: 100px auto;
+				padding: 15px 0;
+				max-width: 600px;
+				top: 0px;
+				max-height: 900px;
+			
+			}
+			.content .container__row{
+				bottom: 0px;
+				
+			}
+			.content .about__block-1{
+				flex-basis: 75%;
+				
+			}
+			.content .about__block-1 img{
+				max-width: 135%;
+				top: 10px;
+			}
+			.content .container__txt p{
+				font-weight: 100;
+				bottom: 0px;
+				left: 0px;
+				line-height: 50px;
+				text-align: center;
+				max-width: 300px;
+				margin: 0 auto;
+				font-size: 50px;
+			}
+			.content .about__block-2{
+				top:-10px;
+				
+			}
+			.content .pen__icons{
+				left: 250px;
+				font-size: 35px;
+				bottom: 0px;
+				padding: 0px 0px;
+
+		
+			} 
+			.content .tab-titles{
+				display: flex;
+				margin: 20px 0 30px;
+				position: relative;
+				bottom: 0px;
+			}
+			.content .tab-links{
+				margin-right: 40px;
+				font-size: 22px;
+				font-weight: 500;
+				font-family: "Carter One";
+				cursor: pointer;
+				position: relative;
+				left: 0px;
+		
+			}		
+			.content .tab-contents ul li{
+				text-align: left;
+				right: 0px;
+				margin: 25px 0;
+				font-size: 17px;
+				font-family: 'Josefin Sans', sans-serif;
+				bottom: 0px;
+			}
+			.content .tab-contents ul li span{
+				color: #367181;
+				font-size: 17px;
+				text-shadow: none;
+				font-weight: 900;
+				font-family: 'Josefin Sans', sans-serif;
+			}
+			
+		}
+		
+
 
 		/*............contact block.................*/
 		.content .contact__block{
-			bottom: 110px;
-			margin: 0 auto;
-			left: 0px;
+			
+			margin: 150 auto;
+			padding: 0 0px;
 			justify-content: center;
 		}
 		.content .contact__row{
@@ -740,9 +1030,12 @@ body{
 		
 		}	
 		.content .contact-right form{
-			width: 150%;
+			display: flex;
+			flex-direction: column;
+			justify-content: right;
 			position: relative;
-			right: 65px;
+	
+			
 		}
 
 		/*............Footer.................*/
@@ -1879,7 +2172,7 @@ circle{
 	font-family: 'Neonderthaw';
 	z-index: 3;
 	right: 370px;
-	top: 140px;
+	top: 160px;
 }
 .pizza__icons{
 	color:#ff90e7;
@@ -1900,7 +2193,7 @@ circle{
 	font-family: "Kaushan Script";
 	font-weight: 700;
 	right: 295px;
-	top: 130px;
+	top: 150px;
 	text-align: left;
 	text-shadow: 0 2px 3px #000000 ;
 	
@@ -1926,6 +2219,7 @@ circle{
 	font-weight: 500;
 	cursor: pointer;
 	position: relative;
+	top: 40px;
 	margin-top: 30px;
 	height: 100px;
 	text-align: center;
@@ -1967,9 +2261,9 @@ circle{
 	overflow: hidden;
 	display: none;
 	position: absolute;
-	bottom: 8%;
-	width: 70%;
-	left: 6%;
+	bottom: 8.5%;
+	max-width: 80%;
+	left: 3%;
 	border-radius: 20px;
 	transition: transform 0.5s;
 	z-index: 2;
