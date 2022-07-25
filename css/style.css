@@ -378,50 +378,51 @@ body{
 		}
 
 		/*............About.................*/
-		.content .container__about{
-			right: 0px;
-			margin: 150px auto;
-			padding: 180px 0;
+		.content  .container__about{
+			position: relative;
 			max-width: 600px;
-			top: -40px;
-			
+			max-height: 950px;
+			margin: 0px auto;
+			background-color: #ffffff38;
+			backdrop-filter: blur(10px);
+			border-radius: 20px;
+			z-index: 5;
 		
 		}
-		.content .container__row{
-			bottom: 320px;
-			
-		}
 		.content .about__block-1{
-			flex-basis: 45%;
+			flex-basis: 80%;
 			
 		}
 		.content .about__block-1 img{
-			width: 125%;
-			top: 170px;
+			max-width: 120%;
+			border-radius: 15px;
+			position: relative;
+			bottom: 180px;
+			left: 10px;
 		}
 		.content .about__block-2{
 			flex-basis: 100%;
-			top: 0px;
-			font-size: 23px;
+			color: #fff;
+			font-family: "Kaushan Script";
+			font-weight: 500;
+			position: relative;
+			top: -160px;
+			font-size: 20px;
 			text-shadow: 0 2px 3px #000000 ;
 		}
-		.content .container__txt p{
+		.content .container__txt {
 			color: rgb(255, 225, 240);
 			text-shadow: 0 0 10px #03e9f4,
 			0 0 10px #03e9f4,
 			0 0 15px #03e9f4;
 			font-weight: 100;
-			bottom: 70px;
-			left: 325px;
-			line-height: 70px;
-			text-align: center;
-			max-width: 100px;
+			bottom: 180px;
+			left: 60px;
 			animation:  neon2 1.9s infinite reverse;
-			font-size: 75px;
+			font-size: 70px;
 			position: relative;
 			font-family: 'Neonderthaw';
 			z-index: 3;
-			display: flex;
 		}
 		.content .pen__icons{
 			color:#d47fee;
@@ -429,73 +430,27 @@ body{
 			0 0 10px rgb(255, 255, 255),
 			0 0 8px rgb(255, 255, 255);
 			position: relative;
-			left: 480px;
-			font-size: 40px;
-			bottom: 65px;
+			left: 370px;
+			font-size:65px;
+			top: 60px;
 			animation: swing 1.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 		} 
 		.content .tab-titles{
 			display: flex;
-			margin: 10px 0 30px;
-		}
-		.content .tab-links{
-			margin-right: 40px;
-			font-size: 22px;
-			font-weight: 500;
-			font-family: "Carter One";
-			cursor: pointer;
+			margin: 20px 0 30px;
 			position: relative;
-			left: 120px;
-		}
-		.content .tab-links::after{
-			content: '';
-			width: 0;
-			height: 3px;
-			background:#009cc4;
-			position: absolute;
-			left: 0;
-			bottom: -8px;
-			transition: 0.5s;
-		}
-		.content .tab-links.active-link::after{
-			width: 50%;
+			left: 130px;
 		}
 		.content .tab-contents ul li{
+			list-style: none;
+			position: relative;
+			left: 0px;
 			text-align: center;
-			position: relative;
-			right: 16px;
-			margin: 25px 0;
 			font-size: 17px;
 			font-family: 'Josefin Sans', sans-serif;
 			
 		}
-		.content .tab-contents ul li span{
-			color: #367181;
-			font-size: 17px;
-			text-shadow: none;
-			font-weight: 900;
-			font-family: 'Josefin Sans', sans-serif;
-		}
-		.container__about .gradient-1{
-			position: relative;
-			bottom: 970px;
-			
-		}
-		.container__about .gradient-2{
-			position: relative;
-			bottom: 800px;
-			
-			height: 11rem;
-			width: 11rem;
-		}
-		.container__about .gradient-3{
-			position: relative;
-			bottom: 840px;
-			
-			height: 7rem;
-			width: 7rem;
-		}
-
+		
 		/*............contact block.................*/
 		.content .contact__block{
 			bottom: 90px;
@@ -512,12 +467,8 @@ body{
 			flex-basis: 60%;
 			
 		}	
-		/*............Footer.................*/
-		.content .copyright{
-			margin-top: 0px;
-		}
-}
-
+		
+	}
 
 /*...........Adaptive 767px.................*/
 @media (max-width: 767px){
@@ -536,12 +487,13 @@ body{
 	
 		
 	}
+
 	/*............fullscrin.................*/
 	.fullscrin .max-width .title{
 		top: 40px;
 		right: 0px;
 		margin: auto 15px;
-		margin-top: 100px;
+		margin-top: 50px;
 	}
 	.max-width .text-1{
 		left: 100px;
@@ -654,91 +606,7 @@ body{
 			bottom: 60px;
 			left: 70px;
 	}
-	@media (max-width: 520px){
-		
-		.max-width .text-1{
-			left: 100px;
-			min-width: 200px;
-			font-size: 18px;
-			top: 0px;
-		}
-		.max-width h1 {
-			font-size: 36px;
-			font-weight: 400;
-			position: relative;
-			right:30px;
-		}
-		.max-width h2 {
-			font-size: 36px;
-			font-weight: 400;
-			position: relative;
-			right:30px;
-		}
-		.max-width h1:before{
-			
-			line-height: 48px;
-			
-		} 
-		.max-width h2:before{
-			line-height: 48px;
-		} 
-		
-		.container .photo__container {
-			position: relative;
-			z-index: 1;
-			display: flex;
-			left: 235px;
-			top: 215px;
-			align-items: center;
-			max-width: 450px;
-			max-height: 400px;
-		}
-		.container .photo__container  .photo .cont .img-box {
-			width: 190px;
-			height: 190px;
-		}
-		.container .neon{
-			
-			top: 290px;
-			right: 135px;
-		
-			padding: 12px 17px;
-			margin: 10px 10px;
-		
-			font-size: 18px;
-			
-			
-		}
-		.container .gradient-1{
-			top: -10px;
-			left: 85px;
-			height: 6rem;
-			width: 6rem;
-		}
-		.container .static__card{	
-			max-width: 300px;
-			height: 165px;
-			bottom:0px;
-			right: 0px;
-			position: relative;
-			left: 105px;
-			top: 120px;
-			
-		}
-		.container .static__card .static-txt{
-			font-size: 26px;
-			font-weight: 300;
-		}
-		.container .static__card .static-txt span{
-			font-size: 23px;
-		}
-		.container h3{
-			position: relative;
-			top: 60px;
-			font-size: 13px;
-			
-		}  
-	}
+
 	.content{
 		top: 250px;	
 		padding: 0 60px;
@@ -822,118 +690,44 @@ body{
 			max-width: 75%;
 			left: 4%;
 		}
-		
+	}
 
-		/*............About.................*/
-		.content .container__about{
-			right: 0px;
-			margin: 150px auto;
-			padding: 305px 0;
+/*...........Adaptive 761px.................*/
+@media (max-width: 610px) {
+		/*............Projects.................*/
+		.content{
 			max-width: 600px;
-			top: -30px;
-			
-		
-		}
-		.content .container__row{
-			bottom: 145px;
-			
-		}
-		.content .about__block-1{
-			flex-basis: 75%;
-			
-		}
-		.content .about__block-1 img{
-			max-width: 135%;
-			top: -100px;
-		}
-		.content .container__txt p{
-			font-weight: 100;
-			bottom: 520px;
-			left: -30px;
-			line-height: 50px;
-			text-align: center;
-			max-width: 300px;
-			margin: 0 auto;
-			font-size: 55px;
-		}
-		.content .about__block-2{
-			top: -180px;
-			
-		}
-		.content .pen__icons{
-			left: 390px;
-			font-size: 45px;
-			bottom: 495px;
-	
 		} 
-		.content .tab-titles{
-			display: flex;
-			margin: 20px 0 30px;
-			position: relative;
-			bottom: 0px;
-		}
-		.content .tab-links{
-			margin-right: 40px;
-			font-size: 22px;
-			font-weight: 500;
-			font-family: "Carter One";
-			cursor: pointer;
-			position: relative;
-			left: 0px;
-	
-		}		
-		.content .tab-contents ul li{
-			text-align: left;
-			
-			right: 0px;
-			margin: 25px 0;
-			font-size: 17px;
-			font-family: 'Josefin Sans', sans-serif;
-			bottom: 0px;
-		}
-		.content .tab-contents ul li span{
-			color: #367181;
-			font-size: 17px;
-			text-shadow: none;
-			font-weight: 900;
-			font-family: 'Josefin Sans', sans-serif;
-		}
-		
-		@media (max-width: 610px) {
-			/*............Projects.................*/
-			.content{
-				max-width: 600px;
-			} 
-			.content .container__projects{
-			left: 0px;
-			margin: 100px auto;
-			padding: 0px 0px;
-			bottom: 0px;
+		.content .container__projects{
+		left: 0px;
+		margin: 100px auto;
+		padding: 0px 0px;
+		bottom: 0px;
 
-			}
-			.content .projects__title{
-				font-weight: 100;
-				font-size: 60px;
-				right: 70px;
-				top: -55px;
-			}
-			.content .pizza__icons{
-				left: 295px;
-				font-size: 55px;
-				
-			}
-			.content .projects__text{
-				font-size: 22px;
-				top: -55px;
-				max-width: 280px;
-				text-align: left;
-			}
-			.content .projects{
-			bottom: 30px;
-			max-width: 90%;
-			left: 0%;
-			position: relative;
-			margin: 0 auto;
+		}
+		.content .projects__title{
+			font-weight: 100;
+			font-size: 60px;
+			right: 70px;
+			top: -55px;
+		}
+		.content .pizza__icons{
+			left: 295px;
+			font-size: 55px;
+			
+		}
+		.content .projects__text{
+			font-size: 22px;
+			top: -55px;
+			max-width: 280px;
+			text-align: left;
+		}
+		.content .projects{
+		bottom: 30px;
+		max-width: 90%;
+		left: 0%;
+		position: relative;
+		margin: 0 auto;
 		}
 		.content .tab-projects{
 			position: relative;
@@ -954,8 +748,6 @@ body{
 			margin-top: 10px;
 			height: 60px;
 		}
-		
-		
 		.content .tab-laps::after{
 			content: '';
 			width: 0;
@@ -969,131 +761,170 @@ body{
 			
 		}
 		.content .tab-laps.active-lin::after{
-			max-width: 100%;
+			max-width: 50%;
 			left: 0px;
-			
-		}
-		
-		
 
-			.content .container__about{
-				right: 0px;
-				margin: 100px auto;
-				padding: 15px 0;
-				max-width: 600px;
-				top: 0px;
-				max-height: 900px;
-			
-			}
-			.content .container__row{
-				bottom: 0px;
-				
-			}
-			.content .about__block-1{
-				flex-basis: 75%;
-				
-			}
-			.content .about__block-1 img{
-				max-width: 135%;
-				top: 10px;
-			}
-			.content .container__txt p{
-				font-weight: 100;
-				bottom: 0px;
-				left: 0px;
-				line-height: 50px;
-				text-align: center;
-				max-width: 300px;
-				margin: 0 auto;
-				font-size: 50px;
-			}
-			.content .about__block-2{
-				top:-10px;
-				
-			}
-			.content .pen__icons{
-				left: 250px;
-				font-size: 35px;
-				bottom: 0px;
-				padding: 0px 0px;
-
-		
-			} 
-			.content .tab-titles{
-				display: flex;
-				margin: 20px 0 30px;
-				position: relative;
-				bottom: 0px;
-			}
-			.content .tab-links{
-				margin-right: 40px;
-				font-size: 22px;
-				font-weight: 500;
-				font-family: "Carter One";
-				cursor: pointer;
-				position: relative;
-				left: 0px;
-		
-			}		
-			.content .tab-contents ul li{
-				text-align: left;
-				right: 0px;
-				margin: 25px 0;
-				font-size: 17px;
-				font-family: 'Josefin Sans', sans-serif;
-				bottom: 0px;
-			}
-			.content .tab-contents ul li span{
-				color: #367181;
-				font-size: 17px;
-				text-shadow: none;
-				font-weight: 900;
-				font-family: 'Josefin Sans', sans-serif;
-			}
-			
 		}
-		
-
-
-		/*............contact block.................*/
-		.content .contact__block{
-			
-			margin: 150 auto;
-			padding: 0 0px;
-			justify-content: center;
-		}
-		.content .contact__row{
-			display: flex;
-			justify-content: center;
-			margin: 0px 50px;
-			
-		}
-		.content .contact-left{
-			flex-basis: 100%;
-			bottom: -20px;
-		
-		}	
-		.content .contact-right form{
-			display: flex;
-			flex-direction: column;
-			justify-content: right;
+		.content  .container__about{
 			position: relative;
-	
+			max-width: 600px;
+			max-height: 850px;
+			margin: 0px auto;
+			background-color: #ffffff38;
+			backdrop-filter: blur(10px);
+			border-radius: 20px;
+			z-index: 5;
+		
+		}
+		.content .about__block-1{
+			flex-basis: 80%;
 			
 		}
+		.content .about__block-1 img{
+			max-width: 120%;
+			border-radius: 15px;
+			position: relative;
+			bottom: 150px;
+			left: 10px;
+		}
+		.content .about__block-2{
+			flex-basis: 100%;
+			color: #fff;
+			font-family: "Kaushan Script";
+			font-weight: 500;
+			position: relative;
+			top: -110px;
+			font-size: 20px;
+			text-shadow: 0 2px 3px #000000 ;
+		}
+		.content .container__txt {
+			color: rgb(255, 225, 240);
+			text-shadow: 0 0 10px #03e9f4,
+			0 0 10px #03e9f4,
+			0 0 15px #03e9f4;
+			font-weight: 100;
+			bottom: 150px;
+			left: 10px;
+			animation:  neon2 1.9s infinite reverse;
+			font-size: 50px;
+			position: relative;
+			font-family: 'Neonderthaw';
+			z-index: 3;
+		}
+		.content .pen__icons{
+			color:#d47fee;
+			text-shadow: 0 0 10px rgb(255, 255, 255),
+			0 0 10px rgb(255, 255, 255),
+			0 0 8px rgb(255, 255, 255);
+			position: relative;
+			left: 260px;
+			font-size:35px;
+			top: 60px;
+			animation: swing 1.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		} 
+		.content .tab-titles{
+			display: flex;
+			margin: 20px 0 30px;
+			position: relative;
+			left: 0px;
+		}
+		.content .tab-contents ul li{
+			list-style: none;
+			position: relative;
+			left: 0px;
+			text-align: left;
+			font-size: 17px;
+			font-family: 'Josefin Sans', sans-serif;
+			
+		}	
+}
 
-		/*............Footer.................*/
-		.content .copyright{
-			margin-top: 0px;
-			width: 100%;
-			text-align: center;
-			padding: 25px 0px;
+/*...........Adaptive 520px.................*/	
+@media (max-width: 520px){
+		
+		.max-width .text-1{
+			left: 100px;
+			min-width: 200px;
+			font-size: 18px;
+			top: 0px;
+		}
+		.max-width h1 {
+			font-size: 40px;
+			font-weight: 400;
+			position: relative;
+			right:30px;
+		}
+		.max-width h2 {
+			font-size: 40px;
+			font-weight: 400;
+			position: relative;
+			right:30px;
+		}
+		.max-width h1:before{
+			
+			line-height: 48px;
+			
+		} 
+		.max-width h2:before{
+			line-height: 48px;
+		} 		
+		.container .photo__container {
+			position: relative;
+			z-index: 1;
+			display: flex;
+			left: 235px;
+			top: 215px;
+			align-items: center;
+			max-width: 450px;
+			max-height: 400px;
+		}
+		.container .photo__container  .photo .cont .img-box {
+			width: 190px;
+			height: 190px;
+		}
+		.container .neon{
+			
+			top: 290px;
+			right: 135px;
+		
+			padding: 12px 17px;
+			margin: 10px 10px;
+		
+			font-size: 18px;
+			
 			
 		}
-		
-		
-		
-	}
+		.container .gradient-1{
+			top: -10px;
+			left: 85px;
+			height: 6rem;
+			width: 6rem;
+		}
+		.container .static__card{	
+			max-width: 300px;
+			height: 165px;
+			bottom:0px;
+			right: 0px;
+			position: relative;
+			left: 105px;
+			top: 120px;
+			
+		}
+		.container .static__card .static-txt{
+			font-size: 26px;
+			font-weight: 300;
+		}
+		.container .static__card .static-txt span{
+			font-size: 22px;
+		}
+		.container h3{
+			position: relative;
+			top: 60px;
+			font-size: 13px;
+			
+		}  
+}
+
 /*............FullScrin.................*/
 .fullscrin .max-width {
 	position: fixed;
@@ -2360,9 +2191,9 @@ circle{
 .container__about{
 	position: relative;
 	top: 15px;
-	padding: 80px 0;
+
 	max-width: 1200px;
-	max-height: 380px;
+	max-height: 500px;
 	margin: 100px auto;
 	background-color: #ffffff38;
 	backdrop-filter: blur(10px);
@@ -2376,17 +2207,17 @@ circle{
 	flex-wrap: wrap;
 	margin: 0px 30px;
 	position: relative;
-	bottom: 205px;
+	top: 30px;
 }
 .about__block-1{
 	flex-basis: 35%;
 	
 }
 .about__block-1 img{
-	width: 120%;
+	max-width: 120%;
 	border-radius: 15px;
 	position: relative;
-	top: 182px;
+	bottom: 180px;
 }
 .about__block-2{
 	flex-basis: 55%;
@@ -2398,19 +2229,19 @@ circle{
 	font-size: 20px;
 	text-shadow: 0 2px 3px #000000 ;
 }
-.container__txt p{
+.container__txt {
 	color: rgb(255, 225, 240);
     text-shadow: 0 0 10px #03e9f4,
     0 0 10px #03e9f4,
     0 0 15px #03e9f4;
 	font-weight: 100;
-	bottom: 50px;
+	bottom: 180px;
+	left: 400px;
 	animation:  neon2 1.9s infinite reverse;
 	font-size: 70px;
 	position: relative;
 	font-family: 'Neonderthaw';
 	z-index: 3;
-	display: flex;
 }
 .pen__icons{
 	color:#d47fee;
@@ -2420,7 +2251,7 @@ circle{
 	position: relative;
 	left: 370px;
 	font-size: 80px;
-	bottom: -5px;
+	top: 60px;
 	animation: swing 1.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 } 
 .tab-titles{
@@ -2468,7 +2299,6 @@ circle{
 .tab-contents.active-tab{
 	display: block;
 }
-
 .container__about .gradient-1{
 	position: relative;
 	bottom: 970px;
@@ -2651,11 +2481,9 @@ form .btn2{
 
 /*............Footer.................*/
 .copyright{
-	margin-top: 100px;
 	width: 100%;
 	text-align: center;
 	padding: 25px 0px;
-	background: #1e2a6d23;
 	font-weight: 300px ;
 	position: relative;
 
