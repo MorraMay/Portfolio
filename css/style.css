@@ -210,7 +210,7 @@ body{
 		opacity: 0;
 		top: 2%;
 		left: -100%;
-		transition: all 1.5s ease 0.8s; 
+		transition: all 1.5s ease 0.6s; 
 	}
 	.menu__logo.active {
 		left: 10%;
@@ -228,11 +228,11 @@ body{
 		text-align: center;
 		background: #1b0000;
 		padding-top: 80px;
-		transition: all 1s ease 0.7s;
+		transition: all 0.6s ease 0.9s;
 	}
 	.header .menu.active{
 		left: 0;
-		transition: all 1s ease 0s;
+		transition: all 0.6s ease 0s;
 	}
 	.header .menu li{
 		display: block;
@@ -2422,7 +2422,7 @@ circle{
 }
 
 
-/*............Cards.................*/
+/*............Cards..............
 .container__cards{
 	position: relative;
 	width: 1100px;
@@ -2486,6 +2486,7 @@ circle{
 	color: #b80000;
 	transition: 0.4s;
 }
+...*/
 
 
 /*............Container Contact.................*/
@@ -2537,7 +2538,6 @@ circle{
 	display: inline-block;
 	transition: all 0.5s ease;
 	}
-
 .social-icons a:hover{
 	color: #ffd829;
 	transform: translateY(-5px);
