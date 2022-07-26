@@ -17,6 +17,8 @@
 <body>
     
     <div class="wrapper">
+        
+          <!-----Header---->
         <header class="header">
             <div class="max-width">
                 <div class="logo"><a href="#">Mo<span>r</span>ra</a></div>
@@ -29,9 +31,13 @@
                 <div class="menu__btn">
                     <i class="fas fa-bars"></i>
                 </div>
+                <div class="menu__logo">
+                    <i class="dragon fa-solid fa-dragon"></i>
+                </div>
             </div>  
         </header>
 
+          <!-----Loader---->
         <section>
             <div class="mask">
                 <div class="loader">
@@ -110,9 +116,10 @@
         <section class="content">
 
              <!-----Progress skill---->
+             <a class="id"  id="skills"></a>
             <div data-aos="slide-up" class="container__skills" >
                 <div class="skills__block">
-                    <div data-aos="fade-up" class="skill_bar" id="skills">
+                    <div data-aos="fade-up" class="skill_bar">
                         <div data-aos="zoom-in" class="skill_html">HTML</div>
                         <div data-aos="zoom-in" class="outer_circle">
                             <div data-aos="zoom-in" class="inner_circle">
@@ -268,8 +275,8 @@
             </div>
             
             <!-----Container projects---->
+            <a class="id"  id="projects"></a>
             <div data-aos="slide-up" class="container__projects" >
-    
                 <div  data-aos="fade-up" class="projects__title">
                     <div data-aos="fade-up" class="pizza__icons fa-solid fa-pizza-slice"></div>
                     Projects
@@ -277,14 +284,14 @@
                 <div  data-aos="fade-up" class="projects__text">
                     Lorem ipsum saepe rerum
                 </div>   
-                <div  class="projects__list" id="projects">
+                <div  class="projects__list">
                     <div  class="tab-projects">
                         <p  class="tab-laps active-lin" onclick="opentabs('Twenty One Fans')">Twenty One Fans</p>
                         <p  class="tab-laps" onclick="opentabs('Magazine')">Magazine</p>
                         <p  class="tab-laps" onclick="opentabs('Clock')">Clock</p>
                     </div>
                     <div class="projects active-tabs" id="Twenty One Fans">
-                        <img data-aos="zoom-in" src="/Portfolio/img/photo.jfif" alt="">
+                        <img src="/Portfolio/img/photo.jfif" alt="">
                         <div class="layer">
                             <div class="projects__txt">Social Media App</div>
                              <p>The app connects you yo the talented people around the world. Download it form play store</p>
@@ -311,9 +318,10 @@
             </div>
 
             <!---------About---------->
+            <a class="id"  id="about"></a>
             <div data-aos="slide-up" class="container__about" >  
                 <div data-aos="slide-up" class="about__block">
-                    <div class="container__row" id="about">
+                    <div class="container__row">
                         <div class="about__block-1">
                             <div data-aos="fade-up" class="container__txt">
                                 <div data-aos="zoom-in" class="pen__icons fa-solid fa-pen"> </div>
@@ -346,9 +354,10 @@
             </div>
 
             <!-----Container contact---->  
-            <div  class="container__contact">
+            <a class="id"  id="contact"></a>
+            <div class="container__contact">
                 <div class="contact__block">
-                    <div class="contact__row" id="contact">
+                    <div class="contact__row">
                         <div class="contact-left">
                             <h1  class="sub-title">Contact Me</h1>
                             <p> <i  class="fa-solid fa-paper-plane"></i>morramay94@gmail.com</p>
@@ -403,10 +412,14 @@
                 </div>
             </div>
              -->   
+        
         </section>
+
+        <!-----Footer---->
         <div class="copyright">
-            <p>Copyright © Alexandr Morra <i class="fa-solid fa-dragon"></i></p>
-        </div> 
+                <p>Copyright © Alexandr Morra <i class="fa-solid fa-dragon"></i></p>
+            </div> 
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>	
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>	

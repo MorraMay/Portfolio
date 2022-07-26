@@ -184,7 +184,12 @@ body{
 	cursor: pointer;
 	display: none;
 }
-
+.menu__logo{
+	color: #ffd829;
+	font-size: 40px;
+	cursor: pointer;
+	display: none;
+}
 
 /*...........Adaptive 991px.................*/
 @media (max-width: 991px){
@@ -197,8 +202,23 @@ body{
 	}
 	.menu__btn i.active::before{
 		content: "\f00d";
-
 	}
+
+	.menu__logo{
+		display: block;
+		position: fixed;
+		opacity: 0;
+		top: 2%;
+		left: -100%;
+		transition: all 1.5s ease 0.8s; 
+	}
+	.menu__logo.active {
+		left: 10%;
+		top: 2%;
+		opacity: 1;
+		transition: all 1.5s ease 0.7s
+	}
+
 	.header .menu{
 		position: fixed;
 		height: 250vh;
@@ -208,21 +228,35 @@ body{
 		text-align: center;
 		background: #1b0000;
 		padding-top: 80px;
-		transition: all 0.3s ease;
+		transition: all 1s ease 0.7s;
 	}
 	.header .menu.active{
 		left: 0;
+		transition: all 1s ease 0s;
 	}
 	.header .menu li{
 		display: block;
 		position: relative;
-		top: 100px;
+		top: 60px;
+		left: -100%;
+		transition: all 1s ease 1.2s; 
+		transform: translateY(50px);
+		transition-delay: calc(0.1s * var(--i));
 	}
-	.header .menu li a{
+	.header .menu.active li{
+		left: 0;
+		transition: all 1s ease 1.2s; 
+		transform: translateY(50px);
+		transition-delay: calc(0.2s * var(--i));
+	}
+
+	.header .menu li a {
 		display: inline-block;
 		margin: 30px 0;
 		font-size: 30px;
+		
 	}
+	
 
 	/*............fullscrin.................*/
 	.fullscrin .max-width .title{
@@ -952,7 +986,7 @@ body{
 		.container .neon{
 			
 			top: 280px;
-			right: 122px;
+			right: 120px;
 		
 			padding: 12px 17px;
 			margin: 10px 10px;
@@ -2318,7 +2352,7 @@ circle{
     0 0 8px rgb(255, 255, 255);
 	position: relative;
 	left: 370px;
-	font-size: 80px;
+	font-size: 65px;
 	top: 60px;
 	animation: swing 1.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 } 
