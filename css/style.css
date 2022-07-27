@@ -345,42 +345,42 @@ body{
 			
 			max-width: 350px;
 			left: -10px;
-			bottom: 305px;
+			bottom: 315px;
 			
 		
 		}
 		.content .skill_bar{
 			right: 280px;
-			bottom: 130px;
+			bottom: 110px;
 		}
 		.content .skill_bar-2{
 			right: 60px;
-			bottom: 130px;
+			bottom: 110px;
 		}
 		.content .skill_bar-3{
 			left: 160px;
-			bottom: 130px;
+			bottom: 110px;
 		}
 		.content .skill_bar-4{
 			right: 170px;
-			top: 20px;
+			top: 40px;
 		}
 		.content .skill_bar-5{
 			
 			left: 60px;
-			top: 20px;
+			top: 40px;
 		}
 		.content .skill_bar-6{
 			left: 160px;
-			top: 170px;
+			top: 190px;
 		}
 		.content .skill_bar-7{
 			right: 60px;
-			top: 170px;
+			top: 190px;
 		}
 		.content .skill_bar-8{
 			right: 280px;
-			top: 170px;
+			top: 190px;
 		}
 
 		/*............Projects.................*/
@@ -656,16 +656,12 @@ body{
 			right: 0px;
 			margin: 100px auto;
 			top: 0px;
+			max-height: 200px;
 		}
-		.content .skills__text {
-			
-			font-size: 22px;
-			
+		.content .skills__text {	
+			font-size: 22px;	
 			max-width: 280px;
-			
-			text-align: left;
-			
-		
+
 		}
 		.content .skill_bar{
 			display: none;
@@ -691,6 +687,67 @@ body{
 		.content .skill_bar-8{
 			display: none;
 		}
+		.content .skills__bars{
+			display: block;
+			width: calc(80% - 30px);
+			position: relative;
+			bottom: 320px;
+		}
+		.content .skills__bars .bars{
+			margin-top: 35px;
+		}
+		.content .skills__bars .info{
+			display: flex;
+			align-items: center;
+			justify-content:space-between;
+			
+		}
+		.content .skills__bars span{
+			font-weight: 300;
+			font-size: 20px;
+		}
+		.content .skills__bars .line{
+			height: 5px;
+			margin-top: 5px;
+			width: 100%;
+			background: lightgrey;
+			position: relative;
+		}
+		.content .skills__bars .line::before{
+			content: "";
+			position: absolute;
+			height: 100%;
+			left: 0;
+			top: 0;
+			background: rgb(255, 27, 141);
+		}
+		.content .skills__bars .HTML::before{
+			width: 80%;
+		}
+		.content .skills__bars .CSS::before{
+			width: 60%;
+		}
+		.content .skills__bars .JavaScript::before{
+			width: 45%;
+		}
+		.content .skills__bars .Figma::before{
+			width: 65%;
+		}
+		.content .skills__bars .JQUERY::before{
+			width: 55%;
+		}
+		.content .skills__bars .Writing::before{
+			width: 90%;
+		}
+		.content .skills__bars .Photoshop::before{
+			width: 65%;
+		}
+		.content .skills__bars .BootStrap::before{
+			width: 70%;
+		}
+
+
+
 
 		/*............Projects.................*/
 		.content .container__projects{
@@ -715,7 +772,7 @@ body{
 			font-size: 22px;
 			top: -105px;
 			max-width: 280px;
-			text-align: left;
+			
 		}
 		.content .tab-laps{
 			font-size: 26px;
@@ -757,9 +814,10 @@ body{
 		}
 		.content .projects__text{
 			font-size: 22px;
-			top: -55px;
+			top: -65px;
+			left: 60px;
 			max-width: 280px;
-			text-align: left;
+			text-align: right;
 		}
 		.content .projects{
 		bottom: 30px;
@@ -1575,104 +1633,6 @@ h3{
 }
 
 
-/*............Button 2.................*/
-/*
-.neon-2{
-	display: inline-block;
-	padding: 19px 24px;
-	margin: 20px 20px;
-	color: rgb(255, 27, 141);
-	font-size: 24px;
-	text-decoration: none;
-	transition: 0.4s;
-	overflow: hidden;
-	letter-spacing: 4px;
-	font-family: 'Akronim';
-	-webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
-}
-.neon-2:hover{
-	background: rgb(255, 27, 141);
-	color: #1b0000;
-	box-shadow: 0 0 5px rgb(255, 27, 141),
-	0 0 10px rgb(255, 27, 141),
-	0 0 25px rgb(255, 27, 141),
-	0 0 100px rgb(255, 27, 141);
-}
-.neon-2 span{
-	position: absolute;
-	display: block;
-}
-.neon-2 span:nth-child(1) {
-	top: 0;
-	left: -100%;
-	width: 100%;
-	height: 2px;
-	background: linear-gradient(90deg, transparent, rgb(255, 27, 141) );
-	animation: animate1 3s linear infinite ;
-	animation-delay: 0.7s;
-}
-@keyframes animate1{
-	0%{
-		left: -100%;
-	}
-	50%,100%{
-		left: 100%;
-	}
-}
-.neon-2 span:nth-child(2) {
-	top: -100%;
-	right: 0;
-	width: 2px;
-	height: 100%;
-	background: linear-gradient(180deg, transparent, rgb(255, 27, 141) );
-	animation: animate2 3s linear infinite ;
-	animation-delay: 1.4s;
-}
-@keyframes animate2{
-	0%{
-		top: -100%;
-	}
-	50%,100%{
-		top: 100%;
-	}
-}
-.neon-2 span:nth-child(3) {
-	bottom: 0;
-	right: -100%;
-	width: 100%;
-	height: 2px;
-	background: linear-gradient(270deg, transparent,rgb(255, 27, 141) );
-	animation: animate3 3s linear infinite ;
-	animation-delay: 2.3s;
-}
-@keyframes animate3{
-	0%{
-		right: -100%;
-	}
-	50%,100%{
-		right: 100%;
-	}
-}
-.neon-2 span:nth-child(4) {
-	bottom: -100%;
-	left: 0%;
-	width: 2px;
-	height: 100%;
-	background: linear-gradient(360deg, transparent,rgb(255, 27, 141) );
-	animation: animate4 3s linear infinite ;
-	animation-delay: 3s;
-}
-@keyframes animate4{
-	0%{
-		bottom: -100%;
-	}
-	50%,100%{
-		bottom: 100%;
-	}
-}
-*/
-
-
 /*............Content.................*/
 .content {
 	background: linear-gradient(to top left, rgb(170, 144, 255), #ff8f8f);
@@ -1708,27 +1668,6 @@ h3{
 	padding: 180px 0;
 	max-width: 650px;
 }
-.container__skills .gradient-1{
-	position: relative;
-	top: 200px;
-	height: 6rem;
-	width: 10rem;
-	background: linear-gradient(to right bottom, 
-	rgba(56, 27, 27, 0),
-	rgba(99, 35, 35, 0.8));
-	border-radius: 50%;
-}
-.container__skills .gradient-2{
-	position: relative;
-	left: 720px;
-	bottom: 540px;
-	height: 10rem;
-	width: 10rem;
-	background: linear-gradient(to right bottom, 
-	rgba(56, 27, 27, 0),
-	rgba(99, 35, 35, 0.8));
-	border-radius: 50%;
-}
 .skills__title {
 	color: rgb(255, 225, 240);
     text-shadow: 0 0 10px rgb(255, 27, 141),
@@ -1762,13 +1701,15 @@ h3{
 	max-width: 280px;
 	font-family: "Kaushan Script";
 	font-weight: 700;
-	left: 355px;
+	left: 325px;
 	bottom: 20px;
-	text-align: left;
+	text-align: center;
 	text-shadow: 0 2px 3px #000000 ;
 
 }
-
+.skills__bars{
+	display: none;	
+}
 
 /*............Skill bar.................*/
 .skill_bar{
@@ -2106,35 +2047,12 @@ circle{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 100px auto;
+	margin: 150px auto;
 	background-color: #ffffff38;
 	backdrop-filter: blur(10px);
 	border-radius: 20px;
 	z-index: 2;
 	max-width: 650px;
-	
-}
-.container__projects .gradient-1{
-	position: relative;
-	bottom: 740px;
-	left: 450px;
-	height: 9rem;
-	width: 9rem;
-	background: linear-gradient(to right bottom, 
-	rgba(56, 27, 27, 0),
-	rgba(99, 35, 35, 0.8));
-	border-radius: 50%;
-}
-.container__projects .gradient-2{
-	position: relative;
-	bottom: 1200px;
-	left: 1050px;
-	height: 9rem;
-	width: 9rem;
-	background: linear-gradient(to right bottom, 
-	rgba(56, 27, 27, 0),
-	rgba(99, 35, 35, 0.8));
-	border-radius: 50%;
 	
 }
 .projects__title{
@@ -2149,7 +2067,7 @@ circle{
 	font-family: 'Neonderthaw';
 	z-index: 3;
 	right: 370px;
-	top: 160px;
+	top: 170px;
 }
 .pizza__icons{
 	color:#ff90e7;
@@ -2169,9 +2087,9 @@ circle{
 	max-width: 280px;
 	font-family: "Kaushan Script";
 	font-weight: 700;
-	right: 295px;
-	top: 150px;
-	text-align: left;
+	right: 320px;
+	top: 160px;
+	text-align: center;
 	text-shadow: 0 2px 3px #000000 ;
 	
 }
@@ -2185,7 +2103,7 @@ circle{
 }
 .tab-projects{
 	position: relative;
-	bottom: 120px;
+	bottom: 130px;
 	left: 210px;
 }
 .projects.active-tabs{
@@ -2238,7 +2156,7 @@ circle{
 	overflow: hidden;
 	display: none;
 	position: absolute;
-	bottom: 8.5%;
+	bottom: 4%;
 	max-width: 80%;
 	left: 3%;
 	border-radius: 20px;
@@ -2401,25 +2319,7 @@ circle{
 .tab-contents.active-tab{
 	display: block;
 }
-.container__about .gradient-1{
-	position: relative;
-	bottom: 970px;
-	
-}
-.container__about .gradient-2{
-	position: relative;
-	bottom: 800px;
-	
-	height: 11rem;
-	width: 11rem;
-}
-.container__about .gradient-3{
-	position: relative;
-	bottom: 840px;
-	
-	height: 7rem;
-	width: 7rem;
-}
+
 
 
 /*............Cards..............
@@ -2491,7 +2391,7 @@ circle{
 
 /*............Container Contact.................*/
 .contact__block{
-	margin: 100px auto;
+	margin: 180px auto;
 	position: relative;
 	max-width: 1200px;
 	color: #5a5a5a;
@@ -2571,7 +2471,7 @@ form input, form textarea{
 	backdrop-filter: blur(10px);
 	padding: 15px;
 	margin: 15px 0;
-	color: #5a5a5a;
+	color: #fff;
 	font-size: 18px;
 	border-radius: 6px;
 }
