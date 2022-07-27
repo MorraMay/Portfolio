@@ -662,7 +662,7 @@ body{
 			right: 0px;
 			margin: 100px auto;
 			top: 0px;
-			max-height: 200px;
+			max-height: 240px;
 		}
 		.content .skills__text {	
 			font-size: 22px;	
@@ -706,11 +706,13 @@ body{
 			display: flex;
 			align-items: center;
 			justify-content:space-between;
-			
+			font-family: "Kaushan Script";
+			text-shadow: 0 2px 3px #000;
 		}
 		.content .skills__bars span{
 			font-weight: 300;
 			font-size: 20px;
+	
 		}
 		.content .skills__bars .line{
 			height: 5px;
@@ -1172,20 +1174,15 @@ body{
 }
 .photo__container  .photo .cont .content-box h4 {
 	color: #fff;
-	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-family: 'Carter One';
+	font-family: 'Splash';
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 24px;
 	text-align: center;
-	margin: 20px 0 10px;
-	line-height: 1.1em;
-}
-.photo__container  .photo .cont .content-box h4 span{
-	font-size: 17px;
-	font-weight: 300px;
+	margin: 10px 0 10px;
 	text-transform: initial;
 }
+
 .photo__container .photo .sci {
 	position: absolute;
 	bottom: 40px;
@@ -1204,7 +1201,7 @@ body{
 	opacity: 1;
 }
 .photo__container .photo .sci li a{
-	color: #fff;
+	color: #ffd829;
 	font-size: 31px;
 	transition: 0.3s;
 }
@@ -2153,10 +2150,9 @@ circle{
 .projects__txt{
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 17px;
+	
 }
-.projects__txt p{;
-	font-family: 'Josefin Sans', sans-serif;
-}
+
 .projects{
 	border-radius: 10px;
 	overflow: hidden;
@@ -2192,6 +2188,12 @@ circle{
 .layer .projects__txt{
 	font-weight: 500;
 	margin-bottom: 20px;
+	line-height: 25px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.layer .projects__txt p{
+	font-family: 'Josefin Sans', sans-serif;
+	
 }
 .layer a{
 	margin-top: 20px;
