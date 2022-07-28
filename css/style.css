@@ -122,7 +122,6 @@ body{
 .header.sticky{
 	padding: 5px 0;
 	background: #cc0791;
-	
 }
 .max-width{
 	max-width: 1200px;
@@ -229,11 +228,10 @@ body{
 		left: -100%;
 		top: 0;
 		text-align: center;
-		background: #1b0000d7;
+		background: #1b0000c9;
 		backdrop-filter: blur(15px);
 		padding-top: 80px;
 		transition: all 0.6s ease 0.9s;
-
 		
 	}
 	.header .menu.active{
@@ -425,8 +423,9 @@ body{
 		.content  .container__about{
 			position: relative;
 			max-width: 600px;
-			max-height: 950px;
+			max-height: 1250px;
 			margin: 0px auto;
+			padding: 70px 0;
 			background-color: #ffffff38;
 			backdrop-filter: blur(10px);
 			border-radius: 20px;
@@ -441,7 +440,7 @@ body{
 			max-width: 120%;
 			border-radius: 15px;
 			position: relative;
-			bottom: 180px;
+			bottom: 230px;
 			left: 10px;
 		}
 		.content .about__block-2{
@@ -450,17 +449,20 @@ body{
 			font-family: "Kaushan Script";
 			font-weight: 500;
 			position: relative;
-			top: -160px;
+			top: -200px;
 			font-size: 20px;
+			padding: 5px 5px;
+			max-height: 210px;
 			text-shadow: 0 2px 3px #000000 ;
 		}
+		
 		.content .container__txt {
 			color: rgb(255, 225, 240);
 			text-shadow: 0 0 10px #03e9f4,
 			0 0 10px #03e9f4,
 			0 0 15px #03e9f4;
 			font-weight: 100;
-			bottom: 180px;
+			bottom: 230px;
 			left: 60px;
 			animation:  neon2 1.9s infinite reverse;
 			font-size: 70px;
@@ -481,15 +483,15 @@ body{
 		} 
 		.content .tab-titles{
 			display: flex;
-			margin: 20px 0 30px;
+			margin: 30px 0 30px;
 			position: relative;
-			left: 130px;
+			left: 0px;
 		}
 		.content .tab-contents ul li{
 			list-style: none;
 			position: relative;
 			left: 0px;
-			text-align: center;
+			text-align: left;
 			font-size: 17px;
 			font-family: 'Josefin Sans', sans-serif;
 			
@@ -870,11 +872,14 @@ body{
 			left: 0px;
 
 		}
+
+
 		.content  .container__about{
 			position: relative;
 			max-width: 600px;
-			max-height: 850px;
+			max-height: 950px;
 			margin: 0px auto;
+			padding: 120px 0;
 			background-color: #ffffff38;
 			backdrop-filter: blur(10px);
 			border-radius: 20px;
@@ -889,7 +894,7 @@ body{
 			max-width: 120%;
 			border-radius: 15px;
 			position: relative;
-			bottom: 135px;
+			bottom: 225px;
 			left: 10px;
 		}
 		.content .about__block-2{
@@ -897,9 +902,12 @@ body{
 			color: #fff;
 			font-family: "Kaushan Script";
 			font-weight: 500;
+			margin: 0 auto;
 			position: relative;
-			top: -110px;
-			font-size: 20px;
+			top: -210px;
+			max-height: 350px;
+			max-width: 270px;
+			font-size: 18px;
 			text-shadow: 0 2px 3px #000000 ;
 		}
 		.content .container__txt {
@@ -908,7 +916,7 @@ body{
 			0 0 10px #03e9f4,
 			0 0 15px #03e9f4;
 			font-weight: 100;
-			bottom: 140px;
+			bottom: 230px;
 			left: 10px;
 			animation:  neon2 1.9s infinite reverse;
 			font-size: 50px;
@@ -927,21 +935,25 @@ body{
 			top: 45px;
 			animation: swing 1.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 		} 
-		.content .tab-titles{
+		.content .tab-titles p{
 			display: flex;
-			margin: 20px 0 30px;
+			margin: 10px 10px;
+			font-size: 17px;
 			position: relative;
-			left: 0px;
+			left: -40px;
+			
 		}
+	
 		.content .tab-contents ul li{
 			list-style: none;
 			position: relative;
 			left: 0px;
 			text-align: left;
-			font-size: 17px;
+			font-size: 15px;
 			font-family: 'Josefin Sans', sans-serif;
 			
 		}	
+		
 		.content .contact__block{
 			margin: 150px auto;
 			position: relative;
