@@ -2221,7 +2221,7 @@ circle{
 	top: 15px;
 
 	max-width: 1200px;
-	max-height: 560px;
+	max-height: 500px;
 	margin: 100px auto;
 	background-color: #ffffff38;
 	backdrop-filter: blur(10px);
@@ -2235,7 +2235,7 @@ circle{
 	flex-wrap: wrap;
 	margin: 0px 30px;
 	position: relative;
-	top: 30px;
+	top: 0px;
 }
 .about__block-1{
 	flex-basis: 35%;
@@ -2245,7 +2245,7 @@ circle{
 	max-width: 120%;
 	border-radius: 15px;
 	position: relative;
-	bottom: 180px;
+	bottom: 165px;
 }
 .about__block-2{
 	flex-basis: 55%;
