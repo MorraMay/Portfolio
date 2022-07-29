@@ -1019,89 +1019,89 @@ body{
 /*...........Adaptive 520px.................*/	
 @media (max-width: 520px){
 		
-		.max-width .text-1{
-			left: 85px;
-			min-width: 200px;
-			font-size: 18px;
-			top: 10px;
-		}
-		.max-width h1 {
-			font-size: 40px;
-			font-weight: 400;
-			position: relative;
-			right:30px;
-			top: 10px;
-		}
-		.max-width h2 {
-			font-size: 40px;
-			font-weight: 400;
-			position: relative;
-			right:30px;
-			top: 10px;
-		}
-		.max-width h1:before{
-			
-			line-height: 48px;
-			
-		} 
-		.max-width h2:before{
-			line-height: 48px;
-		} 		
-		.container .photo__container {
-			position: relative;
-			z-index: 1;
-			display: flex;
-			left: 245px;
-			top: 215px;
-			align-items: center;
-			max-width: 450px;
-			max-height: 400px;
-		}
-		.container .photo__container  .photo .cont .img-box {
-			width: 190px;
-			height: 190px;
-		}
-		.container .neon{
-			
-			top: 280px;
-			right: 120px;
+	.max-width .text-1{
+		left: 90px;
+		min-width: 200px;
+		font-size: 18px;
+		top: 10px;
+	}
+	.max-width h1 {
+		font-size: 40px;
+		font-weight: 400;
+		position: relative;
+		right:25px;
+		top: 10px;
+	}
+	.max-width h2 {
+		font-size: 40px;
+		font-weight: 400;
+		position: relative;
+		right:25px;
+		top: 10px;
+	}
+	.max-width h1:before{
 		
-			padding: 12px 17px;
-			margin: 10px 10px;
+		line-height: 48px;
 		
-			font-size: 18px;
-			
-			
-		}
-		.container .gradient-1{
-			top: -10px;
-			left: 85px;
-			height: 6rem;
-			width: 6rem;
-		}
-		.container .static__card{	
-			max-width: 300px;
-			height: 165px;
-			bottom:0px;
-			right: 0px;
-			position: relative;
-			left: 115px;
-			top: 110px;
-			
-		}
-		.container .static__card .static-txt{
-			font-size: 26px;
-			font-weight: 300;
-		}
-		.container .static__card .static-txt span{
-			font-size: 22px;
-		}
-		.container h3{
-			position: relative;
-			top: 60px;
-			font-size: 13px;
-			
-		}  
+	} 
+	.max-width h2:before{
+		line-height: 48px;
+	} 		
+	.container .photo__container {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		left: 250px;
+		top: 215px;
+		align-items: center;
+		max-width: 450px;
+		max-height: 400px;
+	}
+	.container .photo__container  .photo .cont .img-box {
+		width: 190px;
+		height: 190px;
+	}
+	.container .neon{
+		
+		top: 280px;
+		right: 115px;
+	
+		padding: 12px 17px;
+		margin: 10px 10px;
+	
+		font-size: 18px;
+		
+		
+	}
+	.container .gradient-1{
+		top: -10px;
+		left: 90px;
+		height: 6rem;
+		width: 6rem;
+	}
+	.container .static__card{	
+		max-width: 300px;
+		height: 165px;
+		bottom:0px;
+		right: 0px;
+		position: relative;
+		left: 120px;
+		top: 110px;
+		
+	}
+	.container .static__card .static-txt{
+		font-size: 26px;
+		font-weight: 300;
+	}
+	.container .static__card .static-txt span{
+		font-size: 22px;
+	}
+	.container h3{
+		position: relative;
+		top: 60px;
+		font-size: 13px;
+		
+	}  
 }
 
 
