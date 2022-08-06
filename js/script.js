@@ -1,4 +1,3 @@
-
 //Animation load
 let mask = document.querySelector('.mask');
 
@@ -41,7 +40,6 @@ AOS.init({
   });
    
 
- 
 
 //Typed
 var typed = new Typed(".typing", {
@@ -194,9 +192,8 @@ var number = document.getElementById('value');
     document.getElementById(tabnames).classList.add("active-tabs");
   }
 
-   
-  //header sticky
- $(document).ready(function(){
+   //header sticky
+  $(document).ready(function(){
     $(window).scroll(function(){
       if(this.scrollY > 20){
         $('.header').addClass("sticky");
@@ -204,4 +201,4 @@ var number = document.getElementById('value');
         $('.header').removeClass("sticky");
       }
     })
-  });  
+  });
