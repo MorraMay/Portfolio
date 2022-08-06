@@ -41,17 +41,7 @@ AOS.init({
   });
    
 
- //header sticky
- $(document).ready(function(){
-    $(window).scroll(function(){
-      if(this.scrollY > 20){
-        $('.header').addClass("sticky");
-      }else{
-        $('.header').removeClass("sticky");
-      }
-    })
-  });  
-
+ 
 
 //Typed
 var typed = new Typed(".typing", {
@@ -205,3 +195,13 @@ var number = document.getElementById('value');
   }
 
    
+  //header sticky
+ $(document).ready(function(){
+    $(window).scroll(function(){
+      if(this.scrollY > 20){
+        $('.header').addClass("sticky");
+      }else{
+        $('.header').removeClass("sticky");
+      }
+    })
+  });  
