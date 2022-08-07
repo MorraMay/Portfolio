@@ -594,6 +594,14 @@ body{
 		width: 200px;
 		height: 200px;
 	}
+	.container .photo__container  .photo .cont .img-box img{
+		position: absolute;
+		top: -40px;
+		left: -30px;
+		width: 115%;
+		height: 115%;
+		object-fit: cover;
+	}
 	.container .photo__container  .photo .cont .content-box h4 {
 		color: #fff;
 		text-transform: uppercase;
