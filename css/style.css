@@ -391,24 +391,17 @@ body{
 		/*............Projects.................*/
 		.content .container__projects{
 			left: 0px;
-			padding: 20px 0;
+			padding: 45px 0;
 			max-width: 600px;
 			bottom: -10px;
 		}
-		.content .gradient-5{
-			display: none;
-		}
-		.content .gradient-6{
-			display: none;
-			
-		}
 		.content .projects__title{
 			right: 0px;
-			top: -85px;
+			top: -105px;
 		}
 		.content .projects__text{
 			right: 0px;
-			top: -90px;
+			top: -110px;
 			max-width: 350px;
 		}
 		.content .tab-projects{
@@ -2140,7 +2133,7 @@ circle{
 	position: relative;
 	top: 40px;
 	margin-top: 30px;
-	height: 100px;
+	height: 70px;
 	text-align: center;
 	align-items: center;
 	z-index: 3;
@@ -2159,7 +2152,7 @@ circle{
 	background: #ffd829;
 	position: absolute;
 	left: 0;
-	bottom: 35px;
+	bottom: 5px;
 	transition: 0.5s;
 	border-radius: 5px;
 	z-index: 2;
