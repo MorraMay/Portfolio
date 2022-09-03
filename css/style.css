@@ -764,72 +764,39 @@ body{
 		/*............Projects.................*/
 		.content .container__projects{
 			left: 0px;
-			margin: 50px auto;
-			padding: 0px 0px;
+			margin: 100px auto;
+			padding: 50px 0px;
 			bottom: 0px;
-	
-			}
-			.content .projects__title{
-				font-weight: 100;
-				font-size: 60px;
-				right: 70px;
-				top: -55px;
-			}
-			.content .pizza__icons{
-				left: 295px;
-				font-size: 55px;
-				
-			}
-			.content .projects__text{
-				font-size: 22px;
-				top: -65px;
-				left: 60px;
-				max-width: 280px;
-				text-align: right;
-			}
-			.content .projects{
-			bottom: 30px;
-			max-width: 90%;
-			left: 0%;
-			position: relative;
-			margin: 0 auto;
-			}
-			.content .tab-projects{
-				position: relative;
-				bottom: 0px;
-				left: 0px;
-			}
-			.content .projects.active-tabs{
-				display: block;
-			}
-			.content .tab-laps{
-				background-color: #ffd82985;
-				font-size: 26px;
-				font-weight: 300;
-				right: 0px;
-				position: relative;
-				top: -50px;
-				max-width: 350px;
-				margin-top: 10px;
-				height: 60px;
-			}
-			.content .tab-laps::after{
-				content: '';
-				width: 0;
-				height: 5px;
-				background-color: #cc1872e1;
-				position: absolute;
-				left: 0;
-				bottom: 0px;
+		
+		}
+		.content .projects__title{
+			font-weight: 100;
+			font-size: 60px;
+			right: 70px;
+			top: -105px;
+		}
+		.content .pizza__icons{
+			left: 295px;
+			font-size: 55px;
 			
-				
-				
-			}
-			.content .tab-laps.active-lin::after{
-				max-width: 50%;
-				left: 0px;
-	
-			}
+		}
+		.content .projects__text{
+			font-size: 22px;
+			top: -105px;
+			max-width: 280px;
+			
+		}
+		.content .tab-laps{
+			font-size: 26px;
+			top: 70px;
+			margin: 0 auto;
+			right: 5px;
+		}	
+		.content .projects{
+			bottom: 5%;
+			max-width: 75%;
+			left: 4%;
+		}
 
 	}
 
