@@ -2459,11 +2459,9 @@ form .btn2{
 	position: fixed;
 	top: 510px;
 	left: 1240px;
-	display: flex;
-	justify-content: right;
 	z-index: 100;
 	opacity: 0;
-	transition: all 0.8s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 .sticky__info.sticky{
 	opacity: 1;
