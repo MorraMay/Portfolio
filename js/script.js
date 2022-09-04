@@ -193,12 +193,22 @@ var number = document.getElementById('value');
   }
 
    //header sticky
-  $(document).ready(function(){
+ $(document).ready(function(){
     $(window).scroll(function(){
       if(this.scrollY > 20){
         $('.header').addClass("sticky");
       }else{
         $('.header').removeClass("sticky");
+      }
+	  if(this.scrollY > 550){
+        $('.sticky__info').addClass("sticky");
+      }else{
+        $('.sticky__info').removeClass("sticky");
+      }
+	  if(this.scrollY > 2580){
+        $('.arrow__up').addClass("sticky");
+      }else{
+        $('.arrow__up').removeClass("sticky");
       }
     })
   });

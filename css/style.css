@@ -2451,6 +2451,54 @@ form .btn2{
 	cursor: pointer;
 }
 
+/*............sticky.................*/
+.sticky__info{
+	width: 200px;
+	height: 120px;
+	background-color: #03e9f4;
+	position: fixed;
+	top: 510px;
+	left: 1240px;
+	display: flex;
+	justify-content: right;
+	z-index: 100;
+	opacity: 0;
+	transition: all 0.8s ease-in-out;
+}
+.sticky__info.sticky{
+	opacity: 1;
+	left: 1130px;
+}
+.arrow__up{
+	font-size: 60px;
+	color: #ffd829;
+	position: fixed;
+	left: 60px;
+	
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	animation: arrow 0.5s  linear infinite alternate;
+	cursor: pointer;
+}
+.arrow__up.sticky{
+	opacity: 1;
+	transition: all 0.5s ease;
+	bottom: 110px;
+}
+.arrow__up:hover{
+	color:#cc0791;
+	transition: all 0.5s ease;
+}
+@keyframes arrow {
+	0%{
+		bottom: 13%;
+		
+	}
+	100%{
+	
+		bottom: 14%;
+	} 
+}
 
 /*............Footer.................*/
 .copyright{
