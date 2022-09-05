@@ -2453,26 +2453,41 @@ form .btn2{
 
 /*............sticky.................*/
 .sticky__info{
-	width: 200px;
-	height: 120px;
-	background-color: #03e9f4;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: #ffd829;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.192);
 	position: fixed;
-	top: 510px;
-	left: 1240px;
+	top: 545px;
+	cursor: pointer;
+	left: 1350px;
 	z-index: 100;
 	opacity: 0;
 	transition: all 0.5s ease-in-out;
 }
+
+.sticky__info:hover{
+	background-color: #ffe679;
+	animation: swing 0.2s alternate infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
 .sticky__info.sticky{
 	opacity: 1;
-	left: 1130px;
+	left: 1245px;
+}
+.sticky__btn{
+	cursor: pointer;
+	font-size: 40px;
+	color:#cc0791;
+	position: relative;
+	left: 15px;
+	top: 15px;
 }
 .arrow__up{
 	font-size: 60px;
 	color: #ffd829;
 	position: fixed;
 	left: 60px;
-	
 	opacity: 0;
 	transition: opacity 0.3s ease;
 	animation: arrow 0.5s  linear infinite alternate;
@@ -2497,7 +2512,6 @@ form .btn2{
 		bottom: 14%;
 	} 
 }
-
 /*............Footer.................*/
 .copyright{
 	width: 100%;
