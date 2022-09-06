@@ -2752,23 +2752,41 @@ circle{
 	transform: translateY(-5px);
 	transition: all 0.5s ease;
 }
-.btn {
+.contact__btn {
 	display: inline-block;
 	margin: 50px auto;
-	width: fit-content;
 	padding: 14px 50px;
 	border-radius: 6px;
-	color: #5a5a5a;
+	font-weight: 600;
+	overflow: hidden;
+	text-decoration: none;
+	transition: all 0.4s ease;
+	text-shadow: none;
 	text-decoration: none;
 	background:#ffd829;
-	transition: 0.5s;
-	
-}
-.btn:hover{
-	background:#ffd82960;
+	color: #5a5a5a;
+  }
+  
+  .contact__btn::before { 
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transform: scaleY(0);
+	transition: all 0.4s ease;
+	width: 100%;
+	z-index: -1;
+	background-color: #5a5a5a;
+  }
+  .contact__btn:hover { 
+	color: #ffd829;
 	backdrop-filter: blur(40px);
-	transition: 0.5;
-}
+  }
+  
+  .contact__btn:hover::before { 
+	transform: scaleY(1);
+  }
 .contact-right form{
 	width: 100%;
 }
