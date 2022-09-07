@@ -205,7 +205,7 @@ var number = document.getElementById('value');
       }else{
         $('.sticky__info').removeClass("sticky");
       }
-	  if(this.scrollY > 2580){
+	  if(this.scrollY > 2620){
         $('.arrow__up').addClass("sticky");
       }else{
         $('.arrow__up').removeClass("sticky");
