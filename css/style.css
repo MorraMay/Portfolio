@@ -527,7 +527,12 @@ body{
 	
 		
 	}
-
+	.arrow__up{
+		display: none;
+	}
+	.sticky__info{
+		display: none;
+	}
 	/*............fullscrin.................*/
 	.fullscrin .max-width .title{
 		top: 30px;
@@ -2376,18 +2381,39 @@ circle{
 }
 
 
+/*............Container Contact.................*/
+.container__moments{
+	position: relative;
+	top: 15px;
+	max-width: 1200px;
+	height: 400px;
+	margin: 110px auto;
+	background-color: #ffffff38;
+	backdrop-filter: blur(10px);
+	border-radius: 20px;
+	font-family: 'Kaushan Script';
+	z-index: 5;
+}
+.container__moments .container__txt{
+	max-width: 100%;
+	color: rgb(255, 225, 240);
+    text-shadow: 0 0 10px #ffd829,
+    0 0 10px #ffd829,
+    0 0 15px #ffd829;
+	font-weight: 100;
+	top: -50px;
+	left: 0px;
+	margin: 20px auto;
+	display: flex;
+	justify-content: center;
+	font-size: 65px;
+	position: relative;
+	font-family: 'Neonderthaw';
+}
+
 /* Typography =======================*/
 
 
-
-/* Main heading for card's front cover */
-.cards-front__heading {
-	font-size: 19px;
-	position: absolute;
-	left: 50%;
-	width: 100%;
-  }
-  
   /* Main heading for inside page */
   .inside-page__heading { 
 	color: #cc0791;
@@ -2395,7 +2421,7 @@ circle{
 	bottom: 0px;
 	top: 75px;
 	text-shadow: none;
-	font-size: 11px;
+	font-size: 12px;
 	text-align: center;
 	text-shadow: none;
 	font-family: "Carter One";
@@ -2405,15 +2431,16 @@ circle{
   
   /* For both inside page's main heading and 'view me' text on card front cover */
   .cards-front__text-view {
-	font-size: 16px;
+	font-size: 17px;
 	font-weight: 800;
 	margin-top: 2px;
   }
   
 
  .cards-front__text-view{
-	color: #2aaac1;
+	color: #5a5a5a;
 	text-shadow: none;
+	font-family: 'Kaushan Script';
  }
   
   /* Front cover */
@@ -2424,9 +2451,10 @@ circle{
   
   /* For pricing text on card front cover */
   .cards-front__text-price {
-	font-size: 16px;
+	font-size: 19px;
 	position: relative;
-	top: 5px;
+	top: 6px;
+	font-family: 'Kaushan Script';
   }
   
   /* Back cover */
@@ -2448,17 +2476,15 @@ circle{
   .photo-cards{
 	position: relative;
 	display: flex;
-	height: 75px;
-	margin-top: -20px;
-	width: 75px;
+	height: 95px;
+	margin-top: -25px;
+	width: 95px;
 	border-radius: 50px;
 	overflow: hidden;
-
-	
   }
   .photo-cards img {
 	position: relative;
-	right: 44px;
+	right: 37px;
 	bottom: 16px;
 	width: 145px;
 	height: 145px;
@@ -2470,9 +2496,10 @@ circle{
 	background-color: transparent;
 	border: 3px solid;
 	border-radius: 10px;
-	font-size: 10px;
+	font-size: 13px;
 	font-weight: 600;
-	margin-top: 85px;
+	font-family: 'Kaushan Script';
+	top: 100px;
 	overflow: hidden;
 	padding: 10px 15px;
 	position: relative;
@@ -2481,8 +2508,8 @@ circle{
 	width: 70%;
 	z-index: 10;
 	text-shadow: none;
-	border-color: #279eb2;
-	color: #279eb2;
+	border-color: #5a5a5a;
+	color: #5a5a5a;
   }
   
   .inside-page__btn::before { 
@@ -2495,7 +2522,7 @@ circle{
 	transition: all .3s ease;
 	width: 100%;
 	z-index: -1;
-	background-color: #279eb2;
+	background-color: #5a5a5a;
   }
   .inside-page__btn:hover { 
 	color: #fafbfa;
@@ -2505,21 +2532,7 @@ circle{
 	transform: scaleY(1);
   }
   
-  /* Layout Structure=========================================*/
-  
-  .main {
-	background: linear-gradient(
-	  to bottom right,
-	  #eee8dd,
-	  #e3d9c6
-	);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	height: 100vh;
-	width: 100%;
-  }
-  
+ 
   /* Container to hold all cards in one place */
   .cards-area {
 	align-items: center;
@@ -2534,10 +2547,9 @@ circle{
   
   /* Area to hold an individual card */
   .cards-section {
-	align-items: center;
+	flex-direction: row;
 	display: flex;
 	height: 100%;
-	justify-content: center;
 	width: 100%;
 	
   }
@@ -2546,24 +2558,44 @@ circle{
   .cards {
 	background-color: rgba(0, 0, 0, 0.096);
 	box-shadow:  -10px 17px 66px -32px rgba(0,0,0,0.75);
-	height: 150px;
+	height: 180px;
 	position: relative;
 	transition: all 1s ease;
-	width: 150px;
+	width: 180px;
+	margin: 0 auto;
 	border-radius: 10px;
   }
-  
+  .cards-2 {
+	background-color: rgba(0, 0, 0, 0.096);
+	box-shadow:  -10px 17px 66px -32px rgba(0,0,0,0.75);
+	height: 180px;
+	position: relative;
+	margin: 0 10px;
+	transition: all 1s ease;
+	width: 180px;
+	border-radius: 10px;
+  }
+  .cards-3 {
+	background-color: rgba(0, 0, 0, 0.096);
+	box-shadow:  -10px 17px 66px -32px rgba(0,0,0,0.75);
+	height: 180px;
+	position: relative;
+	margin: 0 auto;
+	transition: all 1s ease;
+	width: 180px;
+	border-radius: 10px;
+  }
   /* Flip card - covering both the front and inside front page */
   
   /* An outer container to hold the flip card. This excludes the inside page */
   .flip-cards {
-	height: 170px;
+	height: 200px;
 	perspective: 1000px;
 	position: absolute;
 	right: 0;
 	transition: all 1s ease;
 	visibility: hidden;
-	width: 170px;
+	width: 200px;
 	z-index: 100;
   }
   
@@ -2600,17 +2632,16 @@ circle{
   /* container for the front side */
   .cards-front {
 	background-color: #f0f0f0;
-	height: 170px;
-	width: 170px;
+	height: 200px;
+	width: 200px;
   }
-  
   /* Front side's top section */
   .cards-front__tp {
 	align-items: center;
 	clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
 	display: flex;
 	flex-direction: column;
-	height: 120px;
+	height: 150px;
 	justify-content: center;
 	padding: 8px;
 	border-radius: 10px;
@@ -2619,8 +2650,8 @@ circle{
   .cards-front__tp{
 	background: linear-gradient(
 	  to bottom,
-	  #47c2d7,
-	  #279eb2
+	  #5a5a5a,
+	  #474747
 	);
   }
   
@@ -2659,7 +2690,7 @@ circle{
 	position: absolute;
 	right: 0;
 	transition: all 1s ease;
-	width: 150px;
+	width: 180px;
 	z-index: 1;
 	border-radius: 10px;
   }
@@ -2691,6 +2722,40 @@ circle{
   
   /* When the card is hovered, the shadow on the inside page will shrink to the left */
   .cards:hover .inside-page {
+	box-shadow: inset 10px 0px 50px -25px rgba(0,0,0,0.1);
+	
+  }
+  .cards-2:hover {
+	box-shadow:
+	-10px 17px 66px -32px rgba(0,0,0,0.75);
+	width: 300px;
+  }
+  
+  /* When the card is hovered, the flip card container will rotate */
+  .cards-2:hover .flip-cards__container {
+	transform: rotateY(-180deg);
+	
+  }
+  
+  /* When the card is hovered, the shadow on the inside page will shrink to the left */
+  .cards-2:hover .inside-page {
+	box-shadow: inset 10px 0px 50px -25px rgba(0,0,0,0.1);
+	
+  }
+  .cards-3:hover {
+	box-shadow:
+	-10px 17px 66px -32px rgba(0,0,0,0.75);
+	width: 300px;
+  }
+  
+  /* When the card is hovered, the flip card container will rotate */
+  .cards-3:hover .flip-cards__container {
+	transform: rotateY(-180deg);
+	
+  }
+  
+  /* When the card is hovered, the shadow on the inside page will shrink to the left */
+  .cards-3:hover .inside-page {
 	box-shadow: inset 10px 0px 50px -25px rgba(0,0,0,0.1);
 	
   }
