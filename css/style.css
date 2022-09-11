@@ -167,6 +167,7 @@ body{
     0 0 15px rgb(255, 216, 41);
 	transition: 0.4s ease 0s;
 	margin-left: 25px;
+	position: relative;
 } 
 .header .menu li a span{
 	animation:  neon 1.5s infinite alternate-reverse ;
