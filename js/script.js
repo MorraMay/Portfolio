@@ -39,7 +39,7 @@ AOS.init({
     $('.menu__logo').toggleClass('active');
   });
 
-  //popup
+//popup
   $('.sticky__info').click(function(event) {
     $('.popup').toggleClass('active');
 	$('.sticky__btn').toggleClass('active');

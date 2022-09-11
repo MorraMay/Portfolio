@@ -2114,6 +2114,8 @@ form .btn2{
 	cursor: pointer;
 }
 
+
+/* sticky */
 .sticky__info{
 	width: 70px;
 	height: 70px;
@@ -2160,13 +2162,15 @@ form .btn2{
 
 .popup {
 	position: fixed;
-	width: 11%;
-	height: 23%;
-	background-color: #ffffff38;
+	width: 13%;
+	height: 30%;
+	background-color: #80808062;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.295);
 	backdrop-filter: blur(10px);
 	border-radius: 15px;
-	top: 385px;
-	left: 1190px;
+	padding: 13px 5px;
+	top: 305px;
+	left: 1115px;
 	z-index: 115;
 	opacity: 0;
 	visibility: hidden;
@@ -2180,14 +2184,45 @@ form .btn2{
 	transform: translate(0px, 0px);
 	transition: all 0.5s ease 0s;
 }
-.popup__content {
-	
-
+.popup__content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
 }
-.popup .popup__content {
+.popup__content .box__telegram {
+	font-size: 80px;
+	margin-top: 10px;
+	color: rgb(235, 233, 233);
+	transition: all 0.5s ease 0s;
+	text-shadow: 0 2px 3px #000000a1 ;
+}
+.popup__content .box__telegram:hover {
+	color: #5a5a5a;
+}
+.popup__content-txt {
+	font-size: 13px;
+	font-weight: 700;
+	margin-top: 10px;
+	color: #5a5a5a;
 	
 }
-
+.popup__content h4{
+	font-size: 35px;
+	color: rgb(255, 225, 240);
+    text-shadow: 0 0 10px #ffd829,
+    0 0 10px #ffd829,
+    0 0 15px #ffd829;
+	font-weight: 100;
+	animation:  neon2 1.9s infinite reverse;
+	font-family: 'Neonderthaw';
+	animation:  neon 1s infinite alternate-reverse ;
+}
+.popup__content span{
+	font-family: "Kaushan Script";
+	font-size: 18px;
+	text-shadow: 0 2px 3px #000000a1 ;
+}
 
 
 
