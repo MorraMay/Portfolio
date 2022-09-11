@@ -2963,19 +2963,21 @@ form .btn2{
 		}
 		.content .tab-laps::after{
 			content: '';
-			width: 0;
+			width: 350px;
 			height: 5px;
 			background-color: #cc1872e1;
 			position: absolute;
 			left: 0;
 			bottom: 0px;
 		
+		
 			
 			
 		}
 		.content .tab-laps.active-lin::after{
-			max-width: 50%;
+			max-width: 100%;
 			left: 0px;
+			height: 20px;
 
 		}
 
