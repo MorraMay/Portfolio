@@ -205,7 +205,12 @@ var number = document.getElementById('value');
       }else{
         $('.sticky__info').removeClass("sticky");
       }
-	  if(this.scrollY > 2620){
+	  if(this.scrollY > 550){
+        $('.popup').addClass("sticky");
+      }else{
+        $('.popup').removeClass("sticky");
+      }
+	  if(this.scrollY > 3050){
         $('.arrow__up').addClass("sticky");
       }else{
         $('.arrow__up').removeClass("sticky");
