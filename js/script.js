@@ -38,7 +38,13 @@ AOS.init({
     $('.menu__btn i').toggleClass('active');
     $('.menu__logo').toggleClass('active');
   });
-   
+
+  //popup
+  $('.sticky__info').click(function(event) {
+    $('.popup').toggleClass('active');
+	$('.sticky__btn').toggleClass('active');
+
+  });
 
 
 //Typed
