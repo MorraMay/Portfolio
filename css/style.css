@@ -679,7 +679,7 @@ h3{
 .content .gradient-4{
 	position: absolute;
 	left: 110px;	
-	top: 60px;
+	top: 70px;
 	background: linear-gradient(to left bottom, 
 	rgba(56, 27, 27, 0),
 	rgba(99, 35, 35, 0.8));
@@ -690,12 +690,13 @@ h3{
 }
 @keyframes gradient-4{
 	0%{
-		left:290px;
+		left:310px;
 	}
 	100%{
-		left:100px;
+		left:210px;
 	}
 }
+
 
 .content .gradient-5{
 	position: absolute;
