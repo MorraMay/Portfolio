@@ -2114,7 +2114,6 @@ form .btn2{
 	cursor: pointer;
 }
 
-/*............sticky.................*/
 .sticky__info{
 	width: 70px;
 	height: 70px;
@@ -2122,7 +2121,7 @@ form .btn2{
 	background-color: #ffd829;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.192);
 	position: fixed;
-	top: 535px;
+	top: 545px;
 	cursor: pointer;
 	left: 1350px;
 	z-index: 100;
@@ -2133,9 +2132,10 @@ form .btn2{
 .sticky__info:hover{
 	animation: swing 0.2s alternate infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
+
 .sticky__info.sticky{
 	opacity: 1;
-	left: 1235px;
+	left: 1233px;
 }
 .sticky__btn{
 	cursor: pointer;
@@ -2144,11 +2144,20 @@ form .btn2{
 	position: relative;
 	left: 15px;
 	top: 15px;
+	transition: all 0.5s ease 0s;
+}
+.sticky__btn.active::before{
+	content: "X";	
+	font-size: 35px;
+	font-weight: 900;
+	position: relative;
+	left: 6px;
+	top: -1px;
+	transition: all 0.5s ease 0s;
 }
 
-
-
 /* POPUP */
+
 .popup {
 	position: fixed;
 	width: 11%;
@@ -2165,7 +2174,7 @@ form .btn2{
 	transition: all 0.5s ease 0s;
 	transform: translate(0px, +10%);
 }
-.popup:target {
+.popup.active {
 	opacity: 1;
 	visibility: visible;
 	transform: translate(0px, 0px);
@@ -2175,23 +2184,11 @@ form .btn2{
 	
 
 }
-.popup:target .popup__content {
+.popup .popup__content {
 	
 }
-.popup__close {
-	position: absolute;
-	left: 79%;
-	bottom: 81%;
-	font-size: 25px;
-	color: #5a5a5a;
-	transition: all 0.3s ease 0s;
-	z-index: 3000000;
-}
-.popup__close:hover{
-	color: #ffd829;
-	transition: all 0.3s ease 0s;
 
-}
+
 
 
 /*............Arrow.................*/
@@ -2288,8 +2285,7 @@ form .btn2{
 		transition: all 0.3s ease 0.4s;
 	}
 	.menu__btn i.active::before{
-		content: "\f00d";
-		
+		content: "\f00d";	
 		transition: all 0.3s ease 0.4s;
 	}
 
