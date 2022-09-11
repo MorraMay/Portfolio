@@ -2319,9 +2319,7 @@ form .btn2{
 /*...........Adaptive 991px.................*/
 @media (max-width: 991px){
 
-	.cards-section {
-		display: none;
-	}
+	
 	.arrow__up{
 		display: none;
 	}
@@ -2656,6 +2654,10 @@ form .btn2{
 
 /*...........Adaptive 767px.................*/
 @media (max-width: 767px){
+	.container__moments{
+		display: none;
+	}
+
 	.fullscrin .max-width {
 		padding: 0 0px;
 	
