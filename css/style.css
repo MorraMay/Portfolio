@@ -2221,35 +2221,39 @@ form .btn2{
 	color: #fa1722;
 }
 
+/*...........Adaptive 1200px.................*/
+@media (max-width: 1200px){
 
+.gradient-3{
+	display: none;
+}
+.gradient-4{
+	display: none;
+}
+.gradient-5{
+	display: none;
+}
+.gradient-6{
+	display: none;
+}
+.gradient-7{
+	display: none;
+}
+.gradient-8{
+	display: none;
+}
+.gradient-9{
+	display: none;
+}
+.gradient-10{
+	display: none;
+}
+
+}
 /*...........Adaptive 991px.................*/
 @media (max-width: 991px){
-	
+
 	.cards-section {
-		display: none;
-	}
-	.gradient-3{
-		display: none;
-	}
-	.gradient-4{
-		display: none;
-	}
-	.gradient-5{
-		display: none;
-	}
-	.gradient-6{
-		display: none;
-	}
-	.gradient-7{
-		display: none;
-	}
-	.gradient-8{
-		display: none;
-	}
-	.gradient-9{
-		display: none;
-	}
-	.gradient-10{
 		display: none;
 	}
 	.arrow__up{
