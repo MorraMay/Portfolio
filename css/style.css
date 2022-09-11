@@ -2340,7 +2340,19 @@ form .btn2{
 		transform: translateY(50px);
 		transition-delay: calc(0.2s * var(--i));
 	}
-
+	.header .menu li a::after{
+		content: '';
+		width: 0%;
+		height: 2px;
+		background: #ffdb3a94;
+		position: absolute;
+		left: 0%;
+		bottom: 13px;
+		transition: 0.4s;
+		border-radius: 5px;
+		z-index: 2;
+		
+	}
 	.header .menu li a {
 		display: inline-block;
 		margin: 30px 0;
