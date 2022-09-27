@@ -1,0 +1,22 @@
+body{
+	color: #fff;
+	transition: all 0.3s;
+}
+
+.header.sticky{
+	background: rgb(160, 160, 160);
+}
+.fullscrin .max-width {
+	
+    background: linear-gradient(to top right, rgb(178, 161, 235), #f79b9b);
+    transition: all  0.3s;
+}
+.btn.change-theme[data-theme="light"]{
+    display:none;
+ 
+}
+
+.btn.change-theme[data-theme="dark"]{
+    display: block;
+  
+}
