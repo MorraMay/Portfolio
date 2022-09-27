@@ -31,27 +31,27 @@ html{
 }
 @font-face {
 	font-family:'Fred';
-	src: url('/fonts/KaushanScript-Regular.ttf');
+	src: url('../fonts/KaushanScript-Regular.ttf');
 }
 @font-face{
 	font-family:'Josef';
-	src: url('/fonts/JosefinSans-VariableFont_wght.ttf');
+	src: url('../fonts/JosefinSans-VariableFont_wght.ttf');
 }
 @font-face{
 	font-family:'Londrina';
-	src: url('/fonts/LondrinaSketch-Regular.ttf');
+	src: url('../fonts/LondrinaSketch-Regular.ttf');
 }
 @font-face{
 	font-family:'Neon';
-	src: url('/fonts/Neonderthaw-Regular.ttf');
+	src: url('../fonts/Neonderthaw-Regular.ttf');
 }
 @font-face{
 	font-family:'Splash';
-	src: url('/fonts/Splash-Regular.ttf');
+	src: url('../fonts/Splash-Regular.ttf');
 }
 @font-face{
 	font-family:'Carter';
-	src: url('/fonts/CarterOne-Regular.ttf');
+	src: url('../fonts/CarterOne-Regular.ttf');
 }
 
 body{
@@ -1132,8 +1132,8 @@ circle{
 	text-shadow: 0px 2px 2px #00000091;
 }
 
-
 /*............Container Skills End.................*/
+
 
 /*............Container Projects Start.................*/
 .projects__title{
