@@ -184,20 +184,6 @@ var number = document.getElementById('value');
     document.getElementById(tabname).classList.add("active-tab");
   }
 
-  var tablaps = document.getElementsByClassName("tab-laps");
-  var projects = document.getElementsByClassName("projects");
-
-  function opentabs(tabnames){
-    for(tablap of tablaps){
-      tablap.classList.remove("active-lin");
-    }
-    for(tabproject of projects){
-      tabproject.classList.remove("active-tabs");
-    }
-    event.currentTarget.classList.add("active-lin");
-    document.getElementById(tabnames).classList.add("active-tabs");
-  }
-
    //header sticky
  $(document).ready(function(){
     $(window).scroll(function(){
@@ -216,7 +202,7 @@ var number = document.getElementById('value');
       }else{
         $('.popup').removeClass("sticky");
       }
-	  if(this.scrollY > 3050){
+	  if(this.scrollY > 3950){
         $('.arrow__up').addClass("sticky");
       }else{
         $('.arrow__up').removeClass("sticky");
