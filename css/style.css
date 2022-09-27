@@ -150,12 +150,12 @@ body{
 .header.sticky{
 	background: var(--boss);
 }
-.max-width{
+.header__body {
 	max-width: 1250px;
 	padding: 0 80px;
 	margin: 0 auto; 
 }
-.header .max-width{
+.header .header__body{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -230,8 +230,7 @@ body{
 }
 label{
     position: fixed;
-	left: 16.3%;
-    top: 3.5%;
+	margin-left: 140px;
     width: 33px;
     height: 33px;
     cursor: pointer;
