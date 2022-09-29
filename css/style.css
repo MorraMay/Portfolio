@@ -556,10 +556,10 @@ h3{
 	font-family:'Josef';
 	text-shadow: 0px 2px 2px #00000091;
 }  
-
 /*............Static Card End.................*/
 
 /*............Gradient Circle Start..................*/
+
 .gradient-1{
 	position: relative;
 	right: 160px;
@@ -570,8 +570,8 @@ h3{
 	rgba(151, 101, 101, 0.007),
 	rgba(139, 86, 86, 0.377));
 	border-radius: 50%;
-	
 }
+
 .gradient-2{
 	position: relative;
 	left: 780px;	
@@ -583,6 +583,7 @@ h3{
 	width: 8rem;
 	border-radius: 50%;
 }
+
 .gradient-3{
 	position: absolute;
 	left: 310px;	
@@ -593,11 +594,18 @@ h3{
 	height: 4rem;
 	width: 4rem;
 	border-radius: 50%;
-	
 }
+
+.gradients {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1250px;
+	height: 100%;
+}
+
 .gradient-4{
 	position: absolute;
-	left: 210px;	
+	left: 160px;	
 	top: 70px;
 	background: linear-gradient(to left bottom, 
 	rgba(151, 101, 101, 0.007),
@@ -607,9 +615,10 @@ h3{
 	border-radius: 50%;
 	
 }
+
 .gradient-5{
 	position: absolute;
-	left: 760px;	
+	left: 720px;	
 	top: 460px;
 	background: linear-gradient(to left bottom, 
 	rgba(151, 101, 101, 0.007),
@@ -619,6 +628,7 @@ h3{
 	border-radius: 50%;
 	
 }
+
 .gradient-6{
 	position: absolute;
 	top: 1150px;
@@ -631,10 +641,24 @@ h3{
 	border-radius: 50%;
 	
 }
+
 .gradient-7{
 	position: absolute;
+	top: 750px;
+	left: 500px;	
+	background: linear-gradient(to left bottom, 
+	rgba(151, 101, 101, 0.007),
+	rgba(139, 86, 86, 0.377));
+	height: 19rem;
+	width: 19rem;
+	border-radius: 50%;
+	animation:  neon-2 6s infinite alternate-reverse ;
+}
+
+.gradient-8{
+	position: absolute;
 	top: 2265px;
-	left: 20px;	
+	left: -50px;	
 	background: linear-gradient(to right bottom, 
 	rgba(151, 101, 101, 0.007),
 	rgba(139, 86, 86, 0.377));
@@ -643,7 +667,8 @@ h3{
 	border-radius: 50%;
 	animation:  neon-2 6s infinite alternate-reverse ;
 }
-.gradient-8{
+
+.gradient-9{
 	position: absolute;
 	left: 1050px;
 	top: 2450px;	
@@ -655,9 +680,9 @@ h3{
 	border-radius: 50%;
 	animation:  gradient-8 4s infinite alternate-reverse cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
-.gradient-9{
+.gradient-10{
 	position: absolute;
-	right: 620px;
+	right: 575px;
 	top: 3155px;	
 	background: linear-gradient(to left bottom, 
 	rgba(151, 101, 101, 0.007),
@@ -666,19 +691,6 @@ h3{
 	width: 7rem;
 	border-radius: 50%;
 }
-.gradient-10{
-	position: absolute;
-	top: 750px;
-	left: 550px;	
-	background: linear-gradient(to left bottom, 
-	rgba(151, 101, 101, 0.007),
-	rgba(139, 86, 86, 0.377));
-	height: 19rem;
-	width: 19rem;
-	border-radius: 50%;
-	animation:  neon-2 6s infinite alternate-reverse ;
-}
-
 /*............Gradient Circle End..................*/
 
 /*............Button Start.................*/
@@ -1913,23 +1925,42 @@ form._sending::after{
 /*............Container Contact End.................*/
 
 /*............Sticky Start.................*/
+.modal{
+	position: fixed;
+	width: 100%;
+	padding: 10px 0;
+	z-index: 100;
+	
+}
+.sticky__body{
+	max-width: 1250px;
+	padding: 0 80px;
+	margin: 0 auto; 
+}
+
+.modal .sticky__body{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 .sticky__info{
 	width: 70px;
 	height: 70px;
 	border-radius: 50%;
 	background-color: #5a5a5a;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.192);
-	position: fixed;
-	top: 545px;
+	position: relative;
+	bottom: 170px;
+	margin-right: 50px;
 	cursor: pointer;
-	left: 1350px;
+	right: -80px;
 	z-index: 100;
 	opacity: 0;
 	transition: all 0.5s ease-in-out;
 }
 .sticky__info.sticky{
 	opacity: 1;
-	left: 1233px;
+	right: -40px;
 }
 .sticky__btn{
 	cursor: pointer;
@@ -1950,19 +1981,38 @@ form._sending::after{
 	transition: all 0.5s ease 0s;
 }
 
+.arrow__up{
+	font-size: 60px;
+	color: #5a5a5a;
+	position: relative;
+	left: 30px;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	cursor: pointer;
+}
+.arrow__up.sticky{
+	opacity: 1;
+	transition: all 0.5s ease;
+	bottom: 200px;
+}
+.arrow__up:hover{
+	color:#03e9f4;
+	transition: all 0.5s ease;
+}
+
 /* POPUP */
 
 .popup {
 	position: fixed;
-	width: 13%;
-	height: 30%;
+	max-width: 15%;
+	max-height: 30%;
 	background-color: #80808062;
 	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.295);
 	backdrop-filter: blur(10px);
 	border-radius: 15px;
-	padding: 13px 5px;
-	top: 305px;
-	left: 1115px;
+	padding: 30px 25px;
+	bottom: 170px;
+	margin-left: 980px;
 	z-index: 115;
 	opacity: 0;
 	visibility: hidden;
@@ -2012,29 +2062,6 @@ form._sending::after{
 	text-shadow: 0 2px 3px #000000a1 ;
 }
 /*............Sticky End.................*/
-
-
-/*............Arrow Start.................*/
-.arrow__up{
-	font-size: 60px;
-	color: #5a5a5a;
-	position: fixed;
-	left: 60px;
-	opacity: 0;
-	transition: opacity 0.3s ease;
-	cursor: pointer;
-}
-.arrow__up.sticky{
-	opacity: 1;
-	transition: all 0.5s ease;
-	bottom: 110px;
-}
-.arrow__up:hover{
-	color:#03e9f4;
-	transition: all 0.5s ease;
-}
-
-/*............Arrow End.................*/
 
 
 /*............Footer Start.................*/
