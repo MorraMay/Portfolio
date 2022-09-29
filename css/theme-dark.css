@@ -960,33 +960,24 @@ circle{
 	text-shadow: 0 2px 3px #000000 ;
 	background-color:#36718125;
 	
-	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.212);
 }
-.container__txt {
+.container__title {
 	color: rgb(255, 225, 240);
     text-shadow: 0 0 10px #03e9f4,
     0 0 10px #03e9f4,
     0 0 15px #03e9f4;
-	font-weight: 100;
-	bottom: 180px;
-	left: 400px;
-	animation:  neon2 1.9s infinite reverse;
-	font-size: 70px;
-	position: relative;
+	
 
-	z-index: 3;
 }
 .pen__icons{
 	color:#ab40cc;
 	text-shadow: 0 0 10px rgb(255, 255, 255),
     0 0 10px rgb(255, 255, 255),
     0 0 8px rgb(255, 255, 255);
-	position: relative;
-	left: 370px;
-	font-size: 65px;
-	top: 60px;
+	
 	animation: swing 1.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 } 
+
 
 
 .tab-links::after{
@@ -1300,14 +1291,14 @@ form::after{
 	height: 7rem;
 	width: 7rem;
 	border-radius: 50%;
-	animation:  gradient-9 10s infinite alternate-reverse cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	animation:  gradient-10 7s infinite alternate-reverse cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 @keyframes gradient-10{
 	0%{
 		left: 100px;
 	}
 	100%{
-		left: 1100px;
+		left: 1000px;
 	}
 }
 

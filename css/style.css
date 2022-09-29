@@ -645,7 +645,7 @@ h3{
 .gradient-7{
 	position: absolute;
 	top: 750px;
-	left: 500px;	
+	left: 450px;	
 	background: linear-gradient(to left bottom, 
 	rgba(151, 101, 101, 0.007),
 	rgba(139, 86, 86, 0.377));
@@ -658,7 +658,7 @@ h3{
 .gradient-8{
 	position: absolute;
 	top: 2265px;
-	left: -50px;	
+	left: -25px;	
 	background: linear-gradient(to right bottom, 
 	rgba(151, 101, 101, 0.007),
 	rgba(139, 86, 86, 0.377));
@@ -1182,12 +1182,12 @@ circle{
 	backdrop-filter: blur(10px);
 	border-radius: 20px;
 	z-index: 2;
-	max-width: 1250px;
+	max-width: 1220px;
 }
 .projects__cards{
     display: flex;
     flex-wrap: wrap;
-	padding: 20px;
+	padding: 10px;
     position: relative;
 }
 .card{
@@ -1299,22 +1299,22 @@ circle{
 
 /*............Container About Start.................*/
 .container__about{
-	max-width: 1250px;
-	max-height: 500px;
-	margin: 160px auto 0;
+	max-width: 1180px;
+	padding: 30px 20px;
+	margin: 70px auto 0;
 	background-color: #ffffff38;
 	backdrop-filter: blur(10px);
 	border-radius: 20px;
-	z-index: 5;
+	z-index: 2;
 
 }
 .container__row{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin: 0px 30px;
+	margin: 0px 10px;
 	position: relative;
-	top: 0px;
+	bottom: 30px;
 }
 .about__block-1{
 	flex-basis: 35%;
@@ -1324,31 +1324,30 @@ circle{
 	max-width: 120%;
 	border-radius: 15px;
 	position: relative;
-	bottom: 165px;
+	top: 25px;
 }
 .about__block-2{
 	flex-basis: 55%;
 	color: #fff;
-	padding: 5px 5px;
+	padding: 10px;
 	font-family: 'Fred';
 	font-weight: 500;
 	position: relative;
-	top: 40px;
+	top: 25px;
 	font-size: 20px;
 	text-shadow: 0px 2px 2px #00000091;
 	background-color:#36718125;
-	max-height: 180px;
 	border-radius: 10px;
-	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.212);
 }
-.container__txt {
+.container__title {
 	color: rgb(255, 225, 240);
 	text-shadow: 0px 2px 2px #00000091;
 	font-weight: 100;
-	bottom: 180px;
-	left: 400px;
-	animation:  neon2 1.9s infinite reverse;
+	display: flex;
+	text-align: center;
+	justify-content: center;
 	font-size: 70px;
+	top: 70px;
 	position: relative;
 	font-family:'Neon';
 	z-index: 3;
@@ -1356,9 +1355,8 @@ circle{
 .pen__icons{
 	color:#dc9cf0;
 	position: relative;
-	left: 370px;
 	font-size: 65px;
-	top: 60px;
+	margin-left: 30px;
 } 
 .tab-titles{
 	display: flex;
@@ -1410,7 +1408,7 @@ circle{
 /*............Container Moments Start.................*/
 
 .container__moments{
-	max-width: 1250px;
+	max-width: 1200px;
 	height: 440px;
 	margin: 160px auto 0;
 	background-color: #ffffff38;
