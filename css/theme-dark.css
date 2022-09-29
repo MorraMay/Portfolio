@@ -2034,6 +2034,24 @@ form::after{
 				margin-right: 75px;
 		}
 	
+		.content .container__skills {
+
+			top: 80px;
+			
+		}
+		
+		.skills__title {
+			
+			font-size: 50px;
+			
+		}
+		.grav__icons{
+			color:rgb(245, 168, 255);
+			position: relative;
+			font-size: 55px;
+			bottom: 20px;
+		}
+		
 	
 	
 	/*...........Adaptive 520px.................*/	
