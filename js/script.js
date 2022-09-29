@@ -184,7 +184,7 @@ var number = document.getElementById('value');
     document.getElementById(tabname).classList.add("active-tab");
   }
 
-   //header sticky
+ // Появление хедера
  $(document).ready(function(){
     $(window).scroll(function(){
       if(this.scrollY > 20){
@@ -196,11 +196,6 @@ var number = document.getElementById('value');
         $('.sticky__info').addClass("sticky");
       }else{
         $('.sticky__info').removeClass("sticky");
-      }
-	  if(this.scrollY > 550){
-        $('.popup').addClass("sticky");
-      }else{
-        $('.popup').removeClass("sticky");
       }
 	  if(this.scrollY > 3950){
         $('.arrow__up').addClass("sticky");
