@@ -1263,7 +1263,6 @@ form::after{
 
 .gradient-9{
 	position: absolute;
-	
 	top: 2450px;	
 	background: linear-gradient(to left bottom, 
 	rgba(56, 27, 27, 0),
@@ -1275,10 +1274,10 @@ form::after{
 }
 @keyframes gradient-9{
 	0%{
-		left: 800px;
+		right: 150px;
 	}
 	100%{
-		left: 1100px;
+		right: 350px;
 	}
 }
 
@@ -1372,3 +1371,869 @@ form::after{
 .btn.change-theme[data-theme="dark"]{
     display: none;
 }
+
+
+	/*...........Adaptive 991px.................*/
+	@media (max-width: 991px){
+		.gradient-2{
+			display: none;
+		}
+		.gradient-3{
+			display: none;
+		}
+		.gradient-4{
+			display: none;
+		}
+		.gradient-5{
+			display: none;
+		}
+		.gradient-6{
+			display: none;
+		}
+		.gradient-7{
+			display: none;
+		}
+		.gradient-8{
+			display: none;
+		}
+		.gradient-9{
+			display: none;
+		}
+		.gradient-10{
+			display: none;
+		}
+		.arrow__up{
+			display: none;
+		}
+	
+	
+		.fullscrin .max-width {
+			padding: 0 40px;
+		}
+		.menu__btn{
+			display: block;
+			position: fixed;
+			right: 45px;
+			transition: all 0.3s ease 0.4s;
+		}
+		.menu__btn i.active::before{
+			content: "\f00d";
+			transition: all 0.3s ease 0.4s;
+			color: #ffdb3afd;
+		}
+	
+		.menu__logo{
+			display: block;
+			position: fixed;
+			opacity: 0;
+			left: -100%;
+			transition: all 1.5s ease 0.6s; 
+		}
+		.menu__logo.active {
+			left: 10%;
+			opacity: 1;
+			transition: all 1.5s ease 0.7s;
+			color: #ffdb3afd;
+		}
+	
+	
+		
+		.header .menu{
+			position: fixed;
+			height: 250vh;
+			width: 100%;
+			left: -100%;
+			top: 0;
+			text-align: center;
+			background: #1b0000c9;
+			backdrop-filter: blur(15px);
+			padding-top: 80px;
+			transition: all 0.6s ease 0.9s;
+			
+		}
+		.header .menu.active{
+			left: 0;
+			transition: all 0.6s ease 0s;
+		}
+		.header .menu li{
+			display: block;
+			position: relative;
+			top: 40px;
+			left: -100%;
+			transition: all 1s ease 1.2s; 
+			transform: translateY(50px);
+			transition-delay: calc(0.1s * var(--i));
+		}
+		.header .menu.active li{
+			left: 0;
+			transition: all 1s ease 1.2s; 
+			transform: translateY(50px);
+			transition-delay: calc(0.2s * var(--i));
+		}
+		.header .menu li a::after{
+			content: '';
+			width: 0%;
+			height: 2px;
+			background: #ffdb3a94;
+			position: absolute;
+			left: 0%;
+			bottom: 13px;
+			transition: 0.4s;
+			border-radius: 5px;
+			z-index: 2;
+			
+		}
+		.header .menu li a {
+			display: inline-block;
+			margin: 30px 0;
+			font-size: 30px;
+			
+		}
+		
+	
+		/*............fullscrin.................*/
+		.fullscrin .max-width .title{
+			top: 100px;
+			left: 0;
+			right: 0;
+		}
+		.title .text-1{
+			font-size: 23px;
+		}
+		.title h1 {
+			text-shadow: 0 0 5px rgb(255, 27, 141),
+			0 0 5px rgb(255, 27, 141),
+			0 0 10px rgb(255, 27, 141);
+			font-size: 65px;
+			font-weight: 300;
+		}
+		.title h2 {
+			text-shadow: 0 0 5px rgb(255, 27, 141),
+			0 0 5px rgb(255, 27, 141),
+			0 0 10px rgb(255, 27, 141);
+			font-size: 65px;
+			font-weight: 300;
+		}
+		.container .photo__container{
+			display: none;
+			
+			left: 50px;
+			top: 120px;
+			max-width: 450px;
+			max-height: 400px;
+		}
+		.container .static__card{
+			display: inline-block;
+		background: rgba(44, 0, 26, 0.486);
+		transform: scale(1);
+		transition: all 0.2s ease 0s;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.051),
+		  0px 0px 7.2px rgba(0, 0, 0, 0.073), 0px 0px 13.6px rgba(0, 0, 0, 0.09),
+		  0px 0px 24.3px rgba(0, 0, 0, 0.107), 0px 0px 45.5px rgba(0, 0, 0, 0.129),
+		  0px 0px 109px rgba(0, 0, 0, 0.18);
+		border-radius: 15px;
+		width: 420px;
+		height: 250px;
+		position: relative;
+		top: 160px;
+		left: 75px;
+		backdrop-filter: blur(10px);
+		transition: 0.5s;
+		}
+		.container .neon{
+				top: 230px;
+				right: 50px;
+				padding: 17px 22px;
+				margin: 20px 20px;
+				font-size: 22px;
+		}
+		.container .gradient-1{
+				bottom: 20px;
+				left: 35px;
+				height: 7rem;
+				width: 7rem;
+		}
+	
+			/*............Skills.................*/
+			.content .container__skills {
+				right: 0px;
+				margin: 100px auto;
+				padding: 240px 0;
+				max-width: 600px;
+				top: 0px;
+			}
+			.content .skills__title {
+				left: 3px;
+				bottom: 300px;
+			}
+			.content .skills__text {
+				
+				max-width: 350px;
+				left: -10px;
+				bottom: 315px;
+				
+			
+			}
+			.content .skill_bar{
+				right: 280px;
+				bottom: 110px;
+			}
+			.content .skill_bar-2{
+				right: 60px;
+				bottom: 110px;
+			}
+			.content .skill_bar-3{
+				left: 160px;
+				bottom: 110px;
+			}
+			.content .skill_bar-4{
+				right: 170px;
+				top: 40px;
+			}
+			.content .skill_bar-5{
+				
+				left: 60px;
+				top: 40px;
+			}
+			.content .skill_bar-6{
+				left: 160px;
+				top: 190px;
+			}
+			.content .skill_bar-7{
+				right: 60px;
+				top: 190px;
+			}
+			.content .skill_bar-8{
+				right: 280px;
+				top: 190px;
+			}
+	
+		
+			.contents{
+				position: relative;
+				left: 0px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin: 0px auto;
+				background-color: #ffffff38;
+				backdrop-filter: blur(10px);
+				border-radius: 20px;
+				z-index: 2;
+				max-width: 800px;
+			}
+			.projects__cards{
+				display: flex;
+				flex-direction: column;
+				padding: 0px;
+				position: relative;
+	
+			}
+			
+			/*............Container About.................*/
+	.container__about{
+		max-width: 600px;
+	
+	
+	}
+	.container__row{
+	
+		flex-direction: column;
+		
+	}
+	
+	.about__block-1 img{
+		max-width: 70%;
+		top: 20px;
+		display: flex;
+		margin: 0 auto;
+	}
+	
+			
+	.container__moments{
+		max-width: 900px;
+		
+	}
+	
+			/*............contact block.................*/
+			.content .contact__block{
+				bottom: 90px;
+				margin-top: 150px;
+				left: 0px;
+				justify-content: center;
+			}
+			.content .contact__row{
+				display: flex;
+				justify-content: center;
+				
+			}
+			.content .contact-left{
+				flex-basis: 60%;
+				
+			}	
+	
+			/*............Sticky Start.................*/
+	
+	
+	
+	
+	.sticky__info{
+		width: 50px;
+		height: 50px;
+		right: 100px;
+	}
+	.sticky__info.sticky{
+		opacity: 1;
+		right: 40px;
+	}
+	.sticky__btn{
+	
+		font-size: 30px;
+		
+		left: 11px;
+		top: 10px;
+	
+	}
+	.sticky__btn.active::before{	
+		font-size: 25px;
+		left: 4.5px;
+		top: -1.7px;
+	}
+	
+	
+	/* POPUP */
+	
+	.popup {
+		position: fixed;
+		max-width: 100%;
+		height: 12%;
+		bottom: 50px;
+		margin-left: 40px;
+	}
+	
+	
+	.popup__content .box__telegram {
+		font-size: 45px;
+		margin-top: 10px;
+		color: rgb(235, 233, 233);
+		transition: all 0.5s ease 0s;
+		text-shadow: 0px 2px 2px #00000091;
+	}
+	
+	.popup__content-txt {
+		font-size: 17px;
+		font-weight: 700;
+		margin-top: 10px;
+		color: #5a5a5a;
+		font-family: 'Fred';
+	}
+	.popup__content h4{
+		font-size: 32px;
+		color: rgb(255, 225, 240);
+		font-weight: 100;
+		font-family:'Neon';
+		text-shadow: 0px 2px 2px #00000091;
+	}
+	.popup__content span{
+		font-family: 'Fred';
+		font-size: 20px;
+		text-shadow: 0 2px 3px #000000a1 ;
+	}
+	/*............Sticky End.................*/
+	
+			
+		}
+	
+	/*...........Adaptive 767px.................*/
+	@media (max-width: 767px){
+	
+		.container__moments{
+			display: none;
+		}
+		.fullscrin .max-width {
+			padding: 0 0px;
+			
+		
+		}
+		.header .logo a{
+			
+			font-size: 25px;
+			
+		}
+		.header .logo a span{
+			font-size: 39px;
+		
+			
+		}
+		label{
+			width: 25px;
+			height: 25px;
+			
+		}
+		label span .fa-power-off{
+			
+			font-size: 15px;
+			
+		}
+		
+		/*............fullscrin.................*/
+		.fullscrin .max-width .title{
+			top: 30px;
+			right: 0px;
+			margin: auto 15px;
+			margin-top: 10px;
+		}
+		.max-width .text-1{
+			left: 100px;
+			min-width: 200px;
+			font-size: 20px;
+			top: 10px;
+		}
+		.max-width h1 {
+			font-size: 45px;
+			font-weight: 400;
+			right:0px;
+		}
+		.max-width h2 {
+			font-size: 45px;
+			font-weight: 400;
+		}
+		.max-width h1:before{
+			
+			line-height: 58px;
+			
+		} 
+		.max-width h2:before{
+			line-height: 58px;
+		} 
+		.container .photo__container {
+			position: relative;
+			z-index: 1;
+			display: flex;
+			left: 275px;
+			top: 215px;
+			align-items: center;
+			max-width: 450px;
+			max-height: 400px;
+		}
+		.container .photo__container  .photo {
+			position: relative;
+			width: 0px;
+			height: 200px;
+			bottom: 120px;
+			background: rgba(255, 255, 255, 0.05);
+			margin: auto 20px;
+			box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+			border-radius: 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			backdrop-filter: blur(10px);
+		
+		}
+		.container .photo__container  .photo .cont .img-box img{
+			position: absolute;
+			top: -30px;
+			left: -30px;
+			width: 115%;
+			height: 115%;
+			object-fit: cover;
+		}
+		.container .photo__container  .photo .cont .img-box {
+			width: 200px;
+			height: 200px;
+		}
+		.container .photo__container  .photo .cont .content-box h4 {
+			color: #fff;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-family: "Fred";
+			font-weight: 500;
+			font-size: 0px;
+			text-align: center;
+			margin: 0px 0 0px;
+			line-height: 0em;
+		}
+		.container .photo__container  .photo .cont .content-box h4 span{
+			font-size: 0px;
+			font-weight: 300px;
+			text-transform: initial;
+		}
+		.container .photo__container .photo .sci {
+			position: absolute;
+			bottom: 50px;
+			display: flex;
+		}
+		.container .photo__container .photo .sci li a{
+			color: #fff;
+			font-size: 25px;
+			transition: 0.3s;
+		}
+		.container .static__card{	
+			max-width: 370px;
+			height: 200px;
+			bottom:0px;
+			right: 0px;
+			position: relative;
+			left: 115px;
+			top: 100px;
+			
+		}
+		.container .static__card .static-txt{
+			font-size: 30px;
+			font-weight: 300;
+		}
+		.container .static__card .static-txt span{
+			font-size: 28px;
+		}
+		.container h3{
+			position: relative;
+			top: 60px;
+			
+			font-size: 15px;
+			
+		}  
+		.container .neon{
+				top: 330px;
+				right: 185px;
+				
+		}
+		.container .gradient-1{
+				display: none;
+		}
+	
+		
+			/*............Skills.................*/
+			.content .container__skills {
+				right: 0px;
+				margin: 100px auto;
+				top: 0px;
+				max-height: 240px;
+			}
+			.content .skills__text {	
+				font-size: 22px;	
+				max-width: 280px;
+	
+			}
+			.content .skill_bar{
+				display: none;
+			}
+			.content .skill_bar-2{
+				display: none;
+			}
+			.content .skill_bar-3{
+				display: none;
+			}
+			.content .skill_bar-4{
+				display: none;
+			}
+			.content .skill_bar-5{
+				display: none;
+			}
+			.content .skill_bar-6{
+				display: none;
+			}
+			.content .skill_bar-7{
+				display: none;
+			}
+			.content .skill_bar-8{
+				display: none;
+			}
+			.content .skills__bars{
+				display: block;
+				width: calc(80% - 30px);
+				position: relative;
+				bottom: 320px;
+			}
+			.content .skills__bars .bars{
+				margin-top: 35px;
+			}
+			.content .skills__bars .info{
+				display: flex;
+				align-items: center;
+				justify-content:space-between;
+				font-family: 'Fred';
+				text-shadow: 0 2px 3px #000;
+			}
+			.content .skills__bars span{
+				font-weight: 300;
+				font-size: 20px;
+		
+			}
+			.content .skills__bars .line{
+				height: 5px;
+				margin-top: 5px;
+				width: 100%;
+				background: lightgrey;
+				position: relative;
+			}
+			.content .skills__bars .line::before{
+				content: "";
+				position: absolute;
+				height: 100%;
+				left: 0;
+				top: 0;
+				background: rgb(255, 27, 141);
+			}
+			.content .skills__bars .HTML::before{
+				width: 80%;
+			}
+			.content .skills__bars .CSS::before{
+				width: 60%;
+			}
+			.content .skills__bars .JavaScript::before{
+				width: 45%;
+			}
+			.content .skills__bars .Figma::before{
+				width: 65%;
+			}
+			.content .skills__bars .JQUERY::before{
+				width: 55%;
+			}
+			.content .skills__bars .Writing::before{
+				width: 90%;
+			}
+			.content .skills__bars .Photoshop::before{
+				width: 65%;
+			}
+			.content .skills__bars .BootStrap::before{
+				width: 70%;
+			}
+	
+	
+	/*...........Adaptive 610px.................*/
+	@media (max-width: 610px) {
+		.projects__cards{
+			display: flex;
+			flex-wrap: wrap;
+			padding: 10px;
+			margin-top: 50px;
+			position: relative;
+		}
+		.projects__title{
+		font-weight: 100;
+		font-size: 50px;
+		font-family:'Neon';
+		display: flex;
+		position: relative;
+		top: 25px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+		
+		z-index: 20;
+		}
+		.pizza__icons{
+		font-size: 55px;
+		margin: 0px 0px 0px 220px;
+		}
+		.projects .text-1{
+				font-size: 25px;
+				text-align: center;
+				margin-right: 75px;
+		}
+	
+	
+	
+	/*...........Adaptive 520px.................*/	
+	@media (max-width: 520px){
+			
+			.max-width .text-1{
+				left: 90px;
+				min-width: 200px;
+				font-size: 18px;
+				top: 10px;
+			}
+			.max-width h1 {
+				font-size: 40px;
+				font-weight: 400;
+				position: relative;
+				right:25px;
+				top: 10px;
+			}
+			.max-width h2 {
+				font-size: 40px;
+				font-weight: 400;
+				position: relative;
+				right:25px;
+				top: 10px;
+			}
+			.max-width h1:before{
+				
+				line-height: 48px;
+				
+			} 
+			.max-width h2:before{
+				line-height: 48px;
+			} 		
+			.container .photo__container {
+				position: relative;
+				z-index: 1;
+				display: flex;
+				left: 250px;
+				top: 215px;
+				align-items: center;
+				max-width: 450px;
+				max-height: 400px;
+			}
+			.container .photo__container  .photo .cont .img-box {
+				width: 190px;
+				height: 190px;
+			}
+			.container .neon{
+				
+				top: 280px;
+				right: 115px;
+			
+				padding: 12px 17px;
+				margin: 10px 10px;
+			
+				font-size: 18px;
+				
+				
+			}
+			
+			.container .static__card{	
+				max-width: 300px;
+				height: 165px;
+				bottom:0px;
+				right: 0px;
+				position: relative;
+				left: 120px;
+				top: 110px;
+				
+			}
+			.container .static__card .static-txt{
+				font-size: 26px;
+				font-weight: 300;
+			}
+			.container .static__card .static-txt span{
+				font-size: 22px;
+			}
+			.container h3{
+				position: relative;
+				top: 60px;
+				font-size: 13px;
+				
+			}  
+		/*............Container About.................*/
+		.container__about{
+			max-width: 500px;
+			padding: 30px 20px;
+			margin: 70px auto 0;
+			background-color: #ffffff38;
+			backdrop-filter: blur(10px);
+			border-radius: 20px;
+			z-index: 2;
+	
+		}
+		.container__row{
+	
+			bottom: 30px;
+		}
+		.about__block-1{
+			flex-basis: 35%;
+			
+		}
+		.about__block-1 img{
+	
+			border-radius: 15px;
+			position: relative;
+			top: 25px;
+		}
+		.about__block-2{
+			margin-top: 40px;
+			font-size: 15px;
+			width: 100%;
+			
+	
+		}
+		.container__title {
+			
+			font-weight: 100;
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			font-size: 50px;
+			top: 70px;
+			position: relative;
+			font-family:'Neon';
+			z-index: 3;
+		}
+		.pen__icons{
+			
+			position: relative;
+			font-size: 45px;
+			margin-left: 30px;
+		} 
+		.tab-titles{
+			display: flex;
+			margin: 20px 0 30px;
+			
+		}
+		.tab-links{
+			margin-right: 30px;
+			font-size: 16px;
+			
+		}
+	
+		.tab-contents ul li{
+			list-style: none;
+			margin: 20px 0;
+			font-size: 14px;
+			font-family:'Josef';
+			
+		}
+		.tab-contents ul li span{
+			color: #367181;
+			font-size: 14px;
+			text-shadow: none;
+			font-weight: 900;
+			font-family:'Josef';
+			
+		}
+	
+	/*............Container Contact.................*/
+	.contact__block{
+	
+		max-width: 100%;
+		
+	}
+	
+	
+	.contact-left h1{
+		font-size: 35px;
+		position: relative;
+		left: 100px;
+		bottom: 30px;	
+	}
+	.contact-right{	
+		flex-basis: 60%;
+	}
+	.contact-left p{
+		margin-top: 35px;
+	}
+	.contact-left p i {
+		margin-right: 15px;
+		color: #03e9f4;
+		text-shadow: 0px 2px 2px #00000091;
+		font-size: 20px;
+	}
+	.social-icons{
+		margin-top: 30px;
+	}
+	
+	label{
+		width: 23px;
+		height: 23px;
+		margin-left: 115px;
+	}
+	label span .fa-power-off{
+		
+		font-size: 14px;
+		
+	}
+	
+	}
+	
