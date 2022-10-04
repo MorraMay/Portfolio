@@ -1506,10 +1506,10 @@ circle{
   }
   .photo-cards img {
 	position: relative;
-	right: 37px;
-	bottom: 16px;
-	width: 145px;
-	height: 145px;
+	right: 0px;
+	top: 0px;
+	width: 120px;
+	height: 110px;
   }
 
   .cards .photo-cards img {
