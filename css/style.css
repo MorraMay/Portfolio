@@ -194,9 +194,7 @@ body{
 	position: relative;
 	text-shadow: 0px 2px 2px #00000091;
 } 
-.header .menu li a span{
-	
-}
+
 .header .menu li a::after{
 	content: '';
 	width: 0%;
