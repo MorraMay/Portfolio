@@ -1054,6 +1054,13 @@ circle{
 	backdrop-filter: blur(40px);
   }
   
+  .container__moments .container__txt{
+	color: rgb(255, 225, 240);
+    text-shadow: 0 0 10px #ffd829,
+    0 0 10px #ffd829,
+    0 0 15px #ffd829;
+}
+
 
 
 
