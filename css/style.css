@@ -2201,7 +2201,7 @@ form._sending::after{
 	transition: all 0.5s ease 0s;
 	overflow: hidden;
   }
-  .popup-gallery .inside-page__btn-2 {
+  .popup-gallery .inside-page__btn-1 {
 	color: rgb(255, 255, 255);
 	position: absolute;
 	right: 0;
@@ -2209,8 +2209,9 @@ form._sending::after{
 	align-items: center;
 	justify-content: center;
 	max-width: 50px;
+	cursor: pointer;
   }
-  .popup-gallery-2 .inside-page__btn-1 {
+  .popup-gallery-2 .inside-page__btn-2 {
 	color: rgb(255, 255, 255);
 	position: absolute;
 	right: 0;
@@ -2218,6 +2219,7 @@ form._sending::after{
 	align-items: center;
 	justify-content: center;
 	max-width: 50px;
+	cursor: pointer;
   }
   .popup-gallery-3 .inside-page__btn-3 {
 	color: rgb(255, 255, 255);
@@ -2227,6 +2229,7 @@ form._sending::after{
 	align-items: center;
 	justify-content: center;
 	max-width: 50px;
+	cursor: pointer;
   }
  
   .gallery{
