@@ -1289,7 +1289,7 @@ form::after{
 
 .gradient-10{
 	position: absolute;
-	top: 3535px;	
+	top: 3530px;	
 	background: linear-gradient(to left bottom, 
 	rgba(56, 27, 27, 0),
 	rgba(99, 35, 35, 0.8));
