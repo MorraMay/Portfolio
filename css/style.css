@@ -1531,6 +1531,7 @@ circle{
   /* Buttons =================================================*/
   
   .inside-page__btn-1 {
+	cursor: pointer;
 	background-color: transparent;
 	border: 3px solid;
 	border-radius: 10px;
@@ -1571,6 +1572,7 @@ circle{
   }
   
   .inside-page__btn-2 {
+	cursor: pointer;
 	background-color: transparent;
 	border: 3px solid;
 	border-radius: 10px;
@@ -1610,6 +1612,7 @@ circle{
 	transform: scaleY(1);
   }
   .inside-page__btn-3 {
+	cursor: pointer;
 	background-color: transparent;
 	border: 3px solid;
 	border-radius: 10px;
@@ -1640,6 +1643,7 @@ circle{
 	width: 100%;
 	z-index: -1;
 	background-color: #5a5a5a;
+	
   }
   .inside-page__btn-3:hover { 
 	color: #fafbfa;
