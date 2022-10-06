@@ -43,7 +43,21 @@ AOS.init({
   $('.sticky__info').click(function(event) {
     $('.popup').toggleClass('active');
 	$('.sticky__btn').toggleClass('active');
+  });
 
+  $('.inside-page__btn-1').click(function(event) {
+    $('.popup-gallery').toggleClass('active');
+	$('.gallery').toggleClass('active');
+  });
+  
+  $('.inside-page__btn-2').click(function(event) {
+    $('.popup-gallery-2').toggleClass('active');
+	$('.gallery-2').toggleClass('active');
+  });
+
+  $('.inside-page__btn-3').click(function(event) {
+    $('.popup-gallery-3').toggleClass('active');
+	$('.gallery-3').toggleClass('active');
   });
 
 
