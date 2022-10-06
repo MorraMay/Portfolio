@@ -655,7 +655,7 @@ h3{
 
 .gradient-8{
 	position: absolute;
-	top: 2265px;
+	top: 2650px;
 	left: -25px;	
 	background: linear-gradient(to right bottom, 
 	rgba(151, 101, 101, 0.007),
@@ -669,7 +669,7 @@ h3{
 .gradient-9{
 	position: absolute;
 	right: 150px;
-	top: 2450px;	
+	top: 2800px;		
 	background: linear-gradient(to left bottom, 
 	rgba(151, 101, 101, 0.007),
 	rgba(139, 86, 86, 0.377));
@@ -682,7 +682,7 @@ h3{
 .gradient-10{
 	position: absolute;
 	right: 575px;
-	top: 3155px;	
+	top: 3535px;	
 	background: linear-gradient(to left bottom, 
 	rgba(151, 101, 101, 0.007),
 	rgba(139, 86, 86, 0.377));
