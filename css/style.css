@@ -58,7 +58,7 @@ html{
 body{
 	color: #fff;
 	font-family:'Carter';
-	
+	background: linear-gradient(to top right, rgb(178, 161, 235), #f79b9b);
 }
 
 
@@ -337,7 +337,6 @@ label input[type="checkbox"]:checked ~ span .fa-power-off{
 .full__container{
 	position: fixed;
 	top: 0;
-
 	width: 100%;
 	height: 100vh;
 	background: linear-gradient(to top right, rgb(178, 161, 235), #f79b9b);
@@ -2372,18 +2371,19 @@ h3{
 		.fullscrin {
 			position: relative;
 			top: 0;
+			height: 100%;
 		}
 		.full__container{
 			position: relative;
 			top: 0;
-		
-		
+			height: 100%;
+			padding-top: 70px;
 		}
 		.container__wrapper{
-			
+			height:100%;
 		
 			
-			padding: 0 80px;
+			padding: 20px 80px;
 		
 			margin-top: 0px;
 			position: relative;
