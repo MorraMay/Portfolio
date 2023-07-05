@@ -39,9 +39,9 @@ AOS.init({
   });
 
 //popup
-  $('.sticky__btn').click(function(event) {
+  $('.sticky__info').click(function(event) {
     $('.popup__body').toggleClass('active');
-	$('.sticky__info').toggleClass('active');
+	$('.sticky__btn').toggleClass('active');
   });
 
   $('.inside-page__btn-1').click(function(event) {
@@ -62,7 +62,7 @@ AOS.init({
 
 //Typed
 let typed = new Typed(".typing", {
-  strings: ["Front-End Developer", "Writer", "Freelancer", "Designer"],
+  strings: ["Front-End Developer", "Teacher", "Writer", "Freelancer", "Designer"],
   typeSpeed: 100,
   backSpeed: 60,
   loop:true

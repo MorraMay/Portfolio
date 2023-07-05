@@ -2335,7 +2335,7 @@ h3{
 			
 		}
 		.about__block-1{
-		
+			margin-right: 0;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -2369,10 +2369,33 @@ h3{
 
 /* Стилі для малих екранів (дисплей максимум 767рх) */
     @media (max-width: 767px) { 
-		.container__wrapper{
-			padding: 0 20px;
+		.fullscrin {
+			position: relative;
+			top: 0;
 		}
-		.slider .slick-arrow{
+		.full__container{
+			position: relative;
+			top: 0;
+		
+		
+		}
+		.container__wrapper{
+			
+		
+			
+			padding: 0 80px;
+		
+			margin-top: 0px;
+			position: relative;
+		}
+
+
+		
+		.slick-next:before{
+			display: none;
+		}
+		
+		.slick-prev:before{
 			display: none;
 		}
 		.container-right .photo .sci {
@@ -2479,7 +2502,9 @@ h3{
 }  
 /*............Static Card End.................*/
 
-
+.pen__icons::before{
+	display: none;
+}
 
 
 /*............Button Start.................*/
@@ -2559,16 +2584,21 @@ h3{
 	}
 	.popup__body.active{
 		right: 20px;
-		
+		background-color: #5a5a5a;
+	}
+	.popup__content-txt{
+		color: #fff;
+		font-weight: 200;
+		letter-spacing: 2px;
 	}
 	}
 /* Стилі для дуже малих екранів (дисплей максимум 575рх) */
-    @media (max-width: 535px) { 
+    @media (max-width: 580px) { 
 		.container__wrapper{
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			
+			padding-top: 50px;
 		}
 		.container-right{
 			display: flex;
@@ -2578,7 +2608,7 @@ h3{
 		
 		}
 		.container-right .photo {
-			max-width: 350px;
+			max-width: 250px;
 		
 			box-shadow: none;
 			margin-top: 20px;
@@ -2639,7 +2669,7 @@ h3{
 		}
 	
 		.neon {
-		right: 130px;
+		right: 28%;
 		top: 38%;
 		padding: 10px 15px;
 		font-size: 16px;
@@ -2734,6 +2764,17 @@ h3{
 		.contact-left .contact__btn{
 			padding: 15px;
 		}
+		.static__card{
+			max-width: 300px;
+			padding: 15px 10px;
+		}
+		.static__card .static-txt {
+			font-size: 22px;
+		}
+		.static__card .static-txt span {
+			font-size: 22px;
+		}
+		
 	}
 		
 	
