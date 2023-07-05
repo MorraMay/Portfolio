@@ -6,7 +6,7 @@ body{
 .header.sticky{
 	background: rgb(160, 160, 160);
 }
-.fullscrin .max-width {
+.fullscrin {
 	
     background: linear-gradient(to top right, rgb(178, 161, 235), #f79b9b);
     transition: all  0.3s;
@@ -16,7 +16,13 @@ body{
  
 }
 
+
 .btn.change-theme[data-theme="dark"]{
     display: block;
   
 }
+
+
+
+
+

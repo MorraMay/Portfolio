@@ -3,27 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" title="theme" href="#">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <title>Alexander Morra</title>
-
     <meta name="description" content="Alexander Morra">
     <meta name="keywords" content="Alexander Morra">
-  
     <meta property="og:title" content="Alexander Morra" />
     <meta property="og:description" content="Alexander Morra" />
     <meta property="og:image" content="./img/portf.png">
 
+    <title>Alexander Morra</title>
+
     <link rel="apple-touch-icon" sizes="180x180" href="./img/portf.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/portf.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/portf.png">
-    <link rel="manifest" href="./img/portf.png">
+   
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" title="theme" href="#">
+    <link rel="stylesheet" href="./js/slick-1.8.1/slick/slick-theme.css">
 </head>
+
 <body>
-    
         <!-----Header start----->
         <header class="header">
             <div class="header__body">
@@ -39,68 +37,69 @@
                 </label>
                 <ul class="menu">
                     <li style="--i:1"><a href="#">Home</a></li>
-                    <li style="--i:2"><a href="#skills">Skills</a></li>
+                   <!--  <li style="--i:2"><a href="#skills">Skills</a></li> -->
                     <li style="--i:3"><a href="#projects"><span>Pro</span>jects</a></li>
                     <li style="--i:4"><a href="#about">About Me</a></li>
                     <li style="--i:5"><a href="#moments">Moments</a></li>
                     <li style="--i:6"><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="menu__btn">
-                    <i class="fas fa-bars"></i>
+                    <span class="mobile__line"></span>
                 </div>
-                <div class="menu__logo">
-                    <i class="dragon fa-solid fa-dragon"></i>
-                </div>
+               
             </div>  
         </header>
         <!-----Header end----->
 
-    <main class="wrapper">    
-          <!-----Loader start----->
-        <section>
-            <div class="mask">
-                <div class="loader">
-                    <span style="--i:1;"></span>
-                    <span style="--i:2;"></span>
-                    <span style="--i:3;"></span>
-                    <span style="--i:4;"></span>
-                    <span style="--i:5;"></span>  
-                    <span style="--i:6;"></span>  
-                    <span style="--i:7;"></span> 
-                    <span style="--i:8;"></span>    
-                    <span style="--i:9;"></span>    
-                    <span style="--i:10;"></span> 
-                    <span style="--i:11;"></span>
-                    <span style="--i:12;"></span>
-                    <span style="--i:13;"></span>
-                    <span style="--i:14;"></span>
-                    <span style="--i:15;"></span>  
-                    <span style="--i:16;"></span>  
-                    <span style="--i:17;"></span> 
-                    <span style="--i:18;"></span>    
-                    <span style="--i:19;"></span>    
-                    <span style="--i:20;"></span>        
-                </div>
+        <!-----Loader start----->
+        <div class="mask">
+            <div class="loading">
+                <div class="loading__item"></div>
+                <div class="loading__item"></div>
+                <div class="loading__item"></div>
+                <div class="loading__item"></div>
+                <img class="loading__img" src="./img/Lesser_Coat_of_Arms_of_Ukraine.svg.png" alt="">
             </div>
-        </section>
+        </div>
         <!-----Loader end----->
-
+        
         <!-----Fullscrin start----->
+       
         <section class="fullscrin">
-            <div data-aos="fade-up" class="max-width">
-                <div class="container"> 
-                    <div class="title">
-                        <div class="text-1"
-                            data-aos="fade-right"
-                            data-aos-delay="1050"
-                            data-aos-duration="1000"
-                            data-aos-easing="ease-out-back">
-                            Hello, my name is
+            <div class="full__container">
+                <div class="container__wrapper">
+                    <div class="container-left">
+                        <span class="text-1"
+                        data-aos="fade-right"
+                        data-aos-delay="1050"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-out-back">
+                        Hello, my name is
+                        </span>
+                        <div class="container-left__title">
+                            <h1 data-content="Alexander" class="glow" >Alexander</h1>
+                            <h2  data-content-2="Morra" class="glow" >Morra</h2>
                         </div>
-                        <h1 data-content="Alexander" class="glow">Alexander</h1>
-                        <h2 data-content-2="Morra" class="glow">Morra</h2>
+                    
+                        <div class="static__card"
+                            data-aos="flip-up"
+                            data-aos-delay="500"
+                            data-aos-duration="1400"
+                            data-aos-easing="ease-out-back">
+                            <div class="static-txt">
+                                I'm a<span class="typing"></span>
+                            </div>
+                            <h3 class="">HTML CSS SCSS JavaScript React jQuery <br><br> WordPress PHP Figma BootStrap Photoshop </h3>
+                            <a href="#contact" class="neon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Contact me
+                            </a>
+                        </div>    
                     </div>
-                    <div class="photo__container"
+                    <div class="container-right"
                         data-aos="zoom-in"
                         data-aos-delay="250"
                         data-aos-duration="700"
@@ -114,110 +113,34 @@
                             </div>
                             <ul class="sci">
                                 <li style="--i:1"> 
-                                    <a href="https://www.facebook.com/profile.php?id=100026043443644" class="box__facebook fa-brands fa-facebook"></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100026043443644" target="_blank" class="box__facebook fa-brands fa-facebook"></a>
                                 </li>
                                 <li style="--i:2"> 
-                                    <a href="https://www.instagram.com/alexander_morra_/?igshid=YmMyMTA2M2Y%3D" class="box__insta fa-brands fa-instagram "></a>
+                                    <a href="https://www.instagram.com/alexander_morra_/?igshid=YmMyMTA2M2Y%3D" target="_blank" class="box__insta fa-brands fa-instagram "></a>
                                 </li>
                                 <li style="--i:3"> 
-                                    <a href="https://web.telegram.org/k/#@Morra_May" class="box__telegram fa-brands fa-telegram"></a>
+                                    <a href="https://web.telegram.org/k/#@Morra_May" target="_blank" class="box__telegram fa-brands fa-telegram"></a>
+                                </li>
+                                <li style="--i:4"> 
+                                    <a href="https://www.linkedin.com/in/morramay" target="_blank" class="box__linkedin fa-brands fa-linkedin"></a>
                                 </li>
                             </ul>
                         </div>        
                     </div>
-                    <div class="static__card"
-                            data-aos="flip-up"
-                            data-aos-delay="500"
-                            data-aos-duration="1400"
-                            data-aos-easing="ease-out-back">
-                        <div class="static-txt">I'm a<span class="typing"></span></div>
-                        <h3>HTML CSS Java Script jQuery <br><br> WordPress PHP Figma BootStrap Photoshop </h3>
-                    </div> 
-                    <a href="#contact" class="neon"
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Contact me
-                    </a>
-                    <div class="gradient-1"
-                        data-aos="zoom-in"
-                        data-aos-delay="700"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-out">
-                    </div>
-                    <div class="gradient-2"
-                        data-aos="zoom-in"
-                        data-aos-delay="700"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-out">
-                    </div>
-                    <div class="gradient-3"
-                        data-aos="fade-down"
-                        data-aos-delay="200"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-out">
-                    </div>
-                </div>            
+                </div>
+                
+                
+        
             </div>
         </section>
-         <!-----Fullscrin end----->
+      
+        <!-----Fullscrin end----->
 
         <!-----Content start----->
-        <section class="content">
+        <main class="content">
 
-             <!-----Gradients start----->
-             <div class="gradients">
-                <div class="gradient-4"
-                    data-aos="zoom-in"
-                    data-aos-delay="700"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-out">
-                </div>
-
-                <div class="gradient-5"
-                    data-aos="zoom-in"
-                    data-aos-delay="700"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-out">
-                </div>
-
-                <div class="gradient-6"
-                    data-aos="zoom-in"
-                    data-aos-delay="300"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-out">
-                </div>
-
-                <div class="gradient-7"
-                    data-aos="zoom-in"
-                    data-aos-delay="300"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-out">
-                </div>
-
-                <div class="gradient-8"
-                    data-aos="zoom-in"
-                    data-aos-delay="400"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-out">
-                </div>
-
-                <div class="gradient-9"
-                    data-aos="zoom-in"
-                    data-aos-delay="400"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-out">
-                </div>
-
-                <div class="gradient-10"
-                    data-aos="zoom-in"
-                    data-aos-delay="400"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-out">
-                </div>
-            </div>  
-            <!-----Gradients end-----> 
+           
+           
             <!-----Modal start----->  
             <div class="modal">
                 <div class="sticky__body">
@@ -225,21 +148,20 @@
                         <i class="fa-solid fa-circle-arrow-up"></i>
                     </a>
                     <div class="sticky__info">
-                        <div class="sticky__btn fa-regular fa-comment-dots"></div>
+                        <div class="sticky__btn fa-regular fa-comment-dots"></div>   
+                    </div>
+                    <div class="popup__body">
+                        <div class="popup__content">
+                            <h4>Write me:</h4>
+                            <span>For any questions</span>
+                            <a href="https://web.telegram.org/k/#@Morra_May" class="box__telegram fa-brands fa-telegram"></a>
+                            <p class="popup__content-txt">
+                                Telegram
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="popup">
-                        <div class="popup__body">
-                            <div class="popup__content">
-                                <h4>Write me:</h4>
-                                <span>For any questions</span>
-                                <a href="https://web.telegram.org/k/#@Morra_May" class="box__telegram fa-brands fa-telegram"></a>
-                                <p class="popup__content-txt">
-                                    Telegram
-                                </p>
-                            </div>
-                        </div>
-                    </div>  
+                    
                 </div>
             </div>
 
@@ -368,246 +290,266 @@
                 </div>
             </div>
             <!-----Modal end----->  
+            
+             <!---------About start---------->
+             <a class="id"  id="about"></a>
+             <div class="container__title"
+                 data-aos="fade-up"
+                 data-aos-delay="450"
+                 data-aos-duration="900"
+                 data-aos-easing="ease-out">
+                 <h2 class="myAbout">About Me</h2>
+                 <div class="pen__icons fa-solid fa-pen"> </div>
+             </div>    
+             <div  class="container__about"
+                 data-aos="fade-up"
+                 data-aos-delay="50"
+                 data-aos-duration="700"
+                 data-aos-easing="ease-out-back"> 
+                 <div class="about__block">
+                     <div class="container__row">
+                         <div class="about__block-1">
+                             <img src="./img/photo.jfif" alt="">
+                         </div>
+                         <div class="about__block-2">
+                             <p>Hello everyone, my name is Alexander and I'm looking for a job as a front-end developer. I have experience working at a school as a computer science teacher.
+                                 In addition to,  I worked in the publishing service "Ridero" as a writer-editor. Now I work as a programming teacher in the company "GoITeens".
+                                 Motivated and sociable person.
+                                 I also feel that my communication skills are top notch. Thanks to these qualities, I am constantly learning new technologies and improving. The main principle I live my life by is - now or never!</p>
+                             <div class="tab-titles">
+                                 <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
+                                 <p class="tab-links" onclick="opentab('Education')">Education</p>
+                                 <p class="tab-links" onclick="opentab('Achievements')">Achievements</p>
+                             </div>
+                             <div class="tab-contents active-tab" id="Experience">
+                                 <ul>
+                                    <li><span>2022 and now - "GoITeens"</span><br>Teacher Front-End</li>
+                                    <li><span>2019-2022 - Publishing service "Ridero"</span><br><br>Writer-editor</li>
+                                    <li><span>2017-2019 - School</span><br>Сomputer science teacher</li>
+                                    <li><span>2014-2017 - Children's Health Center "Chocolate"</span><br>Educator</li>
+                                    </ul>
+                             </div>
+                             <div  class="tab-contents" id="Education">
+                                 <ul>
+                                     <li><span>2013-2018 - Donbass State Pedagogical University</span><br>Faculty of Physics and Mathematics. Department of Informatics</li>
+                                 </ul>
+                             </div>
+                             <div  class="tab-contents" id="Achievements">
+                                 <ul>
+                                     <li><span>2017 - Amazon.de</span><br>The book "Between the Worlds" has been published. ASIN: B06X92R9FW</li>
+                                         <li><span>2017 - FC "Nikopol"</span><br>Created a logo for the club</li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!---------About end---------->
 
-             <!-----Progress skill start---->
-             <a class="id" id="skills"></a>
-             <div class="container__skills"
+             <div  data-aos="fade-up"
+             data-aos-delay="450"
+             data-aos-duration="900"
+             data-aos-easing="ease-out" class="container__title">
+               <h2  class="myBook">My Books</h2>
+             </div>
+           
+             
+
+            <div  data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="700"
+            data-aos-easing="ease-out-back" class="slider center">
+                <div class="slider__box"> 
+                    <img class="slider__img" src="./books/cementry book.jpg" alt="">
+                </div>
+                <div class="slider__box"> 
+                    <img class="slider__img" src="./books/miry book.jpg" alt="">
+                </div>
+                <div class="slider__box"> 
+                    <img class="slider__img" src="./books/vozneseniye book.jpg" alt="">
+                </div>
+                <div class="slider__box"> 
+                    <img class="slider__img" src="./books/illuzia book.jpg" alt="">
+                </div>
+                <div class="slider__box"> 
+                    <img class="slider__img" src="./books/lug book.jpg" alt="">
+                </div>
+                <div class="slider__box"> 
+                    <img class="slider__img" src="./books/my jivy book.jpg" alt="">
+                </div>
+                <div class="slider__box"> 
+                    <img class="slider__img" src="./books/noch book.jpg" alt="">
+                </div>
+                <div class="slider__box"> 
+                    <img class="slider__img" src="./books/odinochestvo book.jpg" alt="">
+                </div>
+                <div class="slider__box"> 
+                    <img class="slider__img" src="./books/volontery book.jpg" alt="">
+                </div>
+                <div class="slider__box"> 
+                    <img class="slider__img" src="./books/ujin book.jpg" alt="">
+                </div>
+                <div class="slider__box"> 
+                    <img class="slider__img" src="./books/zakon book.jpg" alt="">
+                </div>
+                <div class="slider__box"> 
+                    <img class="slider__img" src="./books/ray book.jpg" alt="">
+                </div>
+                
+            </div>
+            <div class="slider__button">
+                <a class="contact__btn" href="">Read More</a>
+            </div>
+            
+            
+            
+            <!---------My Video Start---------->
+            <a class="id"  id="moments"></a>
+            <div class="container__moments"
                 data-aos="fade-right"
                 data-aos-delay="50"
                 data-aos-duration="700"
                 data-aos-easing="ease-out-back">
-                <div class="skills__block">
-                    <div class="skill_bar">
-                        <div class="skill_html">HTML</div>
-                        <div class="outer_circle">
-                            <div class="inner_circle">
-                                <div id="value">80%</div>
-                            </div>
-                        </div>
-                        <svg width="120px" height="120px">
-                            <defs>
-                                <linearGradient id="linear" >
-                                    <stop offset="0%"   stop-color="rgb(255, 27, 141)"/>
-                                    <stop offset="100%" stop-color="rgb(255, 27, 85)"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="60" cy="60" r="50"  stroke-linecap="round"/>
-                        </svg>
-                    </div>
-
-                    <div class="skill_bar-2">
-                        <div class="skill_CSS">CSS</div>
-                        <div class="outer_circle">
-                            <div class="inner_circle">
-                                <div id="value_2">60%</div>
-                            </div>
-                        </div>
-                        <svg width="120px" height="120px">
-                            <defs>
-                                <linearGradient id="linear" >
-                                    <stop offset="0%"   stop-color="rgb(255, 27, 141)"/>
-                                    <stop offset="100%" stop-color="rgb(255, 27, 85)"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="60" cy="60" r="50"  stroke-linecap="round"/>
-                        </svg>
-                    </div>
-
-                    <div class="skill_bar-3">
-                        <div class="skill_JS">Java Script</div>
-                        <div class="outer_circle">
-                            <div class="inner_circle">
-                                <div id="value_3">45%</div>
-                            </div>
-                        </div>
-                        <svg width="120px" height="120px">
-                            <defs>
-                                <linearGradient id="linear" >
-                                    <stop offset="0%"   stop-color="rgb(255, 27, 141)"/>
-                                    <stop offset="100%" stop-color="rgb(255, 27, 85)"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="60" cy="60" r="50"  stroke-linecap="round"/>
-                        </svg>
-                    </div>
-
-                    <div class="skill_bar-4">
-                        <div class="skill_figma">Figma</div>
-                        <div class="outer_circle">
-                            <div class="inner_circle">
-                                <div id="value_4">65%</div>
-                            </div>
-                        </div>
-                        <svg width="120px" height="120px">
-                            <defs>
-                                <linearGradient id="linear" >
-                                    <stop offset="0%"   stop-color="rgb(255, 27, 141)"/>
-                                    <stop offset="100%" stop-color="rgb(255, 27, 85)"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="60" cy="60" r="50"  stroke-linecap="round"/>
-                        </svg>
-                    </div>
-
-                    <div class="skill_bar-5">
-                        <div class="skill_JQUERY">jQuery</div>
-                        <div class="outer_circle">
-                            <div class="inner_circle">
-                                <div id="value_5">55%</div>
-                            </div>
-                        </div>
-                        <svg width="120px" height="120px">
-                            <defs>
-                                <linearGradient id="linear" >
-                                    <stop offset="0%"   stop-color="rgb(255, 27, 141)"/>
-                                    <stop offset="100%" stop-color="rgb(255, 27, 85)"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="60" cy="60" r="50"  stroke-linecap="round"/>
-                        </svg>
-                    </div>
-
-                    <div class="skill_bar-6">
-                        <div class="skill_BootStrap">BootStrap</div>
-                        <div class="outer_circle">
-                            <div class="inner_circle">
-                                <div id="value_6">70%</div>
-                            </div>
-                        </div>
-                        <svg width="120px" height="120px">
-                            <defs>
-                                <linearGradient id="linear" >
-                                    <stop offset="0%"   stop-color="rgb(255, 27, 141)"/>
-                                    <stop offset="100%" stop-color="rgb(255, 27, 85)"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="60" cy="60" r="50"  stroke-linecap="round"/>
-                        </svg>
-                    </div>
-
-                    <div class="skill_bar-7">
-                        <div class="skill_Photoshop">Photoshop</div>
-                        <div class="outer_circle">
-                            <div class="inner_circle">
-                                <div id="value_7">65%</div>
-                            </div>
-                        </div>
-                        <svg width="120px" height="120px">
-                            <defs>
-                                <linearGradient id="linear" >
-                                    <stop offset="0%"   stop-color="rgb(255, 27, 141)"/>
-                                    <stop offset="100%" stop-color="rgb(255, 27, 85)"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="60" cy="60" r="50"  stroke-linecap="round"/>
-                        </svg>
-                    </div>
-
-                    <div class="skill_bar-8">
-                        <div class="skill_writing">Writing</div>
-                        <div class="outer_circle">
-                            <div  class="inner_circle">
-                                <div id="value_8">90%</div>
-                            </div>
-                        </div>
-                        <svg width="120px" height="120px">
-                            <defs>
-                                <linearGradient id="linear" >
-                                    <stop offset="0%"   stop-color="rgb(255, 27, 141)"/>
-                                    <stop offset="100%" stop-color="rgb(255, 27, 85)"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="60" cy="60" r="50"  stroke-linecap="round"/>
-                        </svg>
-                    </div>    
-
-                </div>
-                <div class="skills__title"
-                    data-aos="fade-left"
-                    data-aos-delay="150"
-                    data-aos-duration="500"
-                    data-aos-easing="ease-out">
-                    Skills
-                    <div class="grav__icons fa-brands fa-grav"></div>
-                </div>
-                
-                <div  class="skills__text"
+                <div class="container__txt"      
                     data-aos="fade-up"
-                    data-aos-delay="250"
-                    data-aos-duration="500"
+                    data-aos-delay="450"
+                    data-aos-duration="900"
                     data-aos-easing="ease-out">
-                    My creative<br>skills and expiriences
+                    <h2>Moments In My Life</h2>
                 </div>
+                <section class="cards-section">
+                    <div class="cards">
+                        <div class="flip-cards">
+                            <div class="flip-cards__container">
+                                <div class="cards-front">
+                                    <div class="cards-front__tp cards-front__tp">
+                                        <div class="photo-cards">
+                                            <img src="./img/TwentyOneFans.jpg">
+                                        </div>
+                                        <h2 class="cards-front__heading">
+                                        
+                                        </h2>
+                                        <p class="cards-front__text-price">
+                                            My Inspiration
+                                        </p>
+                                    </div>
+                                    <div class="cards-front__bt">
+                                        <p class="cards-front__text-view">
+                                            View me
+                                        </p>
+                                    </div>
+                                </div>
 
-                <div class="skills__bars">
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>80%</span>
+                                <div class="cards-back">
+                                    <video class="video__container" autoplay muted loop>
+                                        <source class="video__media" src="." type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inside-page">
+                            <div class="inside-page__container">
+                                <span class="inside-page__heading ">
+                                    Sometimes quiet is violent
+                                </span>
+                                <p class="inside-page__text">
+                                    Music rock group - "Twenty One Pilots"
+                                </p>
+                                <a class="inside-page__btn-1">View deals</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="line HTML"></div>
 
-                    <div class="bars">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>60%</span>
+                    <div class="cards-2">
+                        <div class="flip-cards">
+                            <div class="flip-cards__container">
+                                <div class="cards-front">
+                                    <div class="cards-front__tp">
+                                        <div class="photo-cards">
+                                            <img src="./img/me.jpg">
+                                        </div>
+                                        <h2 class="cards-front__heading">
+                                        
+                                        </h2>
+                                        <p class="cards-front__text-price">
+                                            Moments In My Life
+                                        </p>
+                                    </div>
+                                    <div class="cards-front__bt">
+                                        <p class="cards-front__text-view">
+                                            View me
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="cards-back">
+                                    <video class="video__container" autoplay muted loop>
+                                        <source class="video__media" src="./video/Me.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inside-page">
+                            <div class="inside-page__container">
+                                <span class="inside-page__heading ">
+                                    The good old days
+                                </span>
+                                <p class="inside-page__text">
+                                More information and photo with me
+                                </p>
+                                <a class="inside-page__btn-2">View deals</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="line CSS"></div>
 
-                    <div class="bars">
-                        <div class="info">
-                            <span>Java Script</span>
-                            <span>45%</span>
+                    <div class="cards-3">
+                        <div class="flip-cards">
+                            <div class="flip-cards__container">
+                                <div class="cards-front">
+                                    <div class="cards-front__tp">
+                                        <div class="photo-cards">
+                                            <img src="./img/photo5.png">
+                                        </div>
+                                        <h2 class="cards-front__heading">
+                                        
+                                        </h2>
+                                        <p class="cards-front__text-price">
+                                          My Pet
+                                        </p>
+                                    </div>
+                                    <div class="cards-front__bt">
+                                        <p class="cards-front__text-view">
+                                            View me
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="cards-back">
+                                    <video class="video__container" autoplay muted loop>
+                                        <source class="video__media" src="./video/leto.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inside-page">
+                            <div class="inside-page__container">
+                                <span class="inside-page__heading ">
+                                   Meow
+                                </span>
+                                <p class="inside-page__text">
+                                    Meet it my best friend. His name is LETO! 
+                                </p>
+                                <a class="inside-page__btn-3">View deals</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="line JavaScript"></div>
-                    
-                    <div class="bars">
-                        <div class="info">
-                            <span>Figma</span>
-                            <span>65%</span>
-                        </div>
-                    </div>
-                    <div class="line Figma"></div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>JQUERY</span>
-                            <span>55%</span>
-                        </div>
-                    </div>
-                    <div class="line JQUERY"></div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>Writing</span>
-                            <span>90%</span>
-                        </div>
-                    </div>
-                    <div class="line Writing"></div>
-
-                    <div class="bars">
-                        <div class="info">        
-                            <span>Photoshop</span>
-                            <span>65%</span>
-                        </div>
-                    </div>
-                    <div class="line Photoshop"></div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>BootStrap</span>
-                            <span>70%</span>
-                        </div>
-                    </div>
-                    <div class="line BootStrap"></div>
-
-                </div>
+                </section>
             </div>
-            <!-----Progress skill end----->
-            
+             <!---------My Video end---------->
+
             <!-----Container projects start----->
             <a class="id"  id="projects"></a>
             <sections class="projects">
@@ -617,7 +559,7 @@
                     data-aos-duration="500"
                     data-aos-easing="ease-out">
                     <div class="pizza__icons fa-solid fa-pizza-slice"></div>
-                    Projects
+                    <h2 class="myProject">Projects</h2> 
                         <span class="text-1"
                         data-aos="fade-right"
                         data-aos-delay="350"
@@ -626,7 +568,7 @@
                         My abilities and qualities
                         </span> 
                 </div> 
-                 
+                
                 <div class="contents"
                     data-aos="fade-up"
                     data-aos-delay="50"
@@ -841,25 +783,15 @@
                         <br>
                         <br>
                         <br>
-                        <div class="projects__title" 
-                            data-aos="fade-right"
-                            data-aos-delay="250"
-                            data-aos-duration="500"
-                            data-aos-easing="ease-out">
-                            Projects On WordPress
-                                <span class="text-1"
-                                data-aos="fade-right"
-                                data-aos-delay="350"
-                                data-aos-duration="500"
-                                data-aos-easing="ease-out">
-                                Look at my new portfolio
-                                </span> 
-                         </div>
-                         <br>
-                         <br>
-                         <br>
-                         <br>
-                         <div class="card">
+                        <h2 class="projects__title wp" 
+                           >
+                             Projects On WordPress
+                        </h2>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="card">
                             <div class="card__img" style="background-image: url(./img/15.png); background-size: 200%; background-position: -165px 0px; "></div>
                             <div class="card__head">
                                 <div class="layer">
@@ -928,207 +860,8 @@
                 </div>
             </sections>
             <!-----Container projects end----->
-            
-            <!---------About start---------->
-            <a class="id"  id="about"></a>
-            <div class="container__title"
-                data-aos="fade-up"
-                data-aos-delay="450"
-                data-aos-duration="900"
-                data-aos-easing="ease-out">
-                <p>About Me</p>
-                <div class="pen__icons fa-solid fa-pen"> </div>
-            </div>    
-            <div  class="container__about"
-                data-aos="fade-up"
-                data-aos-delay="50"
-                data-aos-duration="700"
-                data-aos-easing="ease-out-back"> 
-                <div class="about__block">
-                    <div class="container__row">
-                        <div class="about__block-1">
-                            <img src="./img/photo.jfif" alt="">
-                        </div>
-                        <div class="about__block-2">
-                            <p>Hello everyone, my name is Alexander and I'm looking for a job as a front-end developer. I have experience working at a school as a computer science teacher.
-                                In addition to,  I worked in the publishing service "Ridero" as a writer-editor
-                                Motivated and sociable person.
-                                I also feel that my communication skills are top notch. Thanks to these qualities, I am constantly learning new technologies and improving. The main principle I live my life by is - now or never!</p>
-                            <div class="tab-titles">
-                                <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
-                                <p class="tab-links" onclick="opentab('Education')">Education</p>
-                                <p class="tab-links" onclick="opentab('Achievements')">Achievements</p>
-                            </div>
-                            <div class="tab-contents active-tab" id="Experience">
-                                <ul>
-                                    <li><span>2014-2017 - Children's Health Center "Chocolate"</span><br>Educator</li>
-                                    <li><span>2017-2019 - School</span><br>Сomputer science teacher</li>
-                                    <li><span>2019-2022 - Publishing service "Ridero"</span><br>Writer-editor</li>
-                                </ul>
-                            </div>
-                            <div  class="tab-contents" id="Education">
-                                <ul>
-                                    <li><span>2013-2018 - Donbass State Pedagogical University</span><br>Faculty of Physics and Mathematics. Department of Informatics</li>
-                                </ul>
-                            </div>
-                            <div  class="tab-contents" id="Achievements">
-                                <ul>
-                                    <li><span>2017 - Amazon.de</span><br>The book "Between the Worlds" has been published. ASIN: B06X92R9FW</li>
-                                        <li><span>2017 - FC "Nikopol"</span><br>Created a logo for the club</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!---------About end---------->
 
-            <!---------My Video Start---------->
-            <a class="id"  id="moments"></a>
-            <div class="container__moments"
-                data-aos="fade-right"
-                data-aos-delay="50"
-                data-aos-duration="700"
-                data-aos-easing="ease-out-back">
-                <div class="container__txt"      
-                    data-aos="fade-up"
-                    data-aos-delay="450"
-                    data-aos-duration="900"
-                    data-aos-easing="ease-out">
-                    <p>Moments In My Life</p>
-                </div>
-                <section class="cards-section">
-                    <div class="cards">
-                        <div class="flip-cards">
-                            <div class="flip-cards__container">
-                                <div class="cards-front">
-                                    <div class="cards-front__tp cards-front__tp">
-                                        <div class="photo-cards">
-                                            <img src="./img/TwentyOneFans.jpg">
-                                        </div>
-                                        <h2 class="cards-front__heading">
-                                        
-                                        </h2>
-                                        <p class="cards-front__text-price">
-                                            My Inspiration
-                                        </p>
-                                    </div>
-                                    <div class="cards-front__bt">
-                                        <p class="cards-front__text-view">
-                                            View me
-                                        </p>
-                                    </div>
-                                </div>
 
-                                <div class="cards-back">
-                                    <video class="video__container" autoplay muted loop>
-                                        <source class="video__media" src="." type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="inside-page">
-                            <div class="inside-page__container">
-                                <span class="inside-page__heading ">
-                                    Sometimes quiet is violent
-                                </span>
-                                <p class="inside-page__text">
-                                    Music rock group - "Twenty One Pilots"
-                                </p>
-                                <a class="inside-page__btn-1">View deals</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cards-2">
-                        <div class="flip-cards">
-                            <div class="flip-cards__container">
-                                <div class="cards-front">
-                                    <div class="cards-front__tp">
-                                        <div class="photo-cards">
-                                            <img src="./img/me.jpg">
-                                        </div>
-                                        <h2 class="cards-front__heading">
-                                        
-                                        </h2>
-                                        <p class="cards-front__text-price">
-                                            Moments In My Life
-                                        </p>
-                                    </div>
-                                    <div class="cards-front__bt">
-                                        <p class="cards-front__text-view">
-                                            View me
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="cards-back">
-                                    <video class="video__container" autoplay muted loop>
-                                        <source class="video__media" src="./video/Me.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="inside-page">
-                            <div class="inside-page__container">
-                                <span class="inside-page__heading ">
-                                    The good old days
-                                </span>
-                                <p class="inside-page__text">
-                                More information and photo with me
-                                </p>
-                                <a class="inside-page__btn-2">View deals</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cards-3">
-                        <div class="flip-cards">
-                            <div class="flip-cards__container">
-                                <div class="cards-front">
-                                    <div class="cards-front__tp">
-                                        <div class="photo-cards">
-                                            <img src="./img/photo5.png">
-                                        </div>
-                                        <h2 class="cards-front__heading">
-                                        
-                                        </h2>
-                                        <p class="cards-front__text-price">
-                                          My Pet
-                                        </p>
-                                    </div>
-                                    <div class="cards-front__bt">
-                                        <p class="cards-front__text-view">
-                                            View me
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="cards-back">
-                                    <video class="video__container" autoplay muted loop>
-                                        <source class="video__media" src="./video/leto.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="inside-page">
-                            <div class="inside-page__container">
-                                <span class="inside-page__heading ">
-                                   Meow
-                                </span>
-                                <p class="inside-page__text">
-                                    Meet it my best friend. His name is LETO! 
-                                </p>
-                                <a class="inside-page__btn-3">View deals</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-             <!---------My Video end---------->
 
             <!-----Container contact start----->  
             <a class="id"  id="contact"></a>
@@ -1140,13 +873,16 @@
                             data-aos-delay="50"
                             data-aos-duration="700"
                             data-aos-easing="ease-out-back">
-                            <h1  class="sub-title">Contact Me</h1>
+                            <h2  class="sub-title">Contact Me 
+                                <span class="grav__icons fa-brands fa-grav"></span>
+                            </h2>
                             <p> <i  class="fa-solid fa-paper-plane"></i>morramay94@gmail.com</p>
                             <p> <i  class="fa-solid fa-phone"></i> +380999099211</p>
                             <div class="social-icons">
-                                <a  href="https://www.facebook.com/profile.php?id=100026043443644" class="box__facebook fa-brands fa-facebook"></a>
-                                <a  href="https://www.instagram.com/alexander_morra_/?igshid=YmMyMTA2M2Y%3D" class="box__insta fa-brands fa-instagram "></a>
-                                <a  href="https://web.telegram.org/k/#@Morra_May" class="box__telegram fa-brands fa-telegram"></a>
+                                <a  href="https://www.facebook.com/profile.php?id=100026043443644" target="_blank" class="box__facebook fa-brands fa-facebook"></a>
+                                <a  href="https://www.instagram.com/alexander_morra_/?igshid=YmMyMTA2M2Y%3D" target="_blank" class="box__insta fa-brands fa-instagram "></a>
+                                <a  href="https://web.telegram.org/k/#@Morra_May" target="_blank" class="box__telegram fa-brands fa-telegram"></a>
+                                <a href="https://www.linkedin.com/in/morramay" target="_blank" class="box__linkedin fa-brands fa-linkedin"></a>
                             </div>
                             <a href="./img/CV.pdf" download class="contact__btn" >Download CV</a>
                         </div>
@@ -1168,9 +904,10 @@
             <!-----Container contact end----->  
 
 
-        </section>
+
+            
         <!-----Content end----->
-    </main>    
+        </main>    
     
         <!-----Footer start----->
         <footer class="copyright">
@@ -1183,9 +920,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>	
     <script src="https://kit.fontawesome.com/6d7cb93199.js" crossorigin="anonymous"></script>
 
-    <script src="./js/jquery-3.6.0.min.js"></script>    
+ 
+    <script src="./js/jquery-3.6.0.min.js"></script>   
+    <script src="./js/slick-1.8.1/slick/slick.min.js"></script> 
+
+    <script src="./js/slider.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/script.js"></script>
-    <script src="./js/slick.min.js"></script>
+    
 </body>
 </html>

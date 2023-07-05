@@ -17,5 +17,8 @@ let activeTheme = localStorage.getItem('theme');
 if(activeTheme === null) {
     applyTheme('dark');
 } else{
-    activeTheme(activeTheme);
+    applyTheme(activeTheme);
 }
+
+
+  
