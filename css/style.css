@@ -2583,7 +2583,8 @@ h3{
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			padding-top: 50px;
+			padding: 50px 0;
+			max-height: 600px;
 		}
 		.container-right{
 			display: flex;
@@ -2615,9 +2616,10 @@ h3{
 			pointer-events: none;
 		}
 		.container-right .photo .sci{
-		
+			margin: 40px auto;
+			border: 1px solid #000;
 			position: static;
-			margin: 0 auto;
+	
 		
 			flex-direction: row;
 			max-width: 200px;
