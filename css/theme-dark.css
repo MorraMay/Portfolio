@@ -2,6 +2,7 @@
 body{
 	color: #fff;
 	transition: all 0.3s;
+	background: linear-gradient(to top right, rgb(68, 40, 159), #bb1010);
 }
 
 /*............Header.................*/
@@ -11,63 +12,38 @@ body{
 	
 }
 .header .logo a span{
-	font-size: 47px;
-	text-transform: uppercase;
-	position: relative;
-	top: 5px;
+	
 	color: #cc0791;
 	
 }
 
 .header .menu li a{
-	padding: 5px 10px;
+	
 	color: rgb(252, 230, 133);
-	font-size: 20px;
-	letter-spacing: 2px;
+	
 	text-shadow:0 0 10px rgb(252, 231, 141),
     0 0 10px rgb(255, 216, 41),
     0 0 15px rgb(255, 216, 41);
-	transition: 0.4s ease 0s;
-	margin-left: 25px;
-	position: relative;
+	
 } 
 .header .menu li a span{
 	animation:  neon 1.5s infinite alternate-reverse ;
 }
 .header .menu li a::after{
-	content: '';
-	width: 5%;
-	height: 0;
-	background: #ffdb3a94;
-	position: absolute;
-	left: 0%;
-	bottom: 0;
-	transition: 0.4s;
-	border-radius: 5px;
+	
+	background: #ffd829;
+	
 	
 	
 }
-.header .menu li a:hover::after{
-	height: 100%;
 
-}
 .header .menu li a::before{
-	content: '';
-	width: 5%;
-	height: 0;
+	
 	background: rgb(65, 82, 179);
-	position: absolute;
-	right: 0%;
-	top: 0;
-	transition: 0.4s;
-	border-radius: 5px;
 	
 	
 }
-.header .menu li a:hover::before{
-	height: 100%;
 
-}
 
 .header .menu li a:hover{
 	
@@ -76,28 +52,17 @@ body{
     0 0 10px #8ae8ff,
     0 0 15px #8ae8ff;
 } 
-.menu__btn{
-	color: #ffd829;
-	font-size: 30px;
-	cursor: pointer;
-	display: none;
-}
-.menu__logo{
-	color: #ffd829;
-	font-size: 40px;
-	cursor: pointer;
-	display: none;
-}
+
+
 
 /*............FullScrin.................*/
 .fullscrin  {
-	
-	background: linear-gradient(to top right, rgb(98, 73, 181), #dd4949);
+	background: linear-gradient(to top right, rgb(12, 4, 38), #640000);
 	transition: all 0.3s;
 }
-.container{
+.full__container{
 	
-	background: linear-gradient(to top right, rgb(68, 40, 159), #bb1010);
+	background: linear-gradient(to top right, rgb(12, 4, 38), #640000);
 	
 	
 }
@@ -105,17 +70,17 @@ body{
 /*............Photo Container.................*/
 
 
-.photo__container  .photo .cont .img-box {
-	border: 10px solid rgba(0,0,0,0.25);
+.img-box{
+	border: 10px solid rgba(61, 4, 46, 0.25);
 }
 
 
-.photo__container .photo .sci li a{
+.container-right .photo .sci li a{
 	color: #ffd829;
-	font-size: 31px;
+
 	transition: 0.3s;
 }
-.photo__container .photo .sci li a:hover {
+.container-right .photo .sci li a:hover {
 	color:#1b0000;
 	transition: 0.3s;
 }
@@ -124,7 +89,7 @@ body{
 /*............Title.................*/
 .text-1{
 	
-	font-size: 28px;
+	
 	-webkit-text-stroke: 0.4px #fff;
 	color: transparent;
 	background-image: linear-gradient(#fff, #fff);
@@ -145,20 +110,14 @@ h1 {
     text-shadow: 0 0 10px rgb(255, 27, 141),
     0 0 10px rgb(255, 27, 141),
     0 0 15px rgb(255, 27, 141);
-    text-align: center;
-    font-size: 70px;
-    font-weight: 400;
-    letter-spacing: 1px;
+   
     transition: 2s;
-    cursor: pointer;
+
 
 }
 h1:before{
-    content: attr(data-content);
-    position: absolute;
-    transform: rotateX(180deg);
-    transform-origin: bottom;
-	line-height: 72px;
+   
+	
     background: linear-gradient(0deg, rgb(255, 255, 255), transparent 55%);
     -webkit-background-clip: text;
     color: transparent;
@@ -173,13 +132,7 @@ h2 {
     text-shadow: 0 0 10px rgb(255, 27, 141),
     0 0 10px rgb(255, 27, 141),
     0 0 15px rgb(255, 27, 141);
-    text-align: center;
-	transition: 2s;
-    font-size: 70px;
-    font-weight: 400;
-    letter-spacing: 2px;
-	transition: 1s;	
-    cursor: pointer;
+   
     animation:  neon 1.7s infinite alternate-reverse ;
 }
 @keyframes neon{
@@ -329,11 +282,7 @@ h2 {
 	
 }
 h2:before{
-    content: attr(data-content-2);
-    position: absolute;
-    transform: rotateX(180deg);
-    transform-origin: bottom;
-	line-height: 72px;
+  
     background: linear-gradient(0deg, rgb(255, 255, 255), transparent 55%);
     -webkit-background-clip: text;
     color: transparent;
@@ -362,8 +311,8 @@ h2:hover{
 /*............Static Card.................*/
 .static__card{	
 	background: rgba(44, 0, 26, 0.486);
-	transform: scale(1);
-	transition: all 0.2s ease 0s;
+	
+	
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.051),
       0px 0px 7.2px rgba(0, 0, 0, 0.073), 0px 0px 13.6px rgba(0, 0, 0, 0.09),
       0px 0px 24.3px rgba(0, 0, 0, 0.107), 0px 0px 45.5px rgba(0, 0, 0, 0.129),
@@ -508,7 +457,7 @@ h3{
     0 0 10px rgb(255, 255, 255),
     0 0 8px rgb(255, 255, 255);
 
-	font-size: 50px;
+
 	
 	animation: swing 1.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
@@ -527,8 +476,8 @@ h3{
 	text-shadow: 0 0 10px rgb(255, 255, 255),
     0 0 10px rgb(255, 255, 255),
     0 0 8px rgb(255, 255, 255);
-	font-size: 80px;
-	margin: 0 20px 30px 0;
+
+	
 	animation: swing 1.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .projects__text{
@@ -658,24 +607,24 @@ h3{
 
 
 .contact-left p i {
-	margin-right: 15px;
+
 	color: #03e9f4;
 	text-shadow: 0 1px 2px #000000;
-	font-size: 25px;
+	
 }
 
 .social-icons a{
 	text-decoration: none;
-	font-size: 30px;
-	margin-right: 15px;
+	
+
 	color: #ffd829;
-	display: inline-block;
-	transition: all 0.5s ease;
+	
+	
 	}
 .social-icons a:hover{
 	color: #03e9f4;
-	transform: translateY(-5px);
-	transition: all 0.5s ease;
+	
+	
 }
 
 .contact__btn {
@@ -708,16 +657,14 @@ h3{
 
 
 form input, form textarea{
-	width: 100%;
+	
 	border: 0;
 	outline: none;
 	background-color: #ffffffa2;
 	backdrop-filter: blur(10px);
-	padding: 15px;
-	margin: 15px 0;
+	
 	color: rgb(68, 68, 68);
-	font-size: 18px;
-	border-radius: 6px;
+
 }
 
 form::after{
@@ -730,11 +677,9 @@ form::after{
 
 /*............Footer.................*/
 .copyright{
-	width: 100%;
-	text-align: center;
-	padding: 25px 0px;
-	font-weight: 300px ;
-	position: relative;
+	
+
+
 	background-color: #3f0202;
 }
 .copyright i{
@@ -756,7 +701,7 @@ form::after{
 }
 .arrow__up:hover{
 	color:#03e9f4;
-	transition: all 0.5s ease;
+	
 }
 @keyframes arrow {
 	0%{
@@ -772,7 +717,7 @@ form::after{
 
 
 .sticky__info{
-	border-radius: 50%;
+	
 	background-color: #ffd829;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.192);
 	
@@ -780,28 +725,17 @@ form::after{
 }
 
 .sticky__info:hover{
-	animation: swing 0.2s alternate infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	
 }
 
 
 .sticky__btn{
-	cursor: pointer;
-	font-size: 40px;
+
+
 	color:#5a5a5a;
-	position: relative;
-	left: 15px;
-	top: 15px;
-	transition: all 0.5s ease 0s;
+	
 }
-.sticky__btn.active::before{
-	content: "X";	
-	font-size: 35px;
-	font-weight: 900;
-	position: relative;
-	left: 6px;
-	top: -1px;
-	transition: all 0.5s ease 0s;
-}
+
 
 /* POPUP */
 
@@ -813,7 +747,7 @@ form::after{
 	
 }
 .popup__content h4{
-	font-size: 35px;
+
 	color: rgb(255, 225, 240);
     text-shadow: 0 0 10px #ffd829,
     0 0 10px #ffd829,
@@ -822,16 +756,12 @@ form::after{
 	animation:  neon 1s infinite alternate-reverse ;
 }
 .popup__content span{
-	font-size: 18px;
+
 	text-shadow: 0 2px 3px #000000a1 ;
 }
 
 
-.fullscrin .max-width {
-	background: linear-gradient(to top right, rgb(8, 2, 26), #2e0202);
-    transition: all 0.2s;
 
-}
 .btn.change-theme[data-theme="light"]{
     display:block;
    
@@ -840,349 +770,30 @@ form::after{
 .btn.change-theme[data-theme="dark"]{
     display: none;
 }
-
-
-	/*...........Adaptive 991px.................*/
-	@media (max-width: 991px){
-	
-		.arrow__up{
-			display: none;
-		}
-	
-	
-		.fullscrin .max-width {
-			padding: 0 40px;
-		}
-		.menu__btn{
-			display: block;
-			position: fixed;
-			right: 45px;
-			transition: all 0.3s ease 0.4s;
-		}
-		.menu__btn i.active::before{
-			content: "\f00d";
-			transition: all 0.3s ease 0.4s;
-			color: #ffdb3afd;
-		}
-	
-		.menu__logo{
-			display: block;
-			position: fixed;
-			opacity: 0;
-			left: -100%;
-			transition: all 1.5s ease 0.6s; 
-		}
-		.menu__logo.active {
-			left: 10%;
-			opacity: 1;
-			transition: all 1.5s ease 0.7s;
-			color: #ffdb3afd;
-		}
-	
-	
+@media(max-width:991px){
+	.header .menu{
 		
-		.header .menu{
-			position: fixed;
-			height:100%;
-			width: 100%;
-			left: -100%;
-			top: 0;
-			text-align: center;
-			background: #1b0000c9;
-			backdrop-filter: blur(15px);
-			padding-top: 30px;
-			transition: all 0.6s ease 0.9s;
-			
-		}
-		.header .menu.active{
-			left: 0;
-			transition: all 0.6s ease 0s;
-		}
-		.header .menu li{
-			display: block;
-			position: relative;
-			top: 10px;
-			left: -100%;
-			transition: all 1s ease 1.2s; 
-			transform: translateY(50px);
-			transition-delay: calc(0.1s * var(--i));
-		}
-		.header .menu.active li{
-			left: 0;
-			transition: all 1s ease 1.2s; 
-			transform: translateY(50px);
-			transition-delay: calc(0.2s * var(--i));
-		}
-		.header .menu li a::after{
-			content: '';
-			width: 0%;
-			height: 2px;
-			background: #ffdb3a94;
-			position: absolute;
-			left: 0%;
-			bottom: 13px;
-			transition: 0.4s;
-			border-radius: 5px;
-			z-index: 2;
-			
-		}
-		.header .menu li a {
-			display: inline-block;
-			margin: 15px 0;
-			font-size: 25px;
-			
-		}
+		background: linear-gradient(to left top,  #43044e, #390404) ;
 		
-	
-		/*............fullscrin.................*/
-		.fullscrin .max-width .title{
-			top: 100px;
-			left: 0;
-			right: 0;
-		}
-		.title .text-1{
-			font-size: 23px;
-		}
-		.title h1 {
-			text-shadow: 0 0 5px rgb(255, 27, 141),
-			0 0 5px rgb(255, 27, 141),
-			0 0 10px rgb(255, 27, 141);
-			font-size: 65px;
-			font-weight: 300;
-		}
-		.title h2 {
-			text-shadow: 0 0 5px rgb(255, 27, 141),
-			0 0 5px rgb(255, 27, 141),
-			0 0 10px rgb(255, 27, 141);
-			font-size: 65px;
-			font-weight: 300;
-		}
-		.container .photo__container{
-			display: none;
-			
-			left: 50px;
-			top: 120px;
-			max-width: 450px;
-			max-height: 400px;
-		}
-		.container .static__card{
-			display: inline-block;
-		background: rgba(44, 0, 26, 0.486);
-		transform: scale(1);
-		transition: all 0.2s ease 0s;
-		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.051),
-		  0px 0px 7.2px rgba(0, 0, 0, 0.073), 0px 0px 13.6px rgba(0, 0, 0, 0.09),
-		  0px 0px 24.3px rgba(0, 0, 0, 0.107), 0px 0px 45.5px rgba(0, 0, 0, 0.129),
-		  0px 0px 109px rgba(0, 0, 0, 0.18);
-		border-radius: 15px;
-		width: 420px;
-		height: 250px;
-		position: relative;
-		top: 160px;
-		left: 75px;
-		backdrop-filter: blur(10px);
-		transition: 0.5s;
-		}
-		.container .neon{
-				top: 230px;
-				right: 50px;
-				padding: 17px 22px;
-				margin: 20px 20px;
-				font-size: 22px;
-		}
-		.container .gradient-1{
-				bottom: 20px;
-				left: 35px;
-				height: 7rem;
-				width: 7rem;
-		}
-	
-			/*............Skills.................*/
-			.content .container__skills {
-				right: 0px;
-				margin: 100px auto;
-				padding: 240px 0;
-				max-width: 600px;
-				top: 0px;
-			}
-			.content .skills__title {
-				left: 3px;
-				bottom: 300px;
-			}
-			.content .skills__text {
-				
-				max-width: 350px;
-				left: -10px;
-				bottom: 315px;
-				
-			
-			}
-			.content .skill_bar{
-				right: 280px;
-				bottom: 110px;
-			}
-			.content .skill_bar-2{
-				right: 60px;
-				bottom: 110px;
-			}
-			.content .skill_bar-3{
-				left: 160px;
-				bottom: 110px;
-			}
-			.content .skill_bar-4{
-				right: 170px;
-				top: 40px;
-			}
-			.content .skill_bar-5{
-				
-				left: 60px;
-				top: 40px;
-			}
-			.content .skill_bar-6{
-				left: 160px;
-				top: 190px;
-			}
-			.content .skill_bar-7{
-				right: 60px;
-				top: 190px;
-			}
-			.content .skill_bar-8{
-				right: 280px;
-				top: 190px;
-			}
-	
-		
-			.contents{
-				position: relative;
-				left: 0px;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				margin: 0px auto;
-				background-color: #ffffff38;
-				backdrop-filter: blur(10px);
-				border-radius: 20px;
-				z-index: 2;
-				max-width: 800px;
-			}
-			.projects__cards{
-				display: flex;
-				flex-direction: column;
-				padding: 0px;
-				position: relative;
-	
-			}
-			
-			/*............Container About.................*/
-	.container__about{
-		max-width: 600px;
-	
-	
-	}
-	.container__row{
-	
-		flex-direction: column;
-		
-	}
-	
-	.about__block-1 img{
-		max-width: 70%;
-		top: 20px;
-		display: flex;
-		margin: 0 auto;
-	}
-	
-			
-	.container__moments{
-		max-width: 900px;
-		
-	}
-	
-			/*............contact block.................*/
-			.content .contact__block{
-				bottom: 90px;
-				margin-top: 150px;
-				left: 0px;
-				justify-content: center;
-			}
-			.content .contact__row{
-				display: flex;
-				justify-content: center;
-				
-			}
-			.content .contact-left{
-				flex-basis: 60%;
-				
-			}	
-	
-			/*............Sticky Start.................*/
-	
-	
-	
-	
-	.sticky__info{
-		width: 50px;
-		height: 50px;
-		right: 100px;
-	}
-	.sticky__info.sticky{
-		opacity: 1;
-		right: 40px;
-	}
-	.sticky__btn{
-	
-		font-size: 30px;
-		
-		left: 11px;
-		top: 10px;
-	
-	}
-	.sticky__btn.active::before{	
-		font-size: 25px;
-		left: 4.5px;
-		top: -1.7px;
-	}
-	
-	
-	/* POPUP */
-	
-	.popup {
-		position: fixed;
-		max-width: 100%;
-		height: 12%;
-		bottom: 50px;
-		margin-left: 40px;
-	}
-	
-	
-	.popup__content .box__telegram {
-		font-size: 45px;
-		margin-top: 10px;
-		color: rgb(235, 233, 233);
-		transition: all 0.5s ease 0s;
-		text-shadow: 0px 2px 2px #00000091;
-	}
-	
-	.popup__content-txt {
-		font-size: 17px;
-		font-weight: 700;
-		margin-top: 10px;
-		color: #5a5a5a;
-		font-family: 'Fred';
-	}
-	.popup__content h4{
-		font-size: 32px;
-		color: rgb(255, 225, 240);
-		font-weight: 100;
-		font-family:'Neon';
-		text-shadow: 0px 2px 2px #00000091;
-	}
-	.popup__content span{
-		font-family: 'Fred';
-		font-size: 20px;
-		text-shadow: 0 2px 3px #000000a1 ;
 	}
 }
-	/*............Sticky End.................*/
+@media(max-width:767px){
+	.neon{
 	
-	
+		right: 230px;
+		top: 38%;
+		
+		padding: 10px 15px;
+		font-size: 16px;
+		
+	}
+}
+@media(max-width:580px){
+	.neon {
+		right: 28%;
+		top: 38%;
+		padding: 10px 15px;
+		font-size: 16px;
+		}
+
+}
