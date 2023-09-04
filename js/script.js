@@ -93,15 +93,16 @@ let typed = new Typed(".typing", {
       }else{
         $('.header').removeClass("sticky");
       }
-	  if(this.scrollY > 550){
+      if(this.scrollY > 520){
+        $('.contents').addClass("sticky");
+      }else{
+        $('.contents').removeClass("sticky");
+      }
+	  if(this.scrollY > 650){
         $('.sticky__info').addClass("sticky");
       }else{
         $('.sticky__info').removeClass("sticky");
       }
-	  if(this.scrollY > 3950){
-        $('.arrow__up').addClass("sticky");
-      }else{
-        $('.arrow__up').removeClass("sticky");
-      }
+	 
     })
   });

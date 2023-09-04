@@ -60,7 +60,34 @@ body{
 	font-family:'Carter';
 	background: linear-gradient(to top right, rgb(178, 161, 235), #f79b9b);
 }
+body::-webkit-scrollbar {
+	width: 12px;
 
+
+  }
+  
+  body::-webkit-scrollbar-thumb {
+	background-color: var(--boss); /* Цвет ползунка */
+	border-radius: 5px;
+	border: 2px solid var(--colors);
+	
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+	background-color: #333; /* Цвет ползунка при наведении курсора */
+  }
+  
+  
+  /* Стилизация трека скролла (для Chrome, Safari и Edge) */
+  body::-webkit-scrollbar-track {
+	background-color: var(--colors); /* Цвет трека */
+	
+  
+  }
+  
+ body::-webkit-scrollbar-track:hover {
+	 /* Цвет трека при наведении курсора */
+  }
 
 /*............Loader Start.................*/
 .mask{
@@ -172,6 +199,8 @@ body{
 }
 .header.sticky{
 	background: var(--boss);
+	z-index: 10;
+	padding: 5px 0;
 }
 .header__body {
 	max-width: 1250px;
@@ -255,7 +284,6 @@ body{
 }
 
 .header .menu li a:hover{
-	color: #181818;
 	z-index: 3;
 } 
 .menu__btn{
@@ -494,12 +522,6 @@ h1:before{
     0 0 20px rgba(0, 0, 0, 0);
     transition:  0.6s;
 } 
-
-
-
-
-
-
 h2 {
     color: rgb(255, 255, 255);
     text-align: center;
@@ -511,7 +533,6 @@ h2 {
     cursor: pointer;
 	text-shadow: 0px 2px 2px #00000091;
 }
-
 h2:before{
     content: attr(data-content-2);
 	position: absolute;
@@ -545,6 +566,7 @@ h2:hover{
 	transition: 2s;
 }
 /*............Title End.................*/
+
 
 /*............Static Card Start.................*/
 .static__card{	
@@ -587,8 +609,6 @@ h3{
 	text-shadow: 0px 2px 2px #00000091;
 }  
 /*............Static Card End.................*/
-
-
 
 
 /*............Button Start.................*/
@@ -635,12 +655,13 @@ h3{
 .content {
 	background: linear-gradient(to top left, rgb(188, 168, 255), #ffaaaa);
 	position: relative;
-	padding: 40px 0;
-	width: 100%;
-	margin: 0 auto;
+	padding: 40px;
+	padding-left: 200px;
+
 	/* overflow: hidden; */
 	z-index: 2;
 	transition: 0.3s ease;
+
 	
 }
 .content::before{
@@ -659,31 +680,30 @@ h3{
 /*............Container Projects Start.................*/
 .projects__title{
 	color: rgb(255, 225, 240);
+	margin-top: 65px;
 	font-weight: 100;
-	font-size: 70px;
+	font-size: 10px;
 	font-family:'Neon';
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	position: relative;
 	z-index: 3;
 	align-items: center;
-	top: 40px;
 	text-shadow: 0px 2px 2px #00000091;
 }
-.wp{
-	margin: 40px;
-	margin-top: 0;
-}
+
 
 .pizza__icons{
 	color:#ecb8cc;
-	font-size: 80px;
-	margin: 0 20px 30px 0;
-	position: relative;
+	font-size: 21px;
+	right: 6px;
+	top: -8px;
+	position: absolute;
 }
-.text-1{
-	margin-left: 20px;
-	margin-top: 20px;
+
+.myProject{
+	font-size: 37px;
 }
 @keyframes swing{
 	0%{
@@ -693,33 +713,67 @@ h3{
 		transform: rotateZ(-13deg);
 	}
 }
+
+
+
+  .contents::-webkit-scrollbar {
+	width: 7px;
+
+  }
+  
+  .contents::-webkit-scrollbar-thumb {
+	background-color: #ecb8cc; /* Цвет ползунка */
+	border-radius: 5px;
+	border: 2px solid #080808;
+	
+  }
+  
+  .contents::-webkit-scrollbar-thumb:hover {
+	background-color: #de81a5; /* Цвет ползунка при наведении курсора */
+  }
+  
+  
+  /* Стилизация трека скролла (для Chrome, Safari и Edge) */
+  .contents::-webkit-scrollbar-track {
+	background-color: #080808; /* Цвет трека */
+	
+  
+  }
+  
+  .contents::-webkit-scrollbar-track:hover {
+	 /* Цвет трека при наведении курсора */
+  }
+
+
 .contents{
-	position: relative;
+	position: fixed;
+
+	left: -200px;
+	top: 0;
 	display: flex;
+	overflow-y: scroll;
 	flex-direction: column;
 	align-items: center;
-	margin: 0 auto;
-	background-color: #ffffff38;
-	backdrop-filter: blur(10px);
-	border-radius: 20px;
-	z-index: 2;
-	max-width: 1050px;
-	padding: 40px 80px 0 80px;
+	background: linear-gradient(to top left, rgb(188, 168, 255), #ffaaaa);
+	width: 140px;
+	height: 100%;
+	padding: 15px;
+
+	transition: all 0.5s ease-in-out;
+	opacity: 0;
 }
-.projects__cards{
-    display: flex;
-    flex-wrap: wrap;
-	padding: 10px;
-    position: relative;
+.contents.sticky{
+	opacity: 1;
+	z-index: 100;
+	left: 0px;
 }
 .card{
-	background-color: #00000021;
+	background-color: #00000080;
 	backdrop-filter: blur(10px);
-    --size: 270px;
 	margin: 20px auto;
 	cursor: pointer;
-  	width: var(--size);
-  	position: relative;
+	text-align: center;
+  	max-width: 100px;
   	border-radius: 20px;
   	transition: all 0.5s;
 	  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.13),
@@ -727,36 +781,36 @@ h3{
 }
 .layer{
     width: 100%;
-    height: 0;
+    height: 0%;
     background: linear-gradient(rgba(0,0,0,0.6), var(--boss));
     border-radius: 10px;
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 0;
     overflow: hidden;
     display: flex;
     align-items:  center;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-size: 14px;
     transition: all 0.5s;
 }
 .layer a{
 	color: #ff004f;
 	text-decoration: none;
-	font-size: 22px;
+	font-size: 17px;
 	background: #fff;
-	width: 60px;
-	line-height: 60px;
-	height: 60px;
+	width: 40px;
+	line-height: 40px;
+	margin: 10px auto;
+	height: 40px;
 	border-radius: 50%;
 	text-align: center;
 	transition: all 0.3s;
 }
 .layer a:hover{
 	color: #fff;
-	font-size: 19px;
+	font-size: 17px;
 	background: #ff004f;
 }
 .card:hover {
@@ -768,45 +822,33 @@ h3{
 	
 }
 .card__img {
-    width: var(--size);
-    height: calc(var(--size)*0.99);
+    width: 100%;
+	height: 100px;
     border-radius: 10px;
     overflow: hidden;
-    background: center / 100% auto no-repeat;
-}
-.card__head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  	object-fit: cover;
 }
 .card__title {
-    font-size: 25px;
-	position: absolute;
-	top: 13%;
-	line-height: 25px;
+    font-size: 13px;
+	padding: 0 5px;
 	font-family:'Josef';
 	text-shadow: 0px 2px 2px #00000091;
 }
 .card__txt {
-	font-size: 17px;
+	font-size: 10px;
 	opacity: 0.8;
-	position: absolute;
-	top: 65%;
+	padding: 0 5px;
 	color: #000;
-	padding: 40px;
 	font-family:'Josef';
+	order: 1;
 	
 }
-.card__footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 18px;
-}
+
 .card__name {
+	
+    font-size: 14px;
 	margin: 0 auto;
-    font-size: 20px;
-	margin-bottom: 15px;
+	padding: 5px 0;
 	font-family: 'Fred';
 	text-shadow: 0px 2px 2px #00000091;
 	
@@ -816,34 +858,42 @@ h3{
 
 /*............Container About Start.................*/
 .container__about{
-	max-width: 1150px;
-	padding: 60px 40px;
+	max-width: 1000px;
+	padding: 50px 40px;
 	margin: 0px auto;
 	margin-bottom: 80px;
 	background-color: #ffffff38;
 	backdrop-filter: blur(10px);
 	border-radius: 20px;
 	z-index: 2;
+
 }
 .container__row{
 	display: flex;
 	justify-content: space-between;
 	
-	align-items: center;
+	align-items: start;
 
 	
 }
 .about__block-1{
 	width: 100%;
 	margin-right: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .about__block-1 img{
 	max-width: 550px;
 	border-radius: 15px;
+}
+.about__block-1 button{
 	
+	font-size: 17px;
 }
 .about__block-2{
 	width: 100%;
+	
 	/* height: 530px; */
 	color: #fff;
 	padding: 10px;
@@ -865,20 +915,21 @@ h3{
 	justify-content: center;
 	font-size: 70px;
 	font-family:'Neon';
-	margin: 0;
-	transform: translateY(40px);
+
+	
 	z-index: 3;
 	position: relative;
 }
 .myAbout{
 	position: relative;
-	top: 40px;
+	transform: translateY(40px);
 }
 .pen__icons{
 	color:#dc9cf0;
-	position: relative;
+	position: absolute;
 	font-size: 65px;
-	margin-left: 30px;
+	top: -50px;
+	right: -70px;
 } 
 .tab-titles{
 	display: flex;
@@ -1016,10 +1067,11 @@ h3{
 /*............Container Moments Start.................*/
 
 .container__moments{
-	max-width: 1200px;
-	height: 440px;
+	max-width: 800px;
+	height: 400px;
 	margin: 0px auto;
 	margin-top: 150px;
+	
 	margin-bottom: 80px;
 	background-color: #ffffff38;
 	backdrop-filter: blur(10px);
@@ -1034,7 +1086,7 @@ h3{
 	font-weight: 100;
 	top: -50px;
 	left: 0px;
-	margin: 20px auto;
+
 	display: flex;
 	justify-content: center;
 	font-size: 65px;
@@ -1121,65 +1173,10 @@ h3{
 	width: 145px;
 	height: 145px;
   }
-
   
-  .cards .photo-cards img {
-	position: relative;
-	right: 0px;
-	top: 0px;
-	width: 120px;
-	height: 110px;
-  }
-  .cards-3 .photo-cards img {
-	position: relative;
-	right: 3px;
-	bottom: 13px;
-	width: 225px;
-	height: 125px;
-	
-  }
   /* Buttons =================================================*/
   
-  .inside-page__btn-1 {
-	cursor: pointer;
-	background-color: transparent;
-	border: 3px solid;
-	border-radius: 10px;
-	font-size: 13px;
-	font-weight: 600;
-	font-family: 'Fred';
-	top: 100px;
-	overflow: hidden;
-	padding: 10px 15px;
-	position: relative;
-	text-decoration: none;
-	transition: all .3s ease;
-	width: 70%;
-	z-index: 10;
-	text-shadow: none;
-	border-color: #5a5a5a;
-	color: #5a5a5a;
-  }
   
-  .inside-page__btn-1::before { 
-	content: "";
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	transform: scaleY(0);
-	transition: all .3s ease;
-	width: 100%;
-	z-index: -1;
-	background-color: #5a5a5a;
-  }
-  .inside-page__btn-1:hover { 
-	color: #fafbfa;
-  }
-  
-  .inside-page__btn-1:hover::before { 
-	transform: scaleY(1);
-  }
   
   .inside-page__btn-2 {
 	cursor: pointer;
@@ -1221,47 +1218,6 @@ h3{
   .inside-page__btn-2:hover::before { 
 	transform: scaleY(1);
   }
-  .inside-page__btn-3 {
-	cursor: pointer;
-	background-color: transparent;
-	border: 3px solid;
-	border-radius: 10px;
-	font-size: 13px;
-	font-weight: 600;
-	font-family: 'Fred';
-	top: 100px;
-	overflow: hidden;
-	padding: 10px 15px;
-	position: relative;
-	text-decoration: none;
-	transition: all .3s ease;
-	width: 70%;
-	z-index: 10;
-	text-shadow: none;
-	border-color: #5a5a5a;
-	color: #5a5a5a;
-  }
-  
-  .inside-page__btn-3::before { 
-	content: "";
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	transform: scaleY(0);
-	transition: all .3s ease;
-	width: 100%;
-	z-index: -1;
-	background-color: #5a5a5a;
-	
-  }
-  .inside-page__btn-3:hover { 
-	color: #fafbfa;
-  }
-  
-  .inside-page__btn-3:hover::before { 
-	transform: scaleY(1);
-  }
   
  
   /* Container to hold all cards in one place */
@@ -1278,24 +1234,15 @@ h3{
   
   /* Area to hold an individual card */
   .cards-section {
-	flex-direction: row;
 	display: flex;
-	height: 100%;
-	width: 100%;
+	align-items: center;
+	justify-content: center;
+	
 	
   }
   
   /* A container to hold the flip card and the inside page */
-  .cards {
-	background-color: rgba(0, 0, 0, 0.096);
-	box-shadow:  -10px 17px 66px -32px rgba(0,0,0,0.75);
-	height: 180px;
-	position: relative;
-	transition: all 1s ease;
-	width: 180px;
-	margin: 0 auto;
-	border-radius: 10px;
-  }
+ 
   .cards-2 {
 	background-color: rgba(0, 0, 0, 0.096);
 	box-shadow:  -10px 17px 66px -32px rgba(0,0,0,0.75);
@@ -1306,16 +1253,7 @@ h3{
 	width: 180px;
 	border-radius: 10px;
   }
-  .cards-3 {
-	background-color: rgba(0, 0, 0, 0.096);
-	box-shadow:  -10px 17px 66px -32px rgba(0,0,0,0.75);
-	height: 180px;
-	position: relative;
-	margin: 0 auto;
-	transition: all 1s ease;
-	width: 180px;
-	border-radius: 10px;
-  }
+ 
   /* Flip card - covering both the front and inside front page */
   
   /* An outer container to hold the flip card. This excludes the inside page */
@@ -1382,6 +1320,12 @@ h3{
 	background: var(--boss)
   }
   
+  .book-adaptive{
+	width: 100%;
+	
+		background-color: #fff;
+		display: none;
+	}
   
   /* Front card's bottom section */
   .cards-front__bt {
@@ -1433,24 +1377,7 @@ h3{
   
   /* Functionality ====================================*/
   
-  /* This is to keep the card centered (within its container) when opened */
-  .cards:hover {
-	box-shadow:
-	-10px 17px 66px -32px rgba(0,0,0,0.75);
-	width: 350px;
-  }
-  
-  /* When the card is hovered, the flip card container will rotate */
-  .cards:hover .flip-cards__container {
-	transform: rotateY(-180deg);
-	
-  }
-  
-  /* When the card is hovered, the shadow on the inside page will shrink to the left */
-  .cards:hover .inside-page {
-	box-shadow: inset 10px 0px 50px -25px rgba(0,0,0,0.1);
-	
-  }
+ 
   .cards-2:hover {
 	box-shadow:
 	-10px 17px 66px -32px rgba(0,0,0,0.75);
@@ -1468,23 +1395,7 @@ h3{
 	box-shadow: inset 10px 0px 50px -25px rgba(0,0,0,0.1);
 	
   }
-  .cards-3:hover {
-	box-shadow:
-	-10px 17px 66px -32px rgba(0,0,0,0.75);
-	width: 350px;
-  }
   
-  /* When the card is hovered, the flip card container will rotate */
-  .cards-3:hover .flip-cards__container {
-	transform: rotateY(-180deg);
-	
-  }
-  
-  /* When the card is hovered, the shadow on the inside page will shrink to the left */
-  .cards-3:hover .inside-page {
-	box-shadow: inset 10px 0px 50px -25px rgba(0,0,0,0.1);
-	
-  }
   
   
 /*............Container Moments End.................*/
@@ -1510,17 +1421,18 @@ h3{
 }
 .contact-left{
 	position: relative;
-	flex-basis: 35%;
+	
+	
 }
-
 .contact-right{	
 	flex-basis: 60%;
+	
 }
 .contact-left h2{
 	font-size: 55px;
 }
 .contact-left p{
-	margin-top: 25px;
+	margin: 25px 0;
 }
 .contact-left p i {
 	margin-right: 15px;
@@ -1634,7 +1546,6 @@ form._sending::after{
 	
 	
 }
-
 .modal .sticky__body{
 	display: flex;
 	align-items: center;
@@ -1646,19 +1557,18 @@ form._sending::after{
 	border-radius: 50%;
 	background-color: #5a5a5a;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.192);
-	position: relative;
+	position: fixed;
 	overflow: hidden;
-	bottom: 170px;
-	margin-right: 50px;
+	bottom: 60px;
 	cursor: pointer;
-	right: -80px;
+	right: 0px;
 	z-index: 100;
 	opacity: 0;
 	transition: all 0.5s ease-in-out;
 }
 .sticky__info.sticky{
 	opacity: 1;
-	right: -40px;
+	right: 50px;
 }
 .sticky__btn{
 	cursor: pointer;
@@ -1679,20 +1589,12 @@ form._sending::after{
 	top: -1px;
 	transition: all 0.5s ease 0s;
 }
-
 .arrow__up{
 	font-size: 60px;
 	color: #5a5a5a;
 	position: relative;
-	left: 30px;
-	opacity: 0;
-	transition: opacity 0.3s ease;
+	transition: 0.3s ease;
 	cursor: pointer;
-}
-.arrow__up.sticky{
-	opacity: 1;
-	transition: all 0.5s ease;
-	bottom: 200px;
 }
 .arrow__up:hover{
 	color:#03e9f4;
@@ -1710,14 +1612,14 @@ form._sending::after{
 	backdrop-filter: blur(10px);
 	border-radius: 15px;
 	padding: 30px 25px;
-	bottom: 280px;
-	right: -200px;
+	bottom: 210px;
+	right: -50px;
 	z-index: 115;
 
 	transition: all 0.5s ease 0s;
 }
 .popup__body.active {
-	right: 100px;
+	right: 230px;
 	transition: all 0.5s ease 0s;
 }
 .popup__content{
@@ -1757,20 +1659,6 @@ form._sending::after{
 }
 
 
-.popup-gallery{
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background-color: #00000062;
-	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.295);
-	backdrop-filter: blur(10px);
-	top: 0px;
-	z-index: 115;
-	opacity: 0;
-	visibility: hidden;
-	transition: all 0.5s ease 0s;
-	
-  }
   .popup-gallery-2{
 	position: fixed;
 	width: 100%;
@@ -1779,54 +1667,23 @@ form._sending::after{
 	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.295);
 	backdrop-filter: blur(10px);
 	top: 0px;
+	left: 0;
 	z-index: 115;
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.5s ease 0s;
 	
   }
-  .popup-gallery-3{
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background-color: #00000062;
-	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.295);
-	backdrop-filter: blur(10px);
-	top: 0px;
-	z-index: 115;
-	opacity: 0;
-	visibility: hidden;
-	transition: all 0.5s ease 0s;
-	
-  }
-  .popup-gallery.active{
-	opacity: 1;
-	visibility: visible;
-	transition: all 0.5s ease 0s;
-	overflow: hidden;
-  }
+ 
   .popup-gallery-2.active{
 	opacity: 1;
 	visibility: visible;
 	transition: all 0.5s ease 0s;
-	overflow: hidden;
+	overflow: auto;
+	direction: rtl;
   }
-  .popup-gallery-3.active{
-	opacity: 1;
-	visibility: visible;
-	transition: all 0.5s ease 0s;
-	overflow: hidden;
-  }
-  .popup-gallery .inside-page__btn-1 {
-	color: rgb(255, 255, 255);
-	position: absolute;
-	right: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	max-width: 50px;
-	cursor: pointer;
-  }
+ 
+  
   .popup-gallery-2 .inside-page__btn-2 {
 	color: rgb(255, 255, 255);
 	position: absolute;
@@ -1837,24 +1694,8 @@ form._sending::after{
 	max-width: 50px;
 	cursor: pointer;
   }
-  .popup-gallery-3 .inside-page__btn-3 {
-	color: rgb(255, 255, 255);
-	position: absolute;
-	right: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	max-width: 50px;
-	cursor: pointer;
-  }
+  
  
-  .gallery{
-	position: relative;
-	padding: 45px 0;
-	margin: 0 100px;
-	transition: all 0.5s ease 0s;
-	transform: translate(0px, +30%);
-  }
   .gallery-2{
 	position: relative;
 	padding: 45px 0;
@@ -1862,26 +1703,16 @@ form._sending::after{
 	transition: all 0.5s ease 0s;
 	transform: translate(0px, +30%);
   }
-  .gallery-3{
-	position: relative;
-	padding: 45px 0;
-	margin: 0 100px;
-	transition: all 0.5s ease 0s;
-	transform: translate(0px, +30%);
+  
+  .gallery-2 h2{
+	margin-top: 50px;
   }
-
-  .gallery.active{
-	transition: all 0.5s ease 0s;
-	transform: translate(0px, 0px);
-  }
+  
   .gallery-2.active{
 	transition: all 0.5s ease 0s;
 	transform: translate(0px, 0px);
   }
-  .gallery-3.active{
-	transition: all 0.5s ease 0s;
-	transform: translate(0px, 0px);
-  }
+  
   h2.title{
 	font-size: 44px;
 	font-weight: bold;
@@ -1899,6 +1730,37 @@ form._sending::after{
 	left: 50%;
 	transform: translateX(-50%);
   }
+
+  .popup-gallery-2.active::-webkit-scrollbar {
+	width: 15px;
+	
+
+  }
+  
+  .popup-gallery-2.active::-webkit-scrollbar-thumb {
+	background-color: #cc0791; /* Цвет ползунка */
+	border-radius: 5px;
+	border: 2px solid var(--colors);
+	
+  }
+  
+  .popup-gallery-2.active::-webkit-scrollbar-thumb:hover {
+	background-color: #9a0c70; /* Цвет ползунка при наведении курсора */
+  }
+  
+  
+  /* Стилизация трека скролла (для Chrome, Safari и Edge) */
+  .popup-gallery-2.active::-webkit-scrollbar-track {
+	background-color: var(--colors); /* Цвет трека */
+	
+  
+  }
+  
+  .popup-gallery-2.active::-webkit-scrollbar-track:hover {
+	 /* Цвет трека при наведении курсора */
+  }
+
+
 	.gallery-list{
 	position: relative;
 	display: flex;
@@ -1909,7 +1771,10 @@ form._sending::after{
   }
   .gallery-item{
 	display: block;
-	flex: 25%;
+	margin: 20px auto;
+	border-radius: 20px;
+	width: 300px;
+	height: 300px;
 	overflow: hidden;
 	position: relative;
   }
@@ -1922,6 +1787,7 @@ form._sending::after{
 	background-color: rgba(0,0,0,.7);
 	color: #ffffff;
 	display: flex;
+	
 	justify-content: center;
 	align-items: center;
 	font-size: 16px;
@@ -1936,28 +1802,31 @@ form._sending::after{
 	transform: scale(1.3) rotate(5deg);
   }
   .gallery-item img{
-	max-width: 100%;
-	height: auto;
+	object-fit: cover;
+	width: 100%;
+	border-radius: 20px;
+	left: 0;
+	top: 0;
+	height: 100%;
+	position: absolute;
 	transition: all .5s ease;
   }
-  @media (max-width: 991px){
-	.gallery-item{
-	  flex: 33.3%;
+  @media (max-width: 550px){
+	.popup-gallery-2 .inside-page__btn-2 {
+		position: static;
+		order: 1;
 	}
-	.popup-gallery .inside-page__btn-2{
-		margin: 0;
+	.gallery-2{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
-  }
-  @media (max-width: 768px){
-	.gallery-item{
-	  flex: 50%;
-	}
-  }
-  @media (max-width: 530px){
-	.gallery-item{
-	  flex: 100%;
+	.gallery-list{
+		order: 2;
 	}
   }
+  
+ 
 
 /*............Sticky End.................*/
 
@@ -1971,33 +1840,86 @@ form._sending::after{
 	position: relative;
 	background-color: var(--boss);
 }
-.copyright i{
-	color: #484848;
+.copyright p{
+	padding-left: 200px;
 }
 /*............Footer End.................*/
 
-
+@media (max-width: 2000px){
+	.content {
+		
+		padding-left: 350px;
+	
+		
+	}
+	.contents{
+		
+		width: 240px;
+		
+	}
+	
+}
+@media (max-width: 1450px){
+	.content {
+		padding-left: 200px;
+	}
+	.container__row{
+		
+		flex-direction: column-reverse;
+	}
+	.contents{
+		width: 140px;
+	
+	}
+	.about__block-2{
+		margin-bottom: 20px;
+	}
+	.contact-right{	
+		flex-basis: 55%;
+	
+	}
+}
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
 @media (max-width: 1199px) { 
+	.contact-left p{
+		margin: 30px 0;
+		font-size: 24px;
+	}
+	.contact-left{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #ffffff38;
+		backdrop-filter: blur(10px);
+		border-radius: 20px;
+		
+	}
+	.contact-left{
+		
+		flex-basis: 100%;
+		
+	}
+	.contact-right{	
+		flex-basis: 100%;
+	
+	}
+
 	.slider .slick-arrow {
 	
 		top: 9%;
 		
 	}
 	.slider .slick-arrow.slick-prev {
-		left: 140px;
+		left: 5%;
 	
 		transform: scale(2);
 	}
 	.slider .slick-arrow.slick-next {
-		right: 140px;
+		right: 5%;
 	
 		transform: scale(2);
 	}
-
-
-
-
 
 	.header__body {
 	
@@ -2005,18 +1927,17 @@ form._sending::after{
 		
 	}
 
-	
 	.about__block-1 img{
 			max-width: 450px;
 			border-radius: 15px;
 			
 		}
-	/*............Photo Container Start.................*/
+
 	
 .container-right {
 	
 	width: 100%;
-	
+	 
 }
 .container-right  .photo {
 	max-width: 350px;
@@ -2024,7 +1945,6 @@ form._sending::after{
 	
 	margin-left: 0px;
 }
-
 .container-right .photo:hover .cont{
 	transform: translateX(30px);
 }
@@ -2034,8 +1954,6 @@ form._sending::after{
 	height: 200px;
 	border: 5px solid rgba(119, 119, 119, 0.25);
 }
-
-
 .container-right .photo .sci {
 	position: absolute;
 	top: 30px;
@@ -2060,11 +1978,6 @@ form._sending::after{
 	opacity: 1;
 }
 
-/*............Photo Container End.................*/
-
-/*............Title Start.................*/
-
-
 .container-left .text-1{
 	font-size: 20px;
 }
@@ -2082,15 +1995,12 @@ h2 {
     font-size: 55px;
     
 }
-
 h2:before{
     
     display: none;
    
 } 
 
-/*............Title End.................*/
-	/*............Static Card Start.................*/
 .static__card{	
 	
 	max-width: 400px;
@@ -2115,12 +2025,12 @@ h3{
 	font-size: 15px;
 	
 }  
-/*............Static Card End.................*/
 
+.about__block-2{
+	width: 100%;
+	height: 100%;
+}
 
-
-
-/*............Button Start.................*/
 .neon{
 	overflow: hidden;
 	color:#fff;
@@ -2137,12 +2047,23 @@ h3{
 	border: 2px solid #fff;
 	border-radius: 6px;
 }
+.myAbout{
+	transform: translateY(30px);
+}
+.myBook{
+	transform: translateY(-10px);
+}
+.sub-title{
+	transform: translateY(-40px);
+}
 }
 
-/* Стилі для середніх екранів (дисплей максимум 991рх) */
-    @media (max-width: 991px) { 
-		/* HEADER----------------------------- */
 
+    @media (max-width: 991px) { 
+		
+		.myAbout{
+			transform: translateY(50px);
+		}
 		.slider{
 		
 			padding: 0 10px;
@@ -2155,14 +2076,12 @@ h3{
 			max-width:150px;
 		
 		}
-		
 		.slider__img{
 			width:100%;
 			height: 150px;
 			
 			
 		}
-
 
 		.menu__btn{
 			display: block;
@@ -2249,10 +2168,7 @@ h3{
 		.header .menu li a:hover{
 		color:#ffd829;
 		}
-		/* HEADER----------------------------- */
 
-
-		/* FULLSCRIN------------------------- */
 		.container-right  .photo {
 			max-width: 0px;
 		
@@ -2278,7 +2194,6 @@ h3{
 			
 		}
 		
-		
 		.container-right .photo .sci {
 		
 			top: 330px;
@@ -2301,25 +2216,14 @@ h3{
 			opacity: 1;
 		}
 	
-		 /* FULLSCRIN------------------------- */
-
-		/* ABOUT------------------------------ */
 		.container__about{
 			
-		
 			margin: 20px auto;
 			
-			border-radius: 0px;
-			
-		}
-		.container__row{
-			display: flex;
-			justify-content: space-between;
-			flex-direction: column;
-			align-items: center;
 		
 			
 		}
+		
 		.about__block-1{
 			margin-right: 0;
 			display: flex;
@@ -2348,13 +2252,30 @@ h3{
 			font-size: 15px;
 		
 		}
-		
+		.container__txt h2{
+			font-size: 48px;
+			transform: translateY(10px);
+		}
 	}
 		/* ABOUT------------------------------ */
 
 
 /* Стилі для малих екранів (дисплей максимум 767рх) */
     @media (max-width: 767px) { 
+		.copyright p{
+			padding-left: 0px;
+		}
+		.contents.sticky {
+			opacity: 0;
+			z-index: 100;
+			left: -300px;
+		}
+		.content {
+		
+			padding-left: 0px;
+			padding: 0 18px;
+			
+		}
 		.fullscrin {
 			position: relative;
 			top: 0;
@@ -2423,7 +2344,7 @@ h3{
 			
 		}
 		.pizza__icons{
-			font-size: 40px;
+			font-size: 10px;
 			transform: translateX(10px);
 		}
 		.projects__title .text-1{
@@ -2461,8 +2382,7 @@ h2:before{
    
 } 
 
-/*............Title End.................*/
-	/*............Static Card Start.................*/
+
 .static__card{	
 	
 	max-width: 350px;
@@ -2486,14 +2406,14 @@ h3{
 	font-size: 14px;
 	
 }  
-/*............Static Card End.................*/
+
 
 .pen__icons::before{
 	display: none;
 }
 
 
-/*............Button Start.................*/
+
 .neon{
 	
 	right: 230px;
@@ -2521,15 +2441,16 @@ h3{
 	.sticky__body{
 		max-width: 1250px;
 		padding: 0 0px;
+		border: 1px solid #000;
 		margin: 0 auto; 
+		position: relative;
 	}
 	.sticky__info{
 		width: 42px;
 		height: 42px;
-	
-		position: relative;
-		bottom: 134px;
-	
+		
+		bottom: 70px;
+		right: 5%;
 		display: flex;
 		justify-content:center;
 		align-items: center;
@@ -2539,7 +2460,7 @@ h3{
 	}
 	.sticky__info.sticky{
 		
-		right: -40px;
+	
 	}
 	.sticky__btn{
 		
@@ -2566,10 +2487,11 @@ h3{
 		bottom: 130px;
 	}
 	.popup__body{
-		bottom: 220px;
+		bottom: 150px;
+		right: -200px;
 	}
 	.popup__body.active{
-		right: 20px;
+		right: 35px;
 		background-color: #5a5a5a;
 	}
 	.popup__content-txt{
@@ -2710,7 +2632,7 @@ h3{
 		}
 		.grav__icons::before{
 			
-			display: none;
+			
 		}
 		.fa-paper-plane::before{
 			display: none;
@@ -2756,7 +2678,61 @@ h3{
 		.static__card .static-txt span {
 			font-size: 22px;
 		}
+		.contact__block{
+			padding: 0 10px;
+		}
+		.contact__row{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+		}
+		.contact-left{
+			width: 400px;
+			
+			
 		
+		}
+		.contact-left .sub-title{
+			font-size: 38px;
+			transform: translateY(-30px);
+		}
+			.contact-left p{
+				font-size: 18px;
+				text-align: center;
+			}
+	}
+	@media(max-width:460px){
+		.contact-left{
+			width: 100%;
+		}
+			.slider{
+				display: none;
+			}
+			.slider__button{
+				display: none;
+			}
+			.book-adaptive{
+				display: block;
+				background-color: #ffffff38;
+				backdrop-filter: blur(10px);
+				border-radius: 20px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-around;
+				padding: 10px 0;
+			}
+			.book-adaptive .slider__button{
+				display: block;
+			}
+			.book-adaptive__img{
+				margin: 30px auto;
+				max-width: 200px;
+				border-radius: 20px;
+			}
+		
+	
 	}
 		
 	
