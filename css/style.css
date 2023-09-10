@@ -2262,6 +2262,12 @@ h3{
 
 /* Стилі для малих екранів (дисплей максимум 767рх) */
     @media (max-width: 767px) { 
+		.mask{
+			display: none;
+		}
+		.loading{
+			display: none;
+		}
 		.copyright p{
 			padding-left: 0px;
 		}
