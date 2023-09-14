@@ -1535,17 +1535,32 @@ form._sending::after{
 .modal{
 	position: fixed;
 	width: 100%;
-	padding: 10px 0;
+	height: 40px;
+	bottom: 100px;
+	left: 0;
+	
 	z-index: 100;
 	
 }
-.sticky__body{
-	max-width: 1250px;
-	padding: 0 80px;
-	margin: 0 auto; 
+.popup__body{
+	position: absolute;
+	width: 150px;
+	background-color: #80808062;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.295);
+	backdrop-filter: blur(10px);
+	border-radius: 15px;
+	padding: 30px 25px;
+	bottom: 40px;
+	right: -230px;
 	
-	
+	z-index: 115;
+	transition: all 0.5s ease 0s;
 }
+.popup__body.active {
+	right: 50px;
+	transition: all 0.5s ease 0s;
+}
+
 .modal .sticky__body{
 	display: flex;
 	align-items: center;
@@ -1561,7 +1576,8 @@ form._sending::after{
 	overflow: hidden;
 	bottom: 60px;
 	cursor: pointer;
-	right: 0px;
+	right: -120px;
+	
 	z-index: 100;
 	opacity: 0;
 	transition: all 0.5s ease-in-out;
@@ -1604,24 +1620,7 @@ form._sending::after{
 /* POPUP */
 
 
-.popup__body{
-	position: absolute;
-	width: 150px;
-	background-color: #80808062;
-	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.295);
-	backdrop-filter: blur(10px);
-	border-radius: 15px;
-	padding: 30px 25px;
-	bottom: 210px;
-	right: -50px;
-	z-index: 115;
 
-	transition: all 0.5s ease 0s;
-}
-.popup__body.active {
-	right: 230px;
-	transition: all 0.5s ease 0s;
-}
 .popup__content{
 	display: flex;
 	flex-direction: column;
@@ -2444,13 +2443,7 @@ h3{
 		flex-basis: 100%;
 		
 	}
-	.sticky__body{
-		max-width: 1250px;
-		padding: 0 0px;
-		border: 1px solid #000;
-		margin: 0 auto; 
-		position: relative;
-	}
+	
 	.sticky__info{
 		width: 42px;
 		height: 42px;
@@ -2464,9 +2457,8 @@ h3{
 		opacity: 0;
 		transition: all 0.5s ease-in-out;
 	}
-	.sticky__info.sticky{
-		
-	
+	.popup__body.active{
+		bottom: 30px;
 	}
 	.sticky__btn{
 		
