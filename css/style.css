@@ -84,10 +84,7 @@ body::-webkit-scrollbar {
 	
   
   }
-  
- body::-webkit-scrollbar-track:hover {
-	 /* Цвет трека при наведении курсора */
-  }
+
 
 /*............Loader Start.................*/
 .mask{
@@ -740,9 +737,7 @@ h3{
   
   }
   
-  .contents::-webkit-scrollbar-track:hover {
-	 /* Цвет трека при наведении курсора */
-  }
+ 
 
 
 .contents{
@@ -1755,10 +1750,7 @@ form._sending::after{
   
   }
   
-  .popup-gallery-2.active::-webkit-scrollbar-track:hover {
-	 /* Цвет трека при наведении курсора */
-  }
-
+  
 
 	.gallery-list{
 	position: relative;
@@ -2626,10 +2618,8 @@ h3{
 			
 			
 		}
-		.grav__icons::before{
-			
-			
-		}
+		
+
 		.fa-paper-plane::before{
 			display: none;
 		}
