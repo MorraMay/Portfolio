@@ -2471,11 +2471,9 @@ h3{
 	.sticky__btn.active::before{
 		content: "X";	
 		font-size: 25px;
-		
 		position: static;
 	
 	}
-	
 	.arrow__up{
 		font-size: 40px;
 		left: 10px;
